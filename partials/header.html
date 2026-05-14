@@ -1,0 +1,116 @@
+<header class="site-header">
+ <div class="header-inner">
+
+  <!-- LOGO -->
+  <a href="/" class="logo-link">
+    <img src="/images/farm-direct-roses-logo.png" alt="Farm Direct Roses">
+  </a>
+
+  <!-- DESKTOP NAV -->
+  <nav class="main-nav hidden md:flex gap-8 font-semibold uppercase">
+
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/why-farm-direct/">Why Farm Direct</a>
+
+    <!-- MEGA MENU -->
+    <div class="mega-parent">
+
+      <a href="/products/">Products</a>
+
+      <div class="mega-dropdown">
+
+        <div class="dropdown-column">
+          <h4>Rose Varieties</h4>
+
+          <div class="mega-card-grid">
+            <a href="/standard-roses/" class="mega-card">
+              <img src="/menu-roses-images/freedom-red-rose-ecuador-closeup.webp">
+              <span>Standard Roses</span>
+            </a>
+
+            <a href="/spray-roses/" class="mega-card">
+              <img src="/menu-roses-images/silver-mikado-light-purple-spray-roses-ecuador-closeup.webp">
+              <span>Spray Roses</span>
+            </a>
+
+            <a href="/garden-roses/" class="mega-card">
+              <img src="/menu-roses-images/white-ohara-garden-rose-ecuador-closeup.webp">
+              <span>Garden Roses</span>
+            </a>
+
+            <a href="/tinted-roses/" class="mega-card">
+              <img src="/menu-roses-images/silver-tinted-rose-ecuador-closeup.webp">
+              <span>Tinted Roses</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="dropdown-column">
+          <h4>Wholesale Export</h4>
+          <a href="/farm-direct-roses-export/">Farm Direct Roses Export</a>
+          <a href="/ecuador-roses-wholesale/">Ecuador Roses Wholesale</a>
+          <a href="/premium-roses-from-ecuador/">Premium Roses From Ecuador</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <a href="/logistics/">Logistics</a>
+    <a href="/contact/">Contact</a>
+
+  </nav>
+
+  <!-- MOBILE BUTTON -->
+  <button id="open-menu" class="md:hidden text-3xl">
+    ☰
+  </button>
+
+</div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu"
+       class="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-white shadow-xl transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+
+    <div class="flex justify-between items-center p-5 border-b">
+      <span class="font-bold">Menu</span>
+      <button id="close-menu" class="text-3xl">✕</button>
+    </div>
+
+    <div class="mobile-menu-links flex flex-col p-6 gap-4">">
+
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/why-farm-direct/">Why Farm Direct</a>
+
+      <!-- MOBILE DROPDOWN -->
+      <button id="products-toggle" class="text-left font-semibold">
+        Products +
+      </button>
+
+      <div id="products-menu" class="hidden flex-col gap-2 pl-4">
+
+        <span class="text-sm text-gray-500">Rose Varieties</span>
+        <a href="/standard-roses/">Standard Roses</a>
+        <a href="/spray-roses/">Spray Roses</a>
+        <a href="/garden-roses/">Garden Roses</a>
+        <a href="/tinted-roses/">Tinted Roses</a>
+
+        <span class="text-sm text-gray-500 mt-3">Wholesale Export</span>
+        <a href="/farm-direct-roses-export/">Export</a>
+        <a href="/ecuador-roses-wholesale/">Wholesale</a>
+
+      </div>
+
+      <a href="/logistics/">Logistics</a>
+      <a href="/contact/">Contact</a>
+
+    </div>
+
+  </div>
+
+  <!-- OVERLAY -->
+  <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-40"></div>
+
+</header>

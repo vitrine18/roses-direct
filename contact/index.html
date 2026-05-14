@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ecuadorian Roses</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- ================= HEADER ================= -->
+  <div id="site-header"></div>
+  
+  <!-- ================= PAGE OFFSET ================= -->
+  <main class="page-offset">
+  
+
+  <section class="max-w-7xl mx-auto px-6 mt-20 md:grid-cols-2">
+    <h1 class="text-3xl mb-6">Contact Us</h1>
+    <p class="mb-12 max-w-2xl">
+      Get in touch to request pricing, availability, or logistics details.
+      We respond within 24 hours.
+    </p>
+
+  </section>
+
+  <div class="max-w-4xl mx-auto px-4 mb-20">
+    <form
+      action="https://formspree.io/f/xlgdjegj"
+      method="POST"
+
+      class="grid grid-cols-1 md:grid-cols-2 gap-6"
+    >
+
+      <input type="hidden" name="_redirect" value="/pages/thanks.html">
+
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+        class="w-full border p-3 rounded"
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+        class="w-full border p-3 rounded"
+      >
+
+      <input
+        type="text"
+        name="company"
+        placeholder="Company Name"
+        class="w-full border p-3 rounded"
+      >
+
+      <textarea
+        name="message"
+        placeholder="Your message"
+        required
+        class="w-full border p-3 rounded"
+      ></textarea>
+
+      <button
+        type="submit"
+        class="btn-primary max-w-xl py-3 rounded hover:btn-secondary mt-10 py-20"
+      >
+        Send Message
+      </button>
+
+    </form>
+  </div>
+
+ </div> <!-- END page-offset -->
+
+ <!-- ================= FOOTER ================= -->
+  <div id="site-footer"></div>
+
+  <!-- ================= JS ================= -->
+  <script src="/js/layout.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

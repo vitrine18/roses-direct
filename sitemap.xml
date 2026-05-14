@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- HOME -->
+  <url>
+    <loc>https://farmdirect-roses.com/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- CORE PAGES -->
+  <url>
+    <loc>https://farmdirect-roses.com/products/</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://farmdirect-roses.com/contact/</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- CATALOG SECTIONS -->
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/#standard-roses</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/#garden-roses</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/#spray-roses</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/#tinted-roses</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- STANDARD ROSES VARIETIES -->
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/roses/freedom/</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/roses/vendela/</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/roses/be-sweet/</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- GARDEN ROSES -->
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/garden-roses/juliet/</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- SPRAY ROSES -->
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/spray-roses/bombastic/</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- TINTED ROSES -->
+  <url>
+    <loc>https://farmdirect-roses.com/catalog/tinted-roses/black/</loc>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>

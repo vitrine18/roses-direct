@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Roses | Farm Direct Roses</title>
+  <meta name="description" content="Order farm direct Ecuadorian roses with door-to-door delivery via DHL Express." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <div id="site-header"></div>
+
+  <main class="page-offset">
+
+    <section class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-10">
+
+
+      <div class="mb-10">
+        <h2 class="text-3xl font-semibold text-gray-900">
+          Rose Program Order Request
+        </h2>
+        <p class="text-gray-600 mt-2">
+          Complete the form below to move forward with your selected rose program.
+        </p>
+      </div>
+
+      <!-- Selected Program -->
+      <div class="mb-6 p-4 rounded-xl bg-gray-100">
+        <p class="text-sm uppercase text-gray-500">Selected Rose Program</p>
+        <p id="selectedProgram" class="text-xl font-bold text-gray-900"></p>
+      </div>
+
+      <form id="orderForm" class="space-y-12">
+
+        <input type="hidden" name="selected_program" id="programInput">
+
+        <!-- Business Info -->
+        <div>
+            <h4 class="text-lg font-semibold mb-6">Business Information</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input required type="text" placeholder="Business Name"
+                class="w-full border rounded-lg px-4 py-3">
+
+              <input required type="text" placeholder="Full Name"
+                class="w-full border rounded-lg px-4 py-3">
+        </div>
+
+      <!-- NEW ROW -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        
+        <!-- Country fixed -->
+        <div class="w-full bg-gray-100 border rounded-lg px-4 py-3 text-gray-600">
+          United States
+        </div>
+
+        <!-- Optional website -->
+        <input type="text" placeholder="Website or Instagram (optional)"
+          class="w-full border rounded-lg px-4 py-3">
+      </div>
+    </div>
+
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6">Contact Information</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input required type="email" placeholder="Email Address" class="w-full border rounded-lg px-4 py-3">
+            <input required type="text" placeholder="Phone / WhatsApp" class="w-full border rounded-lg px-4 py-3">
+          </div>
+        </div>
+
+              <!-- Delivery -->
+      <div>
+        <h4 class="text-lg font-semibold mb-6">Delivery Information</h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <input required type="text" placeholder="City"
+            class="w-full border rounded-lg px-4 py-3">
+
+          <input required type="text" placeholder="ZIP Code"
+            class="w-full border rounded-lg px-4 py-3">
+
+          <input required type="text" placeholder="Delivery Address"
+            class="w-full border rounded-lg px-4 py-3">
+
+          <!-- Delivery Date -->
+          <div class="relative">
+            <input type="date"
+              id="deliveryDate"
+              class="w-full border rounded-lg px-4 py-3 text-gray-700 bg-white">
+
+            <span
+              id="dateHint"
+              class="absolute left-4 top-1/2 -translate-y-1/2
+                    text-gray-400 pointer-events-none text-sm">
+              Place a delivery date
+            </span>
+          </div>
+
+        </div>
+      </div>
+          
+
+         
+          <!-- Notes -->
+          <textarea
+            placeholder="Additional notes or special instructions (optional)"
+            class="w-full border rounded-lg px-4 py-3 mt-6 h-28 resize-none"></textarea>
+        </div>
+
+
+        <!-- PAYPAL -->
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-6 w-full">
+
+          <h4 class="text-lg font-semibold text-rose-700 mb-2">
+            I’m Ready to Move Forward with This Rose Program
+          </h4>
+
+          <p class="text-gray-700 text-sm mb-6">
+            Complete the form to activate secure PayPal payment.
+          </p>
+
+           <!-- PAYPAL -->
+
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-6"> 
+        <h4 class="text-lg font-semibold text-rose-700 mb-2">
+         I’m Ready to Move Forward with This Rose Program </h4>
+          <h5 class="text-lg font-semibold text-rose-700 mb-2"> 
+          Next Step – Secure Your Order </h5> 
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+         To secure flower availability and production priority, advance payment 
+         is recommended. Farms allocate inventory on a first-payment basis.
+          This ensures priority handling and on-time delivery </p>
+           <p class="text-gray-700 text-sm leading-relaxed">
+             You may proceed with secure payment via PayPal to confirm your order
+              and allow us to immediately reserve your roses. 
+            </p> <p class="text-sm text-gray-700 mt-4"> 
+              You do not need a PayPal account to complete your payment. 
+              PayPal allows secure credit and debit card payments. </p> <p class="text-sm text-gray-700 mt-2">Your selected program will be automatically included in your payment details. Once payment is received, we immediately secure production and shipping. </p>
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-6">
+
+
+          <!-- IMPORTANT: NO href here -->
+          <a
+            id="paypalBtn"
+            class="block w-full text-center py-4 rounded-xl
+                   bg-gray-300 text-gray-500 font-semibold
+                   cursor-not-allowed transition-all duration-300"
+          >
+            Complete the form to activate secure payment
+          </a>
+
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/js/layout.js"></script>
+  <script src="/js/order-form.js"></script>
+
+</body>
+</html>

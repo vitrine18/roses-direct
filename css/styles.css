@@ -751,7 +751,7 @@ height:300px;
 @media (max-width:768px){
 
 .banner{
-padding:32px 16px;
+padding:20px 16px;
 }
 
 .banner-inner{
@@ -764,7 +764,7 @@ margin:0;
 .hero-grid{
 display:grid;
 grid-template-columns:1fr;
-gap:28px;
+gap:16px;
 width:100%;
 }
 
@@ -837,10 +837,8 @@ gap:12px;
 /* mobile */
 @media (max-width:768px){
 
-
-
 .hero-grid{
-gap:28px;
+gap:16px;
 }
 
 .hero-content h1{
@@ -860,7 +858,6 @@ gap:10px;
 .hero-image{
 height:260px;
 }
-
 }
 
 

@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         textMain: "#0f172a",
         textMuted: "#475569",
+        "soft-white": "#ffffffcc",
       },
     },
   },

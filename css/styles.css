@@ -1266,9 +1266,11 @@ grid-template-columns:1fr;
   width: 100%;
   padding: 12px 16px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #d1d5db;
   margin-bottom: 20px;
   font-size: 14px;
+  transition: all 0.2s ease;
+  appearance: none;
 }
 
 .form-grid textarea {
@@ -1278,12 +1280,10 @@ grid-template-columns:1fr;
 .form-grid input:focus,
 .form-grid select:focus,
 .form-grid textarea:focus {
-  outline: none;
-  border-color: #115E59;
-  box-shadow: 0 0 0 3px rgba(225,29,72,0.15);
+  outline: none !important;
+  border-color: var(--second-green) !important;
+  box-shadow: 0 0 0 2px rgba(47,94,67,0.12) !important;
 }
-
-
 
 /* NOTES */
 .form-note {

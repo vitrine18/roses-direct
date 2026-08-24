@@ -1,239 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>USA Wholesale Inquiry | Farm Direct Roses</title>
+
+  <meta
+    name="description"
+    content="Request wholesale availability, pricing, rose varieties, stem lengths, and shipping information from Farm Direct Roses. First-time buyers are welcome and guided through the process."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://farmdirect-roses.com/usa-wholesale-inquiry/">
+
   <link rel="icon" href="/favicon.png" type="image/png">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="/dist/output.css">
   <link rel="stylesheet" href="/css/styles.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-sans text-textMain bg-white">
 
-<!-- ================= HEADER ================= -->
- <div id="site-header"></div>
-  
-   <!-- ================= PAGE OFFSET ================= -->
+<body class="fd-inquiry-page">
+
+  <!-- ===================================================== -->
+  <!-- HEADER -->
+  <!-- ===================================================== -->
+
+  <div id="site-header"></div>
+
+
+  <!-- ===================================================== -->
+  <!-- PAGE -->
+  <!-- ===================================================== -->
+
   <main class="page-offset">
- 
-
- 
-<!-- ================= HERO ================= -->
-<section class="hero-section">
-  <div class="hero-container max-w-4xl mx-auto">   
-
-    <h1 class="hero-title">
-      USA Wholesale Inquiry
-    </h1>
-    
-  </div>
-</section>
 
 
-<!-- ================= FORM ================= -->
-<section class="py-24">
-  <div class="max-w-3xl mx-auto px-8">
-      
-    <form 
-      action="https://formspree.io/f/mgovnjnq"
-      method="POST"
-      class="space-y-12"
-    >
+    <!-- ===================================================== -->
+    <!-- HERO -->
+    <!-- ===================================================== -->
 
-       <!-- BUSINESS INFORMATION -->
-    <div>
-      <h2 class="text-2xl mb-6">
-        Business Information
-      </h2>
+    <section class="fd-inquiry-hero">
 
-      <div class="form-grid md:grid-cols-2 gap-6">
-        <input
-          type="text"
-          name="business_name"
-          placeholder="Business Name *"
-          required
-          class="w-full px-4 py-3 rounded-lg"
-        >
+      <div class="fd-container fd-inquiry-hero-inner">
 
-        <input
-          type="text"
-          name="business_type"
-          placeholder="Business Type (Florist, Wholesaler, Event Designer) *"
-          required
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
+        <span class="fd-eyebrow">
+          LET'S START A CONVERSATION
+        </span>
 
-        <input
-          type="text"
-          name="city"
-          placeholder="City *"
-          required
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
+        <h1 class="fd-title-xl">
+          USA Wholesale
+          <em class="fd-title-accent">Inquiry</em>
+        </h1>
 
-        <input
-          type="text"
-          name="state"
-          placeholder="State *"
-          required
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
+        <div class="fd-inquiry-hero-rule"></div>
 
-        <input
-          type="text"
-          name="country"
-          value="United States"
-          readonly
-          class="w-full border px-4 py-3 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-
-        <input
-          type="text"
-          name="website"
-          placeholder="Website or Instagram (optional)"
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-      </div>
-    </div>
-
-    <!-- CONTACT INFORMATION -->
-    <div>
-      <h2 class="text-2xl mb-6">
-        Contact Information
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <input
-          type="text"
-          name="contact_name"
-          placeholder="Full Name *"
-          required
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Business Email *"
-          required
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number *"
-          required
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-
-        <select
-          name="preferred_contact"
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-          <option value="">Preferred Contact Method</option>
-          <option>Email</option>
-          <option>Phone</option>
-          <option>WhatsApp</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- PURCHASING DETAILS -->
-    <div>
-      <h2 class="text-2xl mb-6">
-        Purchasing Details
-      </h2>
-
-      <div class="space-y-6">
-
-        <select
-          name="first_time_importer"
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-          <option value="">
-            Is this your first time importing flowers from Ecuador?
-          </option>
-          <option>Yes – First time buyer</option>
-          <option>No – Experienced importer</option>
-        </select>
-
-        <select
-          name="weekly_volume"
-          required
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        >
-          <option value="">Estimated Weekly Volume *</option>
-          <option>1–5 boxes</option>
-          <option>6–20 boxes</option>
-          <option>20+ boxes</option>
-        </select>
-
-        
-        <textarea
-          name="message"
-          rows="4"
-          placeholder="Tell us about your needs, varieties, stem lengths, upcoming events, or delivery expectations."
-          class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
-        ></textarea>
-      </div>
-    </div>
-
-    <!-- SUBMIT -->
-    <div class="pt-6">
-      <button
-        type="submit"
-        class="w-full btn-primary px-6 py-4 rounded-lg hover:bt-secondary transition"
-      >
-        Submit Wholesale Inquiry
-      </button>
-
-      <p class="text-sm text-textMuted text-center mt-4">
-          Inquiries are reviewed within 24–48 business hours.
+        <p class="fd-description-lg">
+          Tell us what you're looking for and we'll help you find
+          the right Ecuadorian roses for your business, event,
+          or upcoming floral project.
         </p>
 
-      <p class="text-sm text-gray-500 text-center mt-4">
-        DHL Express delivery · Door-to-door service · No minimum order for first-time buyers
-      </p>
-      
-    </div>
-  </form>
-</div>
-          
-</section>
+        <p class="fd-inquiry-hero-note">
+          First time buying directly from Ecuador?
+          <strong>No experience is required.</strong>
+          We'll guide you through the process.
+        </p>
 
-<!-- ================= CTA ================= -->
-<section class="hero-section">
-  <div class="hero-container">
-    <h2 class="hero-title">
-      Farm-Direct. Export Quality. Trusted Logistics.
-    </h2>
+      </div>
 
-    <p class="hero-text mb-10">
-      Work directly with Ecuadorian farms and receive
-      consistent quality for every shipment.
-    </p>
+    </section>
 
-    <p class="hero-text">
-      New to importing flowers? We guide you step by step — from purchase to delivery<br> — ensuring a smooth and stress-free experience.
-    </p>
 
-  </div>
-</section>
 
-</div> <!-- END page-offset -->
+    <!-- ===================================================== -->
+    <!-- INTRO -->
+    <!-- ===================================================== -->
 
-  <!-- ================= FOOTER ================= -->
+    <section class="fd-inquiry-intro">
+
+      <div class="fd-container fd-container-narrow">
+
+        <span class="fd-eyebrow">
+          BEFORE WE BEGIN
+        </span>
+
+        <h2 class="fd-title-lg">
+          A simple conversation
+          <em class="fd-title-accent">starts it all.</em>
+        </h2>
+
+        <p class="fd-description">
+          Whether you're sourcing roses for everyday floral work,
+          an upcoming wedding, an event installation, or simply
+          exploring direct sourcing from Ecuador, we'd love to
+          understand what you need.
+        </p>
+
+        <p class="fd-description">
+          Share a few details below and we'll respond with
+          availability, recommendations, and the information
+          needed for your next step.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- FORM -->
+    <!-- ===================================================== -->
+
+    <section class="fd-inquiry-form-section">
+
+      <div class="fd-container">
+
+        <form
+          action="https://formspree.io/f/mgovnjnq"
+          method="POST"
+          class="fd-inquiry-form"
+        >
+
+          <!-- REDIRECT -->
+          <input
+            type="hidden"
+            name="_redirect"
+            value="/pages/thanks.html"
+          >
+
+
+          <!-- ================================================= -->
+          <!-- SECTION 01 — BUSINESS -->
+          <!-- ================================================= -->
+
+          <fieldset class="fd-form-section">
+
+            <legend class="fd-form-heading">
+
+              <span class="fd-form-number">
+                01
+              </span>
+
+              <span>
+                Your Business
+              </span>
+
+            </legend>
+
+
+            <p class="fd-form-intro">
+              Tell us a little about the business or project
+              you're sourcing for.
+            </p>
+
+
+            <div class="fd-form-grid">
+
+
+              <!-- BUSINESS NAME -->
+
+              <div class="fd-field">
+
+                <label for="business-name">
+                  Business Name
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="business-name"
+                  type="text"
+                  name="business_name"
+                  autocomplete="organization"
+                  required
+                >
+
+              </div>
+
+
+              <!-- BUSINESS TYPE -->
+
+              <div class="fd-field">
+
+                <label for="business-type">
+                  Business Type
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <select
+                  id="business-type"
+                  name="business_type"
+                  required
+                >
+
+                  <option value="">
+                    Select your business type
+                  </option>
+
+                  <option value="Florist">
+                    Florist
+                  </option>
+
+                  <option value="Event Designer">
+                    Event Designer
+                  </option>
+
+                  <option value="Wedding Planner">
+                    Wedding Planner
+                  </option>
+
+                  <option value="Floral Designer">
+                    Floral Designer
+                  </option>
+
+                  <option value="Wholesaler">
+                    Wholesaler
+                  </option>
+
+                  <option value="Retail Flower Business">
+                    Retail Flower Business
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <!-- CITY -->
+
+              <div class="fd-field">
+
+                <label for="city">
+                  City
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="city"
+                  type="text"
+                  name="city"
+                  autocomplete="address-level2"
+                  required
+                >
+
+              </div>
+
+
+              <!-- STATE -->
+
+              <div class="fd-field">
+
+                <label for="state">
+                  State
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="state"
+                  type="text"
+                  name="state"
+                  autocomplete="address-level1"
+                  required
+                >
+
+              </div>
+
+
+              <!-- COUNTRY -->
+
+              <div class="fd-field">
+
+                <label for="country">
+                  Country
+                </label>
+
+                <input
+                  id="country"
+                  type="text"
+                  name="country"
+                  value="United States"
+                  readonly
+                  class="fd-field-readonly"
+                >
+
+              </div>
+
+
+              <!-- WEBSITE -->
+
+              <div class="fd-field">
+
+                <label for="website">
+                  Website or Instagram
+                  <span class="fd-label-optional">
+                    Optional
+                  </span>
+                </label>
+
+                <input
+                  id="website"
+                  type="text"
+                  name="website"
+                  autocomplete="url"
+                >
+
+              </div>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- ================================================= -->
+          <!-- SECTION 02 — CONTACT -->
+          <!-- ================================================= -->
+
+          <fieldset class="fd-form-section">
+
+            <legend class="fd-form-heading">
+
+              <span class="fd-form-number">
+                02
+              </span>
+
+              <span>
+                Your Contact
+              </span>
+
+            </legend>
+
+
+            <p class="fd-form-intro">
+              Who should we contact regarding your inquiry?
+            </p>
+
+
+            <div class="fd-form-grid">
+
+
+              <!-- NAME -->
+
+              <div class="fd-field">
+
+                <label for="contact-name">
+                  Full Name
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="contact_name"
+                  autocomplete="name"
+                  required
+                >
+
+              </div>
+
+
+              <!-- EMAIL -->
+
+              <div class="fd-field">
+
+                <label for="email">
+                  Business Email
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                >
+
+              </div>
+
+
+              <!-- PHONE -->
+
+              <div class="fd-field">
+
+                <label for="phone">
+                  Phone Number
+                  <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                  required
+                >
+
+              </div>
+
+
+              <!-- CONTACT METHOD -->
+
+              <div class="fd-field">
+
+                <label for="preferred-contact">
+                  Preferred Contact Method
+                </label>
+
+                <select
+                  id="preferred-contact"
+                  name="preferred_contact"
+                >
+
+                  <option value="">
+                    Select one
+                  </option>
+
+                  <option value="Email">
+                    Email
+                  </option>
+
+                  <option value="Phone">
+                    Phone
+                  </option>
+
+                  <option value="WhatsApp">
+                    WhatsApp
+                  </option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- ================================================= -->
+          <!-- SECTION 03 — ORDER -->
+          <!-- ================================================= -->
+
+          <fieldset class="fd-form-section">
+
+            <legend class="fd-form-heading">
+
+              <span class="fd-form-number">
+                03
+              </span>
+
+              <span>
+                Your Rose Requirements
+              </span>
+
+            </legend>
+
+
+            <p class="fd-form-intro">
+              The more we know, the better we can tailor
+              our recommendations.
+            </p>
+
+
+            <div class="fd-form-stack">
+
+          <div class="fd-form-stack">
+
+          <div class="fd-form-grid fd-order-grid">
+
+            <!-- FIRST TIME -->
+
+            <div class="fd-field">
+
+              <label for="first-time-importer">
+                Is this your first time importing flowers
+                from Ecuador?
+              </label>
+
+              <select
+                id="first-time-importer"
+                name="first_time_importer"
+              >
+
+                <option value="">
+                  Select an option
+                </option>
+
+                <option value="Yes – First time buyer">
+                  Yes — First time buyer
+                </option>
+
+                <option value="No – Experienced importer">
+                  No — Experienced importer
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- VOLUME -->
+
+            <div class="fd-field">
+
+              <label for="weekly-volume">
+                Estimated Weekly Volume
+                <span aria-hidden="true">*</span>
+              </label>
+
+              <select
+                id="weekly-volume"
+                name="weekly_volume"
+                required
+              >
+
+                <option value="">
+                  Select an estimated volume
+                </option>
+
+                <option value="1–5 boxes">
+                  1–5 boxes
+                </option>
+
+                <option value="6–20 boxes">
+                  6–20 boxes
+                </option>
+
+                <option value="20+ boxes">
+                  20+ boxes
+                </option>
+
+                <option value="Not sure yet">
+                  I'm not sure yet
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="fd-field fd-field-full">
+
+              <label for="message">
+                Tell Us What You're Looking For
+                <span class="fd-label-optional">
+                  Optional
+                </span>
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell us about the varieties, stem lengths, colors, quantities, upcoming events, or delivery expectations you're considering."
+              ></textarea>
+
+            </div>
+
+          </div>
+                    </fieldset>
+
+
+
+          <!-- ================================================= -->
+          <!-- FIRST TIME BUYER NOTE -->
+          <!-- ================================================= -->
+
+          <aside class="fd-first-buyer-note">
+
+            <div class="fd-first-buyer-mark">
+              <span aria-hidden="true">01</span>
+            </div>
+
+            <div>
+
+              <span class="fd-eyebrow">
+                NEW TO IMPORTING?
+              </span>
+
+              <h2>
+                You don't need to
+                <em>figure it out alone.</em>
+              </h2>
+
+              <p>
+                You don't need prior import experience, a florist
+                certification, or logistics expertise to get started.
+                We guide you through sourcing, preparation, shipping,
+                and delivery step by step.
+              </p>
+              
+            </div>
+
+          </aside>
+
+
+
+          <!-- ================================================= -->
+          <!-- SUBMIT -->
+          <!-- ================================================= -->
+
+          <div class="fd-form-submit">
+
+            <button
+              type="submit"
+              class="fd-btn fd-btn-primary fd-submit-btn"
+            >
+              Submit Wholesale Inquiry
+            </button>
+
+
+            <p class="fd-submit-note">
+              We typically review inquiries within
+              <strong>24–48 business hours.</strong>
+            </p>
+
+
+            <p class="fd-submit-logistics">
+              DHL Express delivery
+              <span aria-hidden="true">·</span>
+              Door-to-door service
+              <span aria-hidden="true">·</span>
+              First-time buyers welcome
+            </p>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- FINAL CTA -->
+    <!-- ===================================================== -->
+
+    <section class="fd-inquiry-final">
+
+      <div class="fd-container fd-container-narrow">
+
+        <span class="fd-eyebrow">
+          FARM DIRECT
+        </span>
+
+        <h2 class="fd-title-lg">
+          From your first
+          <em class="fd-title-accent">conversation</em>
+          to your first delivery.
+        </h2>
+
+        <p class="fd-description-lg">
+          We're here to make sourcing Ecuadorian roses
+          simpler, clearer, and more personal.
+        </p>
+
+        <div class="fd-inquiry-final-rule"></div>
+
+        <p class="fd-inquiry-final-small">
+          Direct sourcing · Export preparation · DHL Express
+          · Personalized guidance
+        </p>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ===================================================== -->
+  <!-- FOOTER -->
+  <!-- ===================================================== -->
+
   <div id="site-footer"></div>
 
-  <!-- ================= JS ================= -->
-  <script src="/js/layout.js"></script>
 
-  <script src="js/main.js"></script>
+  <!-- ===================================================== -->
+  <!-- JS -->
+  <!-- ===================================================== -->
+
+  <script src="/js/layout.js"></script>
+  <script src="/js/main.js"></script>
 
 </body>
 </html>
-

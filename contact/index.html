@@ -1,94 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Ecuadorian Roses</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Farm Direct | Ecuadorian Roses</title>
+
+  <meta
+    name="description"
+    content="Contact Farm Direct to request Ecuadorian rose availability, pricing, stem lengths, varieties, and international shipping information."
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="icon" href="/favicon.png" type="image/png">
-  <link href="/dist/output.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/dist/output.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
 
-   <!-- ================= HEADER ================= -->
+<body>
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
   <div id="site-header"></div>
-  
-  <!-- ================= PAGE OFFSET ================= -->
-  <main class="page-offset">
-  
 
-  <section class="max-w-7xl mx-auto px-6 mt-20 md:grid-cols-2">
-    <h1 class="text-3xl mb-6">Contact Us</h1>
-    <p class="mb-12 max-w-2xl">
-      Get in touch to request pricing, availability, or logistics details.
-      We respond within 24 hours.
-    </p>
 
-  </section>
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
 
-  <div class="max-w-4xl mx-auto px-4 mb-20">
-    <form
-      action="https://formspree.io/f/xlgdjegj"
-      method="POST"
+  <main class="page-offset fd-page">
 
-      class="grid grid-cols-1 md:grid-cols-2 gap-6"
+
+    <!-- =====================================================
+         CONTACT HERO
+         ===================================================== -->
+
+    <section
+      class="fd-section fd-contact-hero"
+      aria-labelledby="contact-title"
     >
 
-      <input type="hidden" name="_redirect" value="/pages/thanks.html">
+      <div class="fd-container fd-container-narrow">
+
+        <span class="fd-eyebrow">
+          LET'S TALK FLOWERS
+        </span>
+
+        <h1
+          id="contact-title"
+          class="fd-title-xl"
+        >
+          Let's Start a
+          <em class="fd-title-accent">Conversation.</em>
+        </h1>
+
+        <div class="fd-contact-intro">
+
+          <p class="fd-description-lg">
+            Whether you're looking for current availability, wholesale
+            pricing, specific varieties or guidance on shipping from
+            Ecuador, we're here to help.
+          </p>
+
+          <p class="fd-contact-response">
+            Tell us what you're looking for and we'll help you find
+            the right solution for your business.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
 
 
-      <input
-        type="text"
-        name="name"
-        placeholder="Full Name"
-        required
-        class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-600"
-      >
+    <!-- =====================================================
+         CONTACT AREA
+         ===================================================== -->
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Email Address"
-        required
-        class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-600"
-      >
+    <section
+      class="fd-section fd-contact-area"
+      aria-labelledby="contact-form-title"
+    >
 
-      <input
-        type="text"
-        name="company"
-        placeholder="Company Name"
-        class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-600"
-      >
+      <div class="fd-container">
 
-      <textarea
-        name="message"
-        placeholder="Your message"
-        required
-        class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-600"
-      ></textarea>
 
-      <button
-        type="submit"
-        class="btn-primary max-w-xl py-3 rounded hover:btn-secondary mt-10 py-20"
-      >
-        Send Message
-      </button>
+        <!-- INTRO / FORM HEADER -->
 
-    </form>
-  </div>
+        <div class="fd-contact-heading">
 
- </div> <!-- END page-offset -->
+          <div>
 
- <!-- ================= FOOTER ================= -->
+            <span class="fd-eyebrow">
+              CONTACT FARM DIRECT
+            </span>
+
+            <h2
+              id="contact-form-title"
+              class="fd-title-lg"
+            >
+              How Can We
+              <em class="fd-title-accent">Help You?</em>
+            </h2>
+
+          </div>
+
+          <p class="fd-description">
+            Share a few details about your project or sourcing needs.
+            The more information you provide, the better we can
+            prepare a personalized response.
+          </p>
+
+        </div>
+
+
+        <!-- =================================================
+             FORM
+             ================================================= -->
+
+        <div class="fd-contact-form-wrap">
+
+          <form
+            action="https://formspree.io/f/xlgdjegj"
+            method="POST"
+            class="fd-contact-form"
+          >
+
+            <input
+              type="hidden"
+              name="_redirect"
+              value="/pages/thanks.html"
+            >
+
+
+            <!-- NAME -->
+
+            <div class="fd-form-field">
+
+              <label for="contact-name">
+                Full Name
+              </label>
+
+              <input
+                id="contact-name"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+              >
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="fd-form-field">
+
+              <label for="contact-email">
+                Email Address
+              </label>
+
+              <input
+                id="contact-email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+              >
+
+            </div>
+
+
+            <!-- COMPANY -->
+
+            <div class="fd-form-field">
+
+              <label for="contact-company">
+                Company Name
+                <span>(Optional)</span>
+              </label>
+
+              <input
+                id="contact-company"
+                type="text"
+                name="company"
+                autocomplete="organization"
+              >
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="fd-form-field fd-form-field-full">
+
+              <label for="contact-message">
+                How Can We Help?
+              </label>
+
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="7"
+                required
+              ></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <div class="fd-form-submit">
+
+              <button
+                type="submit"
+                class="fd-btn fd-btn-primary"
+              >
+                Send Message
+              </button>
+
+              <p class="fd-form-note">
+                We typically respond within 24 hours.
+              </p>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHAT YOU CAN CONTACT US ABOUT
+         ===================================================== -->
+
+    <section
+      class="fd-section fd-contact-topics"
+      aria-labelledby="contact-topics-title"
+    >
+
+      <div class="fd-container">
+
+        <div class="fd-contact-topics-heading">
+
+          <span class="fd-eyebrow">
+            WHAT WE CAN HELP WITH
+          </span>
+
+          <h2
+            id="contact-topics-title"
+            class="fd-title-lg"
+          >
+            From Availability to
+            <em class="fd-title-accent">Delivery.</em>
+          </h2>
+
+        </div>
+
+
+        <div class="fd-contact-topic-grid">
+
+
+          <article class="fd-contact-topic">
+
+            <span class="fd-contact-topic-number">
+              01
+            </span>
+
+            <h3>
+              Rose Availability
+            </h3>
+
+            <p>
+              Ask about current varieties, stem lengths,
+              colors and seasonal availability.
+            </p>
+
+          </article>
+
+
+          <article class="fd-contact-topic">
+
+            <span class="fd-contact-topic-number">
+              02
+            </span>
+
+            <h3>
+              Wholesale Pricing
+            </h3>
+
+            <p>
+              Tell us what you're sourcing and we'll prepare
+              a quotation based on your requirements.
+            </p>
+
+          </article>
+
+
+          <article class="fd-contact-topic">
+
+            <span class="fd-contact-topic-number">
+              03
+            </span>
+
+            <h3>
+              Shipping & Logistics
+            </h3>
+
+            <p>
+              We can help explain the farm-direct shipping
+              process and delivery options.
+            </p>
+
+          </article>
+
+
+          <article class="fd-contact-topic">
+
+            <span class="fd-contact-topic-number">
+              04
+            </span>
+
+            <h3>
+              Custom Requests
+            </h3>
+
+            <p>
+              Have a specific project, event or sourcing need?
+              Tell us what you're planning.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL EDITORIAL CTA
+         ===================================================== -->
+
+    <section
+      class="fd-section fd-contact-final"
+      aria-labelledby="contact-final-title"
+    >
+
+      <div class="fd-container">
+
+        <div class="fd-contact-final-inner">
+
+          <span class="fd-eyebrow">
+            FARM DIRECT
+          </span>
+
+          <h2
+            id="contact-final-title"
+            class="fd-title-lg"
+          >
+            Your Roses.
+            <em class="fd-title-accent">Your Vision.</em>
+          </h2>
+
+          <p class="fd-description">
+            Start with a conversation and let us help you
+            source premium Ecuadorian roses directly from
+            the farm.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
   <div id="site-footer"></div>
 
-  <!-- ================= JS ================= -->
-  <script src="/js/layout.js"></script>
 
-  <script src="js/main.js"></script>
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script src="/js/layout.js"></script>
+  <script src="/js/main.js"></script>
 
 </body>
 </html>

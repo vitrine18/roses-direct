@@ -3,172 +3,890 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order Roses | Farm Direct Roses</title>
-  <meta name="description" content="Order farm direct Ecuadorian roses with door-to-door delivery via DHL Express." />
 
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Order Roses | Farm Direct Ecuadorian Roses</title>
+
+  <meta
+    name="description"
+    content="Complete your Farm Direct rose order request for premium Ecuadorian roses with shipping coordination and door-to-door delivery."
+  />
+
+  <!-- =====================================================
+       FARM DIRECT TYPOGRAPHY
+       ===================================================== -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="icon" href="/favicon.png" type="image/png">
-  <link rel="stylesheet" href="/dist/output.css">
+
+  <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/rose-program-order.css">
 </head>
 
-<body class="bg-white text-gray-800">
 
-  <!-- HEADER -->
+<body class="fd-order-page">
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
   <div id="site-header"></div>
 
-  <main class="page-offset">
 
-    <section class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-10">
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
 
-
-      <div class="mb-10">
-        <h2 class="text-3xl font-semibold text-gray-900">
-          Rose Program Order Request
-        </h2>
-        <p class="text-gray-600 mt-2">
-          Complete the form below to move forward with your selected rose program.
-        </p>
-      </div>
-
-      <!-- Selected Program -->
-      <div class="mb-6 p-4 rounded-xl bg-gray-100">
-        <p class="text-sm uppercase text-gray-500">Selected Rose Program</p>
-        <p id="selectedProgram" class="text-xl font-bold text-gray-900"></p>
-      </div>
-
-      <form id="orderForm" class="space-y-12">
-
-        <input type="hidden" name="selected_program" id="programInput">
-
-        <!-- Business Info -->
-        <div>
-            <h4 class="text-lg font-semibold mb-6">Business Information</h4>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input required type="text" placeholder="Business Name"
-                class="w-full border rounded-lg px-4 py-3">
-
-              <input required type="text" placeholder="Full Name"
-                class="w-full border rounded-lg px-4 py-3">
-        </div>
-
-      <!-- NEW ROW -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        
-        <!-- Country fixed -->
-        <div class="w-full bg-gray-100 border rounded-lg px-4 py-3 text-gray-600">
-          United States
-        </div>
-
-        <!-- Optional website -->
-        <input type="text" placeholder="Website or Instagram (optional)"
-          class="w-full border rounded-lg px-4 py-3">
-      </div>
-    </div>
+  <main class="fd-order-main">
 
 
-        <!-- Contact -->
-        <div>
-          <h4 class="text-lg font-semibold mb-6">Contact Information</h4>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input required type="email" placeholder="Email Address" class="w-full border rounded-lg px-4 py-3">
-            <input required type="text" placeholder="Phone / WhatsApp" class="w-full border rounded-lg px-4 py-3">
-          </div>
-        </div>
+    <!-- ===================================================
+         HERO
+         =================================================== -->
 
-              <!-- Delivery -->
-      <div>
-        <h4 class="text-lg font-semibold mb-6">Delivery Information</h4>
+    <section class="fd-order-hero fd-section">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="fd-container">
 
-          <input required type="text" placeholder="City"
-            class="w-full border rounded-lg px-4 py-3">
+        <div class="fd-order-hero-content">
 
-          <input required type="text" placeholder="ZIP Code"
-            class="w-full border rounded-lg px-4 py-3">
+          <span class="fd-eyebrow">
+            ROSE PROGRAM ORDER
+          </span>
 
-          <input required type="text" placeholder="Delivery Address"
-            class="w-full border rounded-lg px-4 py-3">
+          <h1 class="fd-title-xl">
+            Let's get your roses
+            <br>
+            <em>moving.</em>
+          </h1>
 
-          <!-- Delivery Date -->
-          <div class="relative">
-            <input type="date"
-              id="deliveryDate"
-              class="w-full border rounded-lg px-4 py-3 text-gray-700 bg-white">
-
-            <span
-              id="dateHint"
-              class="absolute left-4 top-1/2 -translate-y-1/2
-                    text-gray-400 pointer-events-none text-sm">
-              Place a delivery date
-            </span>
-          </div>
-
-        </div>
-      </div>
-          
-
-         
-          <!-- Notes -->
-          <textarea
-            placeholder="Additional notes or special instructions (optional)"
-            class="w-full border rounded-lg px-4 py-3 mt-6 h-28 resize-none"></textarea>
-        </div>
-
-
-        <!-- PAYPAL -->
-        <div class="bg-rose-50 border border-rose-200 rounded-xl p-6 w-full">
-
-          <h4 class="text-lg font-semibold text-rose-700 mb-2">
-            I’m Ready to Move Forward with This Rose Program
-          </h4>
-
-          <p class="text-gray-700 text-sm mb-6">
-            Complete the form to activate secure PayPal payment.
+          <p class="fd-description-lg">
+            Complete the details below and we'll prepare your
+            farm-direct order for confirmation and payment.
           </p>
 
-           <!-- PAYPAL -->
-
-        <div class="bg-rose-50 border border-rose-200 rounded-xl p-6"> 
-        <h4 class="text-lg font-semibold text-rose-700 mb-2">
-         I’m Ready to Move Forward with This Rose Program </h4>
-          <h5 class="text-lg font-semibold text-rose-700 mb-2"> 
-          Next Step – Secure Your Order </h5> 
-            <p class="text-gray-700 text-sm leading-relaxed mb-4">
-         To secure flower availability and production priority, advance payment 
-         is recommended. Farms allocate inventory on a first-payment basis.
-          This ensures priority handling and on-time delivery </p>
-           <p class="text-gray-700 text-sm leading-relaxed">
-             You may proceed with secure payment via PayPal to confirm your order
-              and allow us to immediately reserve your roses. 
-            </p> <p class="text-sm text-gray-700 mt-4"> 
-              You do not need a PayPal account to complete your payment. 
-              PayPal allows secure credit and debit card payments. </p> <p class="text-sm text-gray-700 mt-2">Your selected program will be automatically included in your payment details. Once payment is received, we immediately secure production and shipping. </p>
-        <div class="bg-rose-50 border border-rose-200 rounded-xl p-6">
+        </div>
 
 
-          <!-- IMPORTANT: NO href here -->
-          <a
-            id="paypalBtn"
-            class="block w-full text-center py-4 rounded-xl
-                   bg-gray-300 text-gray-500 font-semibold
-                   cursor-not-allowed transition-all duration-300"
-          >
-            Complete the form to activate secure payment
-          </a>
+        <div class="fd-order-hero-mark" aria-hidden="true">
+
+          <span class="fd-order-hero-number">
+            02
+          </span>
+
+          <span class="fd-order-hero-line"></span>
+
+          <span class="fd-order-hero-word">
+            ORDER
+          </span>
 
         </div>
 
-      </form>
+      </div>
+
     </section>
+
+
+
+    <!-- ===================================================
+         ORDER FORM
+         =================================================== -->
+
+    <section class="fd-order-section fd-section">
+
+      <div class="fd-container">
+
+        <div class="fd-order-layout">
+
+
+          <!-- =================================================
+               FORM
+               ================================================= -->
+
+          <div class="fd-order-form-wrapper">
+
+            <div class="fd-order-intro">
+
+              <span class="fd-eyebrow">
+                ORDER DETAILS
+              </span>
+
+              <h2 class="fd-title-lg">
+                Tell us where to
+                <br>
+                <em>send your roses.</em>
+              </h2>
+
+              <p class="fd-description">
+                Your selected program has already been carried
+                into this order. Just complete your business,
+                contact, and delivery information.
+              </p>
+
+            </div>
+
+
+            <!-- ===============================================
+                 SELECTED ORDER
+                 =============================================== -->
+
+            <div class="fd-selected-order">
+
+              <div class="fd-selected-order-top">
+
+                <span>
+                  YOUR SELECTION
+                </span>
+
+                <span class="fd-selected-order-status">
+                  READY
+                </span>
+
+              </div>
+
+
+              <div class="fd-selected-order-main">
+
+                <div>
+
+                  <span class="fd-selected-order-label">
+                    SELECTED PROGRAM
+                  </span>
+
+                  <h3 id="selectedProgram">
+                    Loading selection...
+                  </h3>
+
+                </div>
+
+
+                <div class="fd-selected-order-price">
+
+                  <span>
+                    PROGRAM PRICE
+                  </span>
+
+                  <strong id="selectedPrice">
+                    —
+                  </strong>
+
+                </div>
+
+              </div>
+
+
+              <div class="fd-selected-order-details">
+
+                <div>
+
+                  <span>
+                    VOLUME
+                  </span>
+
+                  <strong id="selectedStems">
+                    —
+                  </strong>
+
+                </div>
+
+
+                <div>
+
+                  <span>
+                    STEM LENGTH
+                  </span>
+
+                  <strong id="selectedLength">
+                    —
+                  </strong>
+
+                </div>
+
+
+                <div>
+
+                  <span>
+                    COLOR
+                  </span>
+
+                  <strong id="selectedColor">
+                    —
+                  </strong>
+
+                </div>
+
+              </div>
+
+
+              <a
+                href="/rose-programs/"
+                class="fd-change-selection"
+              >
+                ← CHANGE SELECTION
+              </a>
+
+            </div>
+
+
+            <!-- ===============================================
+                 FORM
+                 =============================================== -->
+
+            <form
+              id="orderForm"
+              class="fd-order-form"
+              novalidate
+            >
+
+              <!-- Hidden selection fields -->
+
+              <input
+                type="hidden"
+                name="selected_program"
+                id="programInput"
+              >
+
+              <input
+                type="hidden"
+                name="order_type"
+                id="orderTypeInput"
+              >
+
+              <input
+                type="hidden"
+                name="box_option"
+                id="boxInput"
+              >
+
+              <input
+                type="hidden"
+                name="program_price"
+                id="priceInput"
+              >
+
+
+              <!-- =========================================
+                   BUSINESS INFORMATION
+                   ========================================= -->
+
+              <fieldset class="fd-form-section">
+
+                <div class="fd-form-section-heading">
+
+                  <span>
+                    01
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Business Information
+                    </h3>
+
+                    <p>
+                      Tell us a little about your business.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="fd-form-grid">
+
+                  <div class="fd-form-field">
+
+                    <label for="businessName">
+                      BUSINESS NAME
+                    </label>
+
+                    <input
+                      required
+                      id="businessName"
+                      name="business_name"
+                      type="text"
+                      placeholder="Your business name"
+                      autocomplete="organization"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field">
+
+                    <label for="fullName">
+                      FULL NAME
+                    </label>
+
+                    <input
+                      required
+                      id="fullName"
+                      name="full_name"
+                      type="text"
+                      placeholder="Your full name"
+                      autocomplete="name"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field">
+
+                    <label for="website">
+                      WEBSITE OR INSTAGRAM
+                    </label>
+
+                    <input
+                      id="website"
+                      name="website"
+                      type="text"
+                      placeholder="Optional"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field">
+
+                    <label>
+                      COUNTRY
+                    </label>
+
+                    <div class="fd-form-static">
+                      United States
+                    </div>
+
+                    <input
+                      type="hidden"
+                      name="country"
+                      value="United States"
+                    >
+
+                  </div>
+
+                </div>
+
+              </fieldset>
+
+
+
+              <!-- =========================================
+                   CONTACT INFORMATION
+                   ========================================= -->
+
+              <fieldset class="fd-form-section">
+
+                <div class="fd-form-section-heading">
+
+                  <span>
+                    02
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Contact Information
+                    </h3>
+
+                    <p>
+                      How should we contact you about the order?
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="fd-form-grid">
+
+                  <div class="fd-form-field">
+
+                    <label for="email">
+                      EMAIL ADDRESS
+                    </label>
+
+                    <input
+                      required
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="you@business.com"
+                      autocomplete="email"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field">
+
+                    <label for="phone">
+                      PHONE / WHATSAPP
+                    </label>
+
+                    <input
+                      required
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="+1..."
+                      autocomplete="tel"
+                    >
+
+                  </div>
+
+                </div>
+
+              </fieldset>
+
+
+
+              <!-- =========================================
+                   DELIVERY
+                   ========================================= -->
+
+              <fieldset class="fd-form-section">
+
+                <div class="fd-form-section-heading">
+
+                  <span>
+                    03
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Delivery Information
+                    </h3>
+
+                    <p>
+                      Where would you like your roses delivered?
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="fd-form-grid">
+
+                  <div class="fd-form-field">
+
+                    <label for="city">
+                      CITY
+                    </label>
+
+                    <input
+                      required
+                      id="city"
+                      name="city"
+                      type="text"
+                      placeholder="City"
+                      autocomplete="address-level2"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field">
+
+                    <label for="state">
+                      STATE
+                    </label>
+
+                    <input
+                      required
+                      id="state"
+                      name="state"
+                      type="text"
+                      placeholder="State"
+                      autocomplete="address-level1"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field fd-form-field-full">
+
+                    <label for="zip">
+                      ZIP CODE
+                    </label>
+
+                    <input
+                      required
+                      id="zip"
+                      name="zip"
+                      type="text"
+                      placeholder="ZIP code"
+                      autocomplete="postal-code"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field fd-form-field-full">
+
+                    <label for="address">
+                      DELIVERY ADDRESS
+                    </label>
+
+                    <input
+                      required
+                      id="address"
+                      name="delivery_address"
+                      type="text"
+                      placeholder="Street address"
+                      autocomplete="street-address"
+                    >
+
+                  </div>
+
+
+                  <div class="fd-form-field fd-form-field-full">
+
+                    <label for="deliveryDate">
+                      PREFERRED DELIVERY DATE
+                    </label>
+
+                    <input
+                      id="deliveryDate"
+                      name="delivery_date"
+                      type="date"
+                    >
+
+                    <small>
+                      Optional — we'll confirm the achievable
+                      delivery schedule with you.
+                    </small>
+
+                  </div>
+
+                </div>
+
+              </fieldset>
+
+
+
+              <!-- =========================================
+                   NOTES
+                   ========================================= -->
+
+              <fieldset class="fd-form-section">
+
+                <div class="fd-form-section-heading">
+
+                  <span>
+                    04
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Order Notes
+                    </h3>
+
+                    <p>
+                      Anything else you'd like us to know?
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="fd-form-field">
+
+                  <label for="notes">
+                    ADDITIONAL NOTES
+                  </label>
+
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    placeholder="Color preferences, event details, special instructions, or anything else..."
+                  ></textarea>
+
+                </div>
+
+              </fieldset>
+
+
+
+              <!-- =========================================
+                   PAYMENT
+                   ========================================= -->
+
+              <div class="fd-payment-box">
+
+                <div class="fd-payment-heading">
+
+                  <span class="fd-payment-mark">
+                    →
+                  </span>
+
+                  <div>
+
+                    <span class="fd-eyebrow">
+                      NEXT STEP
+                    </span>
+
+                    <h3>
+                      Secure your order.
+                    </h3>
+
+                  </div>
+
+                </div>
+
+
+                <p class="fd-payment-intro">
+                  Once your order details are complete, you can
+                  proceed to secure payment through PayPal.
+                  Payment allows us to confirm availability and
+                  begin coordinating your farm-direct shipment.
+                </p>
+
+
+                <div class="fd-payment-points">
+
+                  <div>
+                    <strong>
+                      01
+                    </strong>
+
+                    <span>
+                      Secure online payment
+                    </span>
+                  </div>
+
+
+                  <div>
+                    <strong>
+                      02
+                    </strong>
+
+                    <span>
+                      Your selected program is carried into payment
+                    </span>
+                  </div>
+
+
+                  <div>
+                    <strong>
+                      03
+                    </strong>
+
+                    <span>
+                      Farm and shipping coordination begins
+                    </span>
+                  </div>
+
+                </div>
+
+
+                <p class="fd-payment-note">
+                  You do not need a PayPal account to pay.
+                  PayPal may also allow secure credit or debit
+                  card payment, depending on availability.
+                </p>
+
+
+                <!-- PAYPAL BUTTON -->
+
+                <a
+                  id="paypalBtn"
+                  class="fd-paypal-btn fd-paypal-btn-disabled"
+                  aria-disabled="true"
+                >
+                  Complete the form to continue
+                  <span>→</span>
+                </a>
+
+
+                <p
+                  id="formMessage"
+                  class="fd-form-message"
+                  aria-live="polite"
+                ></p>
+
+              </div>
+
+            </form>
+
+          </div>
+
+
+
+          <!-- =================================================
+               SIDEBAR
+               ================================================= -->
+
+          <aside class="fd-order-sidebar">
+
+
+            <div class="fd-order-sidebar-card">
+
+              <span class="fd-eyebrow">
+                FARM DIRECT
+              </span>
+
+              <h2>
+                From Ecuador
+                <br>
+                <em>to your door.</em>
+              </h2>
+
+              <p>
+                Your Rose Program combines premium Ecuadorian
+                roses with a straightforward farm-direct
+                ordering process.
+              </p>
+
+
+              <div class="fd-sidebar-list">
+
+                <div>
+
+                  <span>
+                    01
+                  </span>
+
+                  <strong>
+                    FARM-DIRECT ROSES
+                  </strong>
+
+                </div>
+
+
+                <div>
+
+                  <span>
+                    02
+                  </span>
+
+                  <strong>
+                    DHL EXPRESS SHIPPING
+                  </strong>
+
+                </div>
+
+
+                <div>
+
+                  <span>
+                    03
+                  </span>
+
+                  <strong>
+                    EXPORT DOCUMENTATION
+                  </strong>
+
+                </div>
+
+
+                <div>
+
+                  <span>
+                    04
+                  </span>
+
+                  <strong>
+                    DOOR-TO-DOOR DELIVERY
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="fd-order-sidebar-note">
+
+              <span>
+                *
+              </span>
+
+              <p>
+                Program prices include shipping. Import duties,
+                customs fees, and destination-country charges
+                are not included and are paid by the customer
+                upon arrival.
+              </p>
+
+            </div>
+
+
+            <a
+              href="/rose-programs/"
+              class="fd-order-back"
+            >
+              ← BACK TO ROSE PROGRAMS
+            </a>
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         FINAL REASSURANCE
+         =================================================== -->
+
+    <section class="fd-order-reassurance fd-section">
+
+      <div class="fd-container">
+
+        <div class="fd-order-reassurance-content">
+
+          <span class="fd-eyebrow">
+            FARM DIRECT, MADE SIMPLE
+          </span>
+
+          <h2 class="fd-title-lg">
+            You choose the roses.
+            <br>
+            <em>We coordinate the journey.</em>
+          </h2>
+
+          <p class="fd-description">
+            Once your order is confirmed, we'll coordinate
+            availability, farm preparation, export documentation,
+            and express shipment to your delivery address.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
 
   <div id="site-footer"></div>
 
+
+  <!-- =====================================================
+       JS
+       ===================================================== -->
+
   <script src="/js/layout.js"></script>
   <script src="/js/order-form.js"></script>
+  <script src="/js/main.js"></script>
 
 </body>
 </html>

@@ -9910,20 +9910,16 @@ button {
     }
 
 
-    .fd-faq-question {
+   .fd-faq-question {
+        max-width: none;
 
-        font-size:
-            clamp(
-                28px,
-                7.8vw,
-                42px
-            );
+        font-size: clamp(24px, 7vw, 28px);
 
-        line-height: 0.98;
+        line-height: 1.05;
     }
 
 
-    .fd-faq-answer {
+  .fd-faq-answer {
 
         display: grid;
 
@@ -9936,6 +9932,14 @@ button {
         padding:
             0 0 38px;
     }
+
+
+.fd-faq-answer-content {
+
+    grid-column: 2;
+
+    max-width: 700px;
+}
 
 
     .fd-faq-answer-content {
@@ -9952,6 +9956,53 @@ button {
 
         line-height: 1.68;
     }
+
+
+
+
+/* ============================================================
+   FAQ — MOBILE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    .fd-faq-question {
+        max-width: none;
+        font-size: clamp(24px, 7vw, 28px);
+        line-height: 1.05;
+    }
+
+    .fd-faq-answer {
+        display: block;
+        padding: 0 0 34px;
+    }
+
+    .fd-faq-answer-content {
+        max-width: none;
+        padding: 0;
+    }
+
+    .fd-faq-answer-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .fd-faq-plus {
+        width: 22px;
+        height: 22px;
+        margin-top: 4px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 
     /* FIRST TIME */

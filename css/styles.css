@@ -42395,10 +42395,25 @@ body {
     pointer-events: none;
 
     transition:
-        opacity 0.25s ease,
-        transform 0.25s ease,
-        visibility 0.25s ease;
+        opacity 0.35s ease,
+        transform 0.35s ease,
+        visibility 0.35s ease;
 }
+
+
+.fd-mega-dropdown::before {
+    content: "";
+
+    position: absolute;
+
+    top: -12px;
+    left: 0;
+
+    width: 100%;
+    height: 12px;
+}
+
+
 
 .fd-mega-parent:hover .fd-mega-dropdown {
     opacity: 1;
@@ -42548,7 +42563,7 @@ body {
 
     padding: 0;
 
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
 
     background: transparent;
@@ -42559,10 +42574,10 @@ body {
 .fd-mobile-menu-toggle span {
     display: block;
 
-    width: 19px;
-    height: 1px;
+    width: 18px;
+    height: 1.5px;
 
-    margin: 4px auto;
+    margin: 3px auto;
 
     background: #ffffff;
 }
@@ -42640,9 +42655,9 @@ body {
 
         display: block;
 
-        background: var(--fd-warm-white);
+        background: var(--fd-cream-soft);
 
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        border-top: 1px solid var(--fd-border);
 
         box-shadow:
             0 20px 45px rgba(31, 61, 43, 0.12);
@@ -43339,7 +43354,7 @@ body {
 
     .fd-footer-logo img {
 
-        height: 42px;
+        height: 70px;
     }
 
 

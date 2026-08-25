@@ -136,6 +136,70 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+/* =========================
+   DESKTOP PRODUCTS MENU
+   DELAYED CLOSE
+========================= */
+
+const megaParent = document.querySelector(".fd-mega-parent");
+const megaDropdown = document.querySelector(".fd-mega-dropdown");
+
+let megaCloseTimer;
+
+if (megaParent && megaDropdown) {
+
+  const keepMenuOpen = () => {
+    clearTimeout(megaCloseTimer);
+
+    megaDropdown.style.opacity = "1";
+    megaDropdown.style.visibility = "visible";
+    megaDropdown.style.pointerEvents = "auto";
+    megaDropdown.style.transform =
+      "translateX(-50%) translateY(0)";
+  };
+
+
+  const scheduleMenuClose = () => {
+
+    clearTimeout(megaCloseTimer);
+
+    megaCloseTimer = setTimeout(() => {
+
+      megaDropdown.style.opacity = "";
+      megaDropdown.style.visibility = "";
+      megaDropdown.style.pointerEvents = "";
+      megaDropdown.style.transform = "";
+
+    }, 350);
+
+  };
+
+
+  megaParent.addEventListener(
+    "mouseenter",
+    keepMenuOpen
+  );
+
+  megaParent.addEventListener(
+    "mouseleave",
+    scheduleMenuClose
+  );
+
+  megaDropdown.addEventListener(
+    "mouseenter",
+    keepMenuOpen
+  );
+
+  megaDropdown.addEventListener(
+    "mouseleave",
+    scheduleMenuClose
+  );
+
+}
+
+
+
+
 
   /* =========================
      LOAD FOOTER

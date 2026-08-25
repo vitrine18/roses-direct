@@ -9204,32 +9204,6 @@ button {
 }
 
 
-/* ------------------------------------------------------------
-   FAQ NUMBER
-   ------------------------------------------------------------ */
-
-.fd-faq-number {
-
-    display: block;
-
-    padding-top: 7px;
-
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 20px;
-
-    font-style: italic;
-
-    font-weight: 400;
-
-    letter-spacing: -0.04em;
-
-    line-height: 0.8;
-
-    color: rgba(53,107,76,0.62);
-
-    transform: rotate(-5deg);
-}
 
 
 /* ------------------------------------------------------------
@@ -9887,29 +9861,23 @@ button {
     }
 
 
-    .fd-faq-item summary {
+   .fd-faq-item summary {
 
-        grid-template-columns:
-            42px
-            minmax(0, 1fr)
-            24px;
+    display: grid;
 
-        column-gap: 14px;
+    grid-template-columns:
+        minmax(0, 1fr)
+        24px;
 
-        min-height: 100px;
+    column-gap: 16px;
 
-        padding: 24px 0;
-    }
+    min-height: 100px;
 
-
-    .fd-faq-number {
-
-        padding-top: 6px;
-
-        font-size: 26px;
-    }
+    padding: 24px 0;
+}
 
 
+   
    .fd-faq-question {
         max-width: none;
 
@@ -9921,41 +9889,35 @@ button {
 
   .fd-faq-answer {
 
-        display: grid;
+    display: block;
 
-        grid-template-columns:
-            42px
-            minmax(0, 1fr);
-
-        column-gap: 14px;
-
-        padding:
-            0 0 38px;
-    }
+    padding: 0 0 38px;
+}
 
 
 .fd-faq-answer-content {
-
-    grid-column: 2;
 
     max-width: 700px;
 }
 
 
-    .fd-faq-answer-content {
-
-        grid-column: 2;
-
-        max-width: none;
-    }
-
 
     .fd-faq-answer-content p {
 
-        font-size: 13px;
+        font-size: 14px;
 
         line-height: 1.68;
     }
+
+
+    .fd-faq-plus {
+
+    width: 22px;
+
+    height: 22px;
+
+    margin-top: 4px;
+}
 
 
 
@@ -9963,37 +9925,6 @@ button {
 /* ============================================================
    FAQ — MOBILE
    ============================================================ */
-
-@media (max-width: 700px) {
-
-    .fd-faq-question {
-        max-width: none;
-        font-size: clamp(24px, 7vw, 28px);
-        line-height: 1.05;
-    }
-
-    .fd-faq-answer {
-        display: block;
-        padding: 0 0 34px;
-    }
-
-    .fd-faq-answer-content {
-        max-width: none;
-        padding: 0;
-    }
-
-    .fd-faq-answer-content p {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    .fd-faq-plus {
-        width: 22px;
-        height: 22px;
-        margin-top: 4px;
-    }
-
-}
 
 
 
@@ -10094,12 +10025,7 @@ button {
     }
 
 
-    .fd-faq-number {
-
-        font-size: 24px;
-    }
-
-
+   
     .fd-faq-answer-content p {
 
         font-size: 12.5px;

@@ -1184,6 +1184,297 @@ button {
 }
 
 
+
+
+
+/* =========================================================
+   QUALITY SECTION
+   THE ECUADORIAN ADVANTAGE
+   ========================================================= */
+
+.fd-quality-section {
+    background: #F4EFE6;
+    color: var(--fd-green-dark);
+
+    padding-top: clamp(90px, 10vw, 140px);
+    padding-bottom: clamp(90px, 10vw, 140px);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.fd-quality-section .fd-section-heading {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Eyebrow */
+
+.fd-quality-section .fd-section-heading .fd-eyebrow {
+    display: block;
+
+    width: auto;
+
+    margin: 0 0 14px;
+
+    color: var(--fd-green);
+
+    text-align: center;
+}
+
+
+/* Main title */
+
+.fd-quality-section .fd-section-heading .fd-title-lg {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    font-size: clamp(48px, 6vw, 82px);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+
+    color: var(--fd-green-dark);
+
+    text-align: center;
+}
+
+
+/* Accent */
+
+.fd-quality-section .fd-section-heading .fd-title-accent {
+    color: var(--fd-green);
+
+    font-style: italic;
+}
+
+
+/* Description */
+
+.fd-quality-section .fd-section-heading .fd-description-lg {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 24px auto 0;
+
+    color: rgba(35, 70, 53, 0.72);
+
+    text-align: center;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   QUALITY GRID
+   ========================================================= */
+
+.fd-quality-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: clamp(35px, 6vw, 90px);
+
+    margin-top: clamp(75px, 9vw, 120px);
+}
+
+
+/* =========================================================
+   QUALITY CARD
+   ========================================================= */
+
+.fd-quality-card {
+    position: relative;
+
+    padding-top: 28px;
+
+    border-top: 1px solid rgba(35, 70, 53, 0.22);
+}
+
+
+/* Top number area */
+
+.fd-card-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 34px;
+}
+
+
+/* Editorial number */
+
+.fd-card-number {
+    display: block;
+
+    flex-shrink: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(42px, 4vw, 62px);
+
+    font-weight: 400;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.04em;
+
+    color: var(--fd-green);
+
+    opacity: 0.9;
+}
+
+
+/* Small editorial line */
+
+.fd-card-line {
+    display: block;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: rgba(35, 70, 53, 0.18);
+}
+
+
+/* Card title */
+
+.fd-quality-card h3 {
+    max-width: 340px;
+
+    margin: 0 0 16px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(25px, 2.2vw, 34px);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.015em;
+
+    color: var(--fd-green-dark);
+}
+
+
+/* Card paragraph */
+
+.fd-quality-card p {
+    max-width: 330px;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: rgba(35, 70, 53, 0.68);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fd-quality-section .fd-section-heading .fd-title-lg {
+        max-width: 850px;
+    }
+
+    .fd-quality-grid {
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .fd-quality-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+
+    .fd-quality-section .fd-section-heading .fd-eyebrow {
+        margin-bottom: 12px;
+    }
+
+
+    .fd-quality-section .fd-section-heading .fd-title-lg {
+        font-size: clamp(42px, 12vw, 58px);
+
+        line-height: 1;
+    }
+
+
+    .fd-quality-section .fd-section-heading .fd-description-lg {
+        margin-top: 20px;
+
+        max-width: 500px;
+    }
+
+
+    .fd-quality-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        margin-top: 65px;
+    }
+
+
+    .fd-quality-card {
+        padding-top: 22px;
+    }
+
+
+    .fd-card-top {
+        margin-bottom: 26px;
+    }
+
+
+    .fd-card-number {
+        font-size: 48px;
+    }
+
+}
+
+
+
+
+
+
+
 /* =========================================================
    04. LOGISTICS
    ========================================================= */
@@ -1259,6 +1550,110 @@ button {
 
     color: var(--fd-text-muted);
 }
+
+
+
+
+
+/* =========================================================
+   HOW IT WORKS — EDITORIAL CENTER
+   ========================================================= */
+
+.fd-how-it-works .fd-how-heading {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Eyebrow */
+
+.fd-how-it-works .fd-eyebrow {
+    display: block;
+
+    width: 100%;
+
+    margin: 0 0 16px;
+
+    text-align: center;
+}
+
+
+/* Main title */
+
+.fd-how-it-works .fd-title-lg {
+    width: 100%;
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    font-size: clamp(50px, 6vw, 80px);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+
+    text-align: center;
+}
+
+
+/* Accent */
+
+.fd-how-it-works .fd-title-accent {
+    font-style: italic;
+}
+
+
+/* Description */
+
+.fd-how-it-works .fd-description {
+    width: 100%;
+    max-width: 680px;
+
+    margin: 26px auto 0;
+
+    text-align: center;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .fd-how-it-works .fd-how-heading {
+        max-width: 100%;
+    }
+
+    .fd-how-it-works .fd-title-lg {
+        font-size: clamp(42px, 11vw, 58px);
+
+        line-height: 1;
+    }
+
+    .fd-how-it-works .fd-description {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
 
 
 /* =========================================================
@@ -2754,13 +3149,15 @@ button {
 
 .fd-why-intro {
     background: #FFFFFF;
-
     text-align: center;
+    
 }
 
 
 .fd-why-intro .fd-container {
     max-width: 900px;
+    
+  
 }
 
 
@@ -6396,6 +6793,106 @@ button {
     }
 
 }
+
+
+
+
+
+
+/* =========================================================
+   FIRST BUYER SUPPORT — EDITORIAL CENTER
+   ========================================================= */
+
+.fd-firstbuyer-support .fd-firstbuyer-heading {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Eyebrow */
+
+.fd-firstbuyer-support .fd-eyebrow {
+    display: block;
+
+    margin: 0 0 16px;
+
+    text-align: center;
+}
+
+
+/* Main title */
+
+.fd-firstbuyer-support .fd-title-lg {
+    width: 100%;
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    font-size: clamp(50px, 6vw, 80px);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+
+    text-align: center;
+}
+
+
+/* Accent */
+
+.fd-firstbuyer-support .fd-title-accent {
+    font-style: italic;
+}
+
+
+/* Description */
+
+.fd-firstbuyer-support .fd-description {
+    width: 100%;
+    max-width: 680px;
+
+    margin: 26px auto 0;
+
+    text-align: center;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .fd-firstbuyer-support .fd-firstbuyer-heading {
+        max-width: 100%;
+    }
+
+    .fd-firstbuyer-support .fd-title-lg {
+        font-size: clamp(42px, 11vw, 58px);
+
+        line-height: 1;
+    }
+
+    .fd-firstbuyer-support .fd-description {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
 
 
 
@@ -23417,34 +23914,252 @@ body {
 
 
 
+
+
+
 /* =========================================================
    FEATURED STORY
 ========================================================= */
 
 .fd-blog-featured {
-    background: var(--fd-dark-green);
-    color: var(--fd-white);
+    width: 100%;
+
+    background: var(--fd-green-dark);
+    color: #ffffff;
 }
+
 
 .fd-blog-featured-inner {
     width: min(1180px, calc(100% - 48px));
+
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr) 180px;
+
+    grid-template-columns:
+        150px
+        minmax(0, 1fr)
+        180px;
 
     min-height: 560px;
+
     padding: 80px 0;
 }
 
 
-/* Meta */
+/* =========================================================
+   META
+========================================================= */
 
 .fd-blog-featured-meta {
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
 }
+
+
+.fd-blog-number {
+    color: rgba(255, 255, 255, 0.55);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 52px;
+
+    line-height: 1;
+}
+
+
+.fd-blog-category {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   FEATURED CONTENT
+========================================================= */
+
+.fd-blog-featured-content {
+    align-self: center;
+
+    max-width: 760px;
+}
+
+
+.fd-blog-kicker {
+    margin: 0 0 18px;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+
+.fd-blog-featured-content h2 {
+    max-width: 780px;
+
+    margin: 0 0 26px;
+
+    color: #ffffff;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    font-weight: 500;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.025em;
+}
+
+
+.fd-blog-featured-excerpt {
+    max-width: 620px;
+
+    margin: 0 0 32px;
+
+    color: rgba(255, 255, 255, 0.74);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   READ LINK
+========================================================= */
+
+.fd-blog-read-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.06em;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+}
+
+
+.fd-blog-read-link span {
+    font-size: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.fd-blog-read-link:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   SIDE
+========================================================= */
+
+.fd-blog-featured-side {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    color: rgba(255, 255, 255, 0.58);
+
+    font-size: 11px;
+
+    letter-spacing: 0.15em;
+
+    line-height: 1.5;
+
+    text-align: right;
+
+    text-transform: uppercase;
+}
+
+
+.fd-blog-featured-arrow {
+    display: inline-block;
+
+    font-size: 30px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    transform: rotate(135deg);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .fd-blog-featured-inner {
+        width: min(100% - 40px, 680px);
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        gap: 40px;
+
+        padding: 70px 0;
+    }
+
+
+    .fd-blog-featured-meta {
+        flex-direction: row;
+
+        align-items: center;
+    }
+
+
+    .fd-blog-featured-content h2 {
+        font-size: clamp(42px, 11vw, 58px);
+    }
+
+
+    .fd-blog-featured-side {
+        flex-direction: row;
+
+        align-items: center;
+
+        text-align: left;
+    }
+
+}
+
+
+
+
+
+
 
 .fd-blog-number {
     font-family: "Cormorant Garamond", Georgia, serif;
@@ -41903,7 +42618,7 @@ body {
     }
 
     .fd-logo img {
-        height: 38px;
+        height: 50px;
     }
 
 }

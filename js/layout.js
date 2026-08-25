@@ -14,79 +14,98 @@ document.addEventListener("DOMContentLoaded", () => {
         headerContainer.innerHTML = html;
       }
 
-      /* =========================
-         MOBILE MENU
-      ========================= */
 
-      const openBtn = document.getElementById("open-menu");
-      const closeBtn = document.getElementById("close-menu");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const overlay = document.getElementById("overlay");
+      
+    /* =========================
+   MOBILE MENU
+========================= */
 
-      const openMenu = () => {
-        mobileMenu.classList.add("active");
-        overlay.classList.add("active");
-        document.body.classList.add("menu-open");
-      };
+const openBtn = document.getElementById("fd-mobile-menu-toggle");
+const closeBtn = document.getElementById("fd-mobile-menu-close");
+const mobileMenu = document.getElementById("fd-mobile-menu");
 
-      const closeMenu = () => {
-        mobileMenu.classList.remove("active");
-        overlay.classList.remove("active");
-        document.body.classList.remove("menu-open");
-      };
+const openMenu = () => {
+  if (!mobileMenu || !openBtn) return;
 
-      if (openBtn) {
-        openBtn.addEventListener("click", openMenu);
-      }
+  mobileMenu.classList.add("is-open");
 
-      if (closeBtn) {
-        closeBtn.addEventListener("click", closeMenu);
-      }
+  openBtn.setAttribute("aria-expanded", "true");
+  openBtn.setAttribute("aria-label", "Close menu");
 
-      if (overlay) {
-        overlay.addEventListener("click", closeMenu);
-      }
+  document.body.classList.add("menu-open");
+};
 
-      /* =========================
-         CLOSE MENU ON LINK CLICK
-      ========================= */
+const closeMenu = () => {
+  if (!mobileMenu || !openBtn) return;
 
-      document.querySelectorAll("#mobile-menu a").forEach(link => {
-        link.addEventListener("click", closeMenu);
-      });
+  mobileMenu.classList.remove("is-open");
 
-      /* =========================
-         PRODUCTS DROPDOWN MOBILE
-      ========================= */
+  openBtn.setAttribute("aria-expanded", "false");
+  openBtn.setAttribute("aria-label", "Open menu");
 
-      const productsToggle = document.getElementById("products-toggle");
-      const productsMenu = document.getElementById("products-menu");
+  document.body.classList.remove("menu-open");
+};
 
-      if (productsToggle && productsMenu) {
+if (openBtn) {
+  openBtn.addEventListener("click", openMenu);
+}
 
-        productsToggle.addEventListener("click", () => {
-          productsMenu.classList.toggle("hidden");
-        });
+if (closeBtn) {
+  closeBtn.addEventListener("click", closeMenu);
+}
 
-      }
 
-      /* =========================
-         ACTIVE LINK
-      ========================= */
+/* =========================
+   CLOSE MENU ON LINK CLICK
+========================= */
 
-      const currentPath = window.location.pathname;
+document.querySelectorAll("#fd-mobile-menu a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
 
-      document.querySelectorAll(".main-nav a").forEach(link => {
 
-        const linkPath = new URL(link.href).pathname;
+/* =========================
+   PRODUCTS DROPDOWN MOBILE
+========================= */
 
-        if (linkPath === currentPath) {
-          link.classList.add("active-link");
-        }
+const productsToggle = document.getElementById("fd-products-toggle");
+const productsMenu = document.getElementById("fd-products-menu");
 
-      });
+if (productsToggle && productsMenu) {
 
-    });
+  productsToggle.addEventListener("click", () => {
+
+    const isOpen = productsToggle.classList.toggle("is-open");
+
+    productsMenu.classList.toggle("is-open");
+
+    productsToggle.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+
+  });
+
+}
+
+
+/* =========================
+   ACTIVE LINK
+========================= */
+
+const currentPath = window.location.pathname;
+
+document.querySelectorAll(".fd-nav a, .fd-mobile-nav a").forEach(link => {
+
+  const linkPath = new URL(link.href).pathname;
+
+  if (linkPath === currentPath) {
+    link.classList.add("active-link");
+  }
+
+});
+
+
 
   /* =========================
      LOAD FOOTER

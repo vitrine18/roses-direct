@@ -42543,8 +42543,8 @@ body {
 .fd-mobile-menu-toggle {
     display: none;
 
-    width: 42px;
-    height: 42px;
+    width: 46px;
+    height: 46px;
 
     padding: 0;
 
@@ -42559,7 +42559,7 @@ body {
 .fd-mobile-menu-toggle span {
     display: block;
 
-    width: 17px;
+    width: 19px;
     height: 1px;
 
     margin: 4px auto;
@@ -42605,7 +42605,7 @@ body {
 @media (max-width: 900px) {
 
     .fd-header-inner {
-        min-height: 72px;
+        min-height: 82px;
     }
 
     .fd-nav,
@@ -42618,7 +42618,7 @@ body {
     }
 
     .fd-logo img {
-        height: 50px;
+        height: 60px;
     }
 
 }

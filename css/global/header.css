@@ -1010,6 +1010,87 @@
 }
 
 
+
+
+
+/* =========================================================
+   FARM DIRECT — MOBILE MENU
+   Dark Editorial Navigation
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* MAIN MENU PANEL */
+    .fd-mobile-menu {
+        background: var(--fd-green-dark);
+        border-top: 1px solid rgba(239, 231, 216, 0.25);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+    }
+
+    /* MENU HEADER */
+    .fd-mobile-menu-header {
+        border-bottom: 1px solid rgba(239, 231, 216, 0.20);
+    }
+
+    .fd-mobile-menu-header .fd-eyebrow {
+        color: #D8CBB3;
+    }
+
+    /* CLOSE BUTTON */
+    .fd-mobile-menu-close {
+        color: #F1E9D8;
+    }
+
+    .fd-mobile-menu-close:hover {
+        color: #FFFFFF;
+    }
+
+    /* MAIN NAVIGATION LINKS */
+    .fd-mobile-nav > a,
+    .fd-mobile-products-toggle {
+        color: #F1E9D8;
+        border-bottom: 1px solid rgba(239, 231, 216, 0.18);
+    }
+
+    .fd-mobile-nav > a:hover,
+    .fd-mobile-nav > a:focus-visible {
+        color: #FFFFFF;
+    }
+
+    /* PRODUCTS SUBMENU */
+    .fd-mobile-products-menu {
+        background: transparent;
+    }
+
+    .fd-mobile-products-menu a {
+        color: #E2D8C6;
+    }
+
+    .fd-mobile-products-menu a:hover,
+    .fd-mobile-products-menu a:focus-visible {
+        color: #FFFFFF;
+    }
+
+    /* SUBMENU LABELS */
+    .fd-mobile-label {
+        color: #C9B99A;
+    }
+
+    /* PRODUCTS PLUS ICON */
+    .fd-mobile-plus {
+        color: #D8CBB3;
+    }
+
+    /* CTA AREA */
+    .fd-mobile-cta {
+        border-top: 1px solid rgba(239, 231, 216, 0.18);
+        padding-top: 22px;
+    }
+
+}
+
+
+
 /* =========================================================
    SMALL MOBILE
    ========================================================= */

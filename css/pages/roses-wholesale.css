@@ -1,0 +1,1202 @@
+/* =========================================================
+   ECUADOR ROSES WHOLESALE
+   EDITORIAL B2B PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE FOUNDATION
+   ========================================================= */
+
+.fd-wholesale-page {
+    overflow: hidden;
+}
+
+.fd-wholesale-page .fd-section {
+    position: relative;
+}
+
+
+/* =========================================================
+   EDITORIAL EMPHASIS
+   Base treatment for <em>
+   ========================================================= */
+
+.fd-wholesale-page em {
+    font-family: var(--fd-font-display);
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fd-wholesale-hero {
+    position: relative;
+
+    padding:
+        clamp(90px, 11vw, 150px)
+        0
+        clamp(100px, 11vw, 145px);
+
+    overflow: hidden;
+
+    background: var(--fd-green-dark);
+    color: var(--fd-warm-white);
+
+    text-align: center;
+}
+
+.fd-wholesale-hero::after {
+    content: "";
+
+    position: absolute;
+
+    right: clamp(25px, 5vw, 80px);
+    bottom: 35px;
+
+    width: clamp(70px, 9vw, 120px);
+    height: 1px;
+
+    background: color-mix(
+        in srgb,
+        var(--fd-warm-white) 28%,
+        transparent
+    );
+}
+
+.fd-wholesale-hero-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.fd-wholesale-hero .fd-eyebrow {
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 72%,
+        transparent
+    );
+}
+
+.fd-wholesale-hero .fd-title-xl {
+    max-width: 920px;
+
+    margin: 24px auto 0;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-wholesale-hero .fd-title-xl em {
+    display: block;
+
+    font-size: 0.78em;
+    font-weight: 600;
+    line-height: inherit;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-wholesale-hero .fd-description-lg {
+    max-width: 760px;
+
+    margin: 34px auto 0;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 76%,
+        transparent
+    );
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.fd-wholesale-intro {
+    padding:
+        clamp(85px, 10vw, 135px)
+        0
+        clamp(90px, 10vw, 140px);
+
+    background: var(--fd-cream);
+}
+
+.fd-wholesale-intro .fd-container-narrow {
+    max-width: 850px;
+}
+
+.fd-wholesale-intro .fd-eyebrow {
+    display: block;
+
+    margin-bottom: 22px;
+}
+
+.fd-wholesale-intro .fd-title-lg {
+    max-width: 780px;
+
+    margin: 0;
+}
+
+.fd-wholesale-intro .fd-title-lg em {
+    font-size: 0.78em;
+    font-weight: 600;
+    line-height: inherit;
+
+    color: var(--fd-green);
+}
+
+.fd-intro-rule {
+    width: 55px;
+    height: 1px;
+
+    margin: 32px 0 30px;
+
+    background: var(--fd-green);
+}
+
+.fd-wholesale-intro .fd-description {
+    max-width: 760px;
+
+    margin: 0;
+}
+
+.fd-wholesale-intro .fd-description + .fd-description {
+    margin-top: 22px;
+}
+
+
+/* =========================================================
+   ECUADORIAN ADVANTAGE
+   ========================================================= */
+
+.fd-wholesale-advantages {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0
+        clamp(90px, 10vw, 135px);
+
+    background: var(--fd-warm-white);
+}
+
+
+/* =========================================================
+   ADVANTAGE SECTION HEADING
+   Explicit centered editorial composition
+   ========================================================= */
+
+.fd-wholesale-advantages .fd-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1080px;
+
+    margin: 0 auto clamp(55px, 7vw, 78px);
+
+    text-align: center;
+}
+
+.fd-wholesale-advantages .fd-section-heading .fd-eyebrow {
+    display: block;
+    width: 100%;
+
+    margin: 0 0 20px;
+
+    text-align: center;
+}
+
+.fd-wholesale-advantages .fd-section-heading .fd-title-lg {
+    display: block;
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-wholesale-advantages .fd-section-heading .fd-title-lg em {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: inherit;
+
+    color: var(--fd-green);
+}
+
+.fd-wholesale-advantages .fd-section-heading .fd-description {
+    display: block;
+    width: 100%;
+
+    max-width: 820px;
+
+    margin: 28px auto 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EDITORIAL ADVANTAGE LIST
+   ========================================================= */
+
+.fd-editorial-list {
+    border-top: 1px solid var(--fd-border);
+}
+
+.fd-editorial-item {
+    display: grid;
+
+    grid-template-columns:
+        90px
+        minmax(0, 1fr);
+
+    gap: 35px;
+
+    padding: 38px 0 42px;
+
+    border-bottom: 1px solid var(--fd-border);
+}
+
+.fd-editorial-number {
+    padding-top: 5px;
+
+    font-family: var(--fd-font-display);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1;
+
+    color: var(--fd-green);
+}
+
+.fd-editorial-content > span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: var(--fd-font-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+.fd-editorial-content h3 {
+    max-width: 700px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(29px, 3vw, 42px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-editorial-content p {
+    max-width: 700px;
+
+    margin: 16px 0 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 13px;
+    line-height: 1.8;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   ROSE RANGE
+   ========================================================= */
+
+.fd-wholesale-range {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0
+        clamp(90px, 10vw, 135px);
+
+    background: var(--fd-cream);
+}
+
+
+/* =========================================================
+   PROFESSIONAL BUYERS SECTION HEADING
+   Explicit centered editorial composition
+   ========================================================= */
+
+.fd-wholesale-range .fd-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1080px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-wholesale-range .fd-section-heading .fd-eyebrow {
+    display: block;
+    width: 100%;
+
+    margin: 0 0 20px;
+
+    text-align: center;
+}
+
+.fd-wholesale-range .fd-section-heading .fd-title-lg {
+    display: block;
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-wholesale-range .fd-section-heading .fd-title-lg em {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: inherit;
+
+    color: var(--fd-green);
+}
+
+.fd-wholesale-range .fd-section-heading .fd-description {
+    display: block;
+    width: 100%;
+
+    max-width: 820px;
+
+    margin: 28px auto 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   ROSE RANGE GRID
+   ========================================================= */
+
+.fd-wholesale-range-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    margin-top: clamp(55px, 7vw, 75px);
+
+    border-top: 1px solid var(--fd-border);
+    border-bottom: 1px solid var(--fd-border);
+}
+
+.fd-wholesale-range-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 360px;
+
+    padding: 30px 30px 35px 0;
+
+    border-right: 1px solid var(--fd-border);
+}
+
+.fd-wholesale-range-card:not(:first-child) {
+    padding-left: 30px;
+}
+
+.fd-wholesale-range-card:last-child {
+    border-right: 0;
+}
+
+.fd-wholesale-range-number {
+    display: block;
+
+    margin-bottom: 55px;
+
+    font-family: var(--fd-font-display);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1;
+
+    color: var(--fd-green);
+}
+
+.fd-wholesale-range-card h3 {
+    max-width: 240px;
+
+    margin: 0 0 15px;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(27px, 2.3vw, 35px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-wholesale-range-card p {
+    max-width: 270px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   TEXT LINKS
+   ========================================================= */
+
+.fd-text-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    width: fit-content;
+
+    margin-top: auto;
+    padding-top: 25px;
+
+    font-family: var(--fd-font-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--fd-green);
+
+    transition:
+        gap 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.fd-text-link:hover {
+    gap: 12px;
+    opacity: 0.72;
+}
+
+
+/* =========================================================
+   STEM LENGTHS / PROFESSIONAL SPECIFICATIONS
+   ========================================================= */
+
+.fd-wholesale-lengths {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0
+        clamp(90px, 10vw, 135px);
+
+    background: var(--fd-warm-white);
+}
+
+.fd-wholesale-lengths-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(320px, 470px);
+
+    gap: clamp(55px, 9vw, 120px);
+
+    align-items: start;
+}
+
+.fd-wholesale-lengths-layout > div:first-child {
+    padding-top: 0;
+}
+
+.fd-wholesale-lengths-layout > div:last-child {
+    padding-top: clamp(28px, 4vw, 58px);
+}
+
+.fd-wholesale-lengths-layout .fd-eyebrow {
+    display: block;
+}
+
+.fd-wholesale-lengths-layout .fd-title-lg {
+    max-width: 700px;
+
+    margin-top: 20px;
+}
+
+.fd-wholesale-lengths-layout .fd-title-lg em {
+    font-size: 0.78em;
+    font-weight: 600;
+    line-height: inherit;
+
+    color: var(--fd-green);
+}
+
+.fd-wholesale-lengths-layout .fd-description {
+    max-width: 650px;
+
+    margin-top: 28px;
+}
+
+
+/* =========================================================
+   LENGTH LIST
+   ========================================================= */
+
+.fd-length-list {
+    border-top: 1px solid var(--fd-border);
+}
+
+.fd-length-item {
+    display: flex;
+    align-items: center;
+
+    min-height: 65px;
+
+    border-bottom: 1px solid var(--fd-border);
+}
+
+.fd-length-item span {
+    font-family: var(--fd-font-display);
+    font-size: clamp(22px, 2vw, 28px);
+    font-weight: 500;
+    line-height: 1;
+
+    color: var(--fd-green-dark);
+}
+
+
+/* =========================================================
+   FARM DIRECT SOURCING
+   ========================================================= */
+
+.fd-wholesale-direct {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0
+        clamp(90px, 10vw, 135px);
+
+    background: var(--fd-cream);
+}
+
+.fd-wholesale-direct-content {
+    width: 100%;
+    max-width: 1080px;
+}
+
+.fd-wholesale-direct-content .fd-eyebrow {
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+.fd-wholesale-direct-content .fd-title-lg {
+    max-width: 900px;
+
+    margin-top: 0;
+}
+
+.fd-wholesale-direct-content .fd-title-lg em {
+    font-size: 0.78em;
+    font-weight: 600;
+    line-height: inherit;
+
+    color: var(--fd-green);
+}
+
+.fd-wholesale-direct-content .fd-description-lg {
+    max-width: 820px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   FARM DIRECT POINTS
+   ========================================================= */
+
+.fd-wholesale-direct-points {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    margin-top: 55px;
+
+    border-top: 1px solid var(--fd-border);
+    border-bottom: 1px solid var(--fd-border);
+}
+
+.fd-wholesale-direct-points > div {
+    padding: 26px 25px 28px 0;
+
+    border-right: 1px solid var(--fd-border);
+}
+
+.fd-wholesale-direct-points > div:not(:first-child) {
+    padding-left: 25px;
+}
+
+.fd-wholesale-direct-points > div:last-child {
+    border-right: 0;
+}
+
+.fd-wholesale-direct-points span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-family: var(--fd-font-display);
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1;
+
+    color: var(--fd-green);
+}
+
+.fd-wholesale-direct-points p {
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.fd-wholesale-cta {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0
+        clamp(100px, 11vw, 150px);
+
+    background: var(--fd-green-dark);
+    color: var(--fd-warm-white);
+}
+
+.fd-wholesale-cta .fd-cta {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-wholesale-cta .fd-cta::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: min(60vw, 700px);
+    height: min(60vw, 700px);
+
+    border: 1px solid
+        color-mix(
+            in srgb,
+            var(--fd-warm-white) 8%,
+            transparent
+        );
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.fd-wholesale-cta .fd-cta > * {
+    position: relative;
+    z-index: 1;
+}
+
+.fd-wholesale-cta .fd-eyebrow {
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 65%,
+        transparent
+    );
+}
+
+.fd-wholesale-cta .fd-title-lg {
+    max-width: 750px;
+
+    margin: 22px auto 0;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-wholesale-cta .fd-title-lg em {
+    font-size: 0.78em;
+    font-weight: 600;
+    line-height: inherit;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-wholesale-cta .fd-description-lg {
+    max-width: 680px;
+
+    margin: 30px auto 0;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 72%,
+        transparent
+    );
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+   ========================================================= */
+
+.fd-wholesale-cta .fd-cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 38px;
+}
+
+.fd-wholesale-cta .fd-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding:
+        13px
+        22px;
+
+    border-radius: 999px;
+
+    font-family: var(--fd-font-body);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition:
+        background-color 220ms ease,
+        color 220ms ease,
+        border-color 220ms ease,
+        transform 220ms ease,
+        opacity 220ms ease;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.fd-wholesale-cta .fd-btn-light {
+    border: 1px solid var(--fd-warm-white);
+
+    background: var(--fd-warm-white);
+    color: var(--fd-green-dark);
+}
+
+.fd-wholesale-cta .fd-btn-light:hover {
+    transform: translateY(-2px);
+
+    background: transparent;
+    color: var(--fd-warm-white);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.fd-wholesale-cta .fd-btn-outline-light {
+    border: 1px solid
+        color-mix(
+            in srgb,
+            var(--fd-warm-white) 60%,
+            transparent
+        );
+
+    background: transparent;
+    color: var(--fd-warm-white);
+}
+
+.fd-wholesale-cta .fd-btn-outline-light:hover {
+    transform: translateY(-2px);
+
+    border-color: var(--fd-warm-white);
+
+    background: var(--fd-warm-white);
+    color: var(--fd-green-dark);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* -----------------------------------------------------
+       Rose range
+       ----------------------------------------------------- */
+
+    .fd-wholesale-range-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .fd-wholesale-range-card:nth-child(2) {
+        border-right: 0;
+    }
+
+    .fd-wholesale-range-card:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--fd-border);
+    }
+
+
+    /* -----------------------------------------------------
+       Professional specifications
+       ----------------------------------------------------- */
+
+    .fd-wholesale-lengths-layout {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .fd-wholesale-lengths-layout > div:last-child {
+        padding-top: 0;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    /* -----------------------------------------------------
+       Hero
+       ----------------------------------------------------- */
+
+    .fd-wholesale-hero {
+        padding: 75px 0 85px;
+    }
+
+    .fd-wholesale-hero::after {
+        right: 20px;
+        bottom: 25px;
+
+        width: 65px;
+    }
+
+    .fd-wholesale-hero .fd-title-xl em {
+        display: inline;
+
+        font-size: 0.80em;
+    }
+
+    .fd-wholesale-hero .fd-description-lg {
+        margin-top: 28px;
+    }
+
+
+    /* -----------------------------------------------------
+       Sections
+       ----------------------------------------------------- */
+
+    .fd-wholesale-intro,
+    .fd-wholesale-advantages,
+    .fd-wholesale-range,
+    .fd-wholesale-lengths,
+    .fd-wholesale-direct {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    /* -----------------------------------------------------
+       Intro
+       ----------------------------------------------------- */
+
+    .fd-intro-rule {
+        margin: 27px 0;
+    }
+
+
+    /* -----------------------------------------------------
+       Ecuadorian Advantage
+       ----------------------------------------------------- */
+
+    .fd-wholesale-advantages .fd-section-heading {
+        margin-bottom: 48px;
+    }
+
+    .fd-wholesale-advantages .fd-section-heading .fd-eyebrow,
+    .fd-wholesale-advantages .fd-section-heading .fd-title-lg,
+    .fd-wholesale-advantages .fd-section-heading .fd-description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fd-wholesale-advantages .fd-section-heading .fd-description {
+        max-width: 100%;
+    }
+
+    .fd-editorial-item {
+        grid-template-columns:
+            45px
+            minmax(0, 1fr);
+
+        gap: 18px;
+
+        padding: 30px 0 34px;
+    }
+
+    .fd-editorial-content h3 {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+
+    /* -----------------------------------------------------
+       Rose range / Professional buyers
+       ----------------------------------------------------- */
+
+    .fd-wholesale-range .fd-section-heading {
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .fd-wholesale-range .fd-section-heading .fd-eyebrow,
+    .fd-wholesale-range .fd-section-heading .fd-title-lg,
+    .fd-wholesale-range .fd-section-heading .fd-description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fd-wholesale-range .fd-section-heading .fd-description {
+        max-width: 100%;
+    }
+
+    .fd-wholesale-range-grid {
+        grid-template-columns: 1fr;
+
+        margin-top: 48px;
+    }
+
+    .fd-wholesale-range-card,
+    .fd-wholesale-range-card:not(:first-child) {
+        min-height: auto;
+
+        padding: 28px 0 34px;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--fd-border);
+    }
+
+    .fd-wholesale-range-card:last-child {
+        border-bottom: 0;
+    }
+
+    .fd-wholesale-range-number {
+        margin-bottom: 32px;
+    }
+
+    .fd-wholesale-range-card h3 {
+        max-width: 400px;
+
+        margin: 0 0 15px;
+    }
+
+    .fd-wholesale-range-card p {
+        max-width: 500px;
+    }
+
+    .fd-text-link {
+        margin-top: 24px;
+    }
+
+
+    /* -----------------------------------------------------
+       Professional specifications
+       ----------------------------------------------------- */
+
+    .fd-wholesale-lengths-layout {
+        gap: 40px;
+    }
+
+    .fd-wholesale-lengths-layout > div:last-child {
+        padding-top: 0;
+    }
+
+    .fd-length-item {
+        min-height: 60px;
+    }
+
+
+    /* -----------------------------------------------------
+       Farm direct
+       ----------------------------------------------------- */
+
+    .fd-wholesale-direct-content {
+        max-width: 100%;
+    }
+
+    .fd-wholesale-direct-content .fd-description-lg {
+        max-width: 100%;
+    }
+
+    .fd-wholesale-direct-points {
+        grid-template-columns: 1fr;
+
+        margin-top: 45px;
+    }
+
+    .fd-wholesale-direct-points > div,
+    .fd-wholesale-direct-points > div:not(:first-child) {
+        padding: 24px 0;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--fd-border);
+    }
+
+    .fd-wholesale-direct-points > div:last-child {
+        border-bottom: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       CTA
+       ----------------------------------------------------- */
+
+    .fd-wholesale-cta {
+        padding: 80px 0 90px;
+    }
+
+    .fd-wholesale-cta .fd-cta::before {
+        width: 500px;
+        height: 500px;
+    }
+
+    .fd-wholesale-cta .fd-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .fd-wholesale-cta .fd-btn {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-wholesale-hero {
+        padding: 60px 0 72px;
+    }
+
+    .fd-wholesale-intro,
+    .fd-wholesale-advantages,
+    .fd-wholesale-range,
+    .fd-wholesale-lengths,
+    .fd-wholesale-direct {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .fd-editorial-item {
+        grid-template-columns:
+            38px
+            minmax(0, 1fr);
+
+        gap: 14px;
+    }
+
+    .fd-editorial-number {
+        font-size: 16px;
+    }
+
+    .fd-wholesale-range-card h3 {
+        margin-top: 0;
+    }
+
+    .fd-wholesale-cta {
+        padding: 70px 0 80px;
+    }
+
+    .fd-wholesale-cta .fd-cta::before {
+        width: 400px;
+        height: 400px;
+    }
+
+    .fd-wholesale-cta .fd-title-lg em {
+        font-size: 0.80em;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .fd-text-link,
+    .fd-wholesale-cta .fd-btn {
+        transition: none;
+    }
+
+}

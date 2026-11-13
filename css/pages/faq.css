@@ -1,0 +1,1062 @@
+/* ============================================================
+   FARM DIRECT ROSES
+   FAQ — EDITORIAL PAGE SYSTEM
+   ============================================================ */
+
+
+/* ============================================================
+   FAQ HERO
+   ============================================================ */
+
+.fd-faq-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    background: var(--fd-green);
+    color: #ffffff;
+}
+
+
+.fd-faq-hero-inner {
+    width: min(1180px, calc(100% - 64px));
+    margin: 0 auto;
+
+    padding: 30px 0 112px;
+}
+
+
+/* ------------------------------------------------------------
+   HERO TOPLINE
+   ------------------------------------------------------------ */
+
+.fd-faq-hero-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+    font-family: var(--fd-font-body), Inter, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.19em;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.76);
+}
+
+
+/* ------------------------------------------------------------
+   HERO MAIN
+   ------------------------------------------------------------ */
+
+.fd-faq-hero-main {
+    padding-top: 86px;
+}
+
+
+.fd-faq-hero .fd-eyebrow {
+    display: block;
+
+    margin: 0 0 23px;
+}
+
+
+/* ------------------------------------------------------------
+   HERO TITLE
+   ------------------------------------------------------------ */
+
+.fd-faq-hero-title {
+    max-width: 920px;
+
+    margin: 0;
+
+    font-family:
+        var(--fd-font-display),
+        "Cormorant Garamond",
+        serif;
+
+    font-size: clamp(72px, 8.6vw, 124px);
+    font-weight: 400;
+
+    letter-spacing: -0.048em;
+    line-height: 0.82;
+
+    color: #ffffff;
+}
+
+
+.fd-faq-hero-title span {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 0.78em;
+    font-style: italic;
+    font-weight: 400;
+
+    line-height: 0.94;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* ------------------------------------------------------------
+   HERO FOOTER
+   ------------------------------------------------------------ */
+
+.fd-faq-hero-footer {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-top: 68px;
+    margin-left: 5px;
+}
+
+
+.fd-faq-hero-arrow {
+    flex: 0 0 auto;
+
+    font-family:
+        var(--fd-font-display),
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 35px;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, 0.68);
+}
+
+
+.fd-faq-hero-footer p {
+    max-width: 455px;
+
+    margin: 0;
+
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 13px;
+    line-height: 1.72;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* ============================================================
+   SHARED SECTION LABEL
+   ============================================================ */
+
+.fd-faq-section-label {
+    display: flex;
+    align-items: baseline;
+
+    margin-bottom: 40px;
+}
+
+
+.fd-faq-section-eyebrow {
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 0.20em;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+
+/* ============================================================
+   SECTION 01 — INTRO
+   ============================================================ */
+
+.fd-faq-intro {
+    background: var(--fd-cream);
+}
+
+
+.fd-faq-intro-inner {
+    width: min(1120px, calc(100% - 64px));
+    margin: 0 auto;
+
+    padding: 116px 0 124px;
+}
+
+
+/* ------------------------------------------------------------
+   INTRO GRID
+   ------------------------------------------------------------ */
+
+.fd-faq-intro-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(280px, 0.62fr);
+
+    gap: 96px;
+
+    align-items: start;
+}
+
+
+/* ------------------------------------------------------------
+   INTRO HEADING
+   ------------------------------------------------------------ */
+
+.fd-faq-intro-heading {
+    max-width: 700px;
+}
+
+
+.fd-faq-intro-heading .fd-title-lg {
+    margin: 0;
+}
+
+
+/* ------------------------------------------------------------
+   INTRO COPY
+   ------------------------------------------------------------ */
+
+.fd-faq-intro-copy {
+    padding-top: 7px;
+}
+
+
+.fd-faq-intro-copy p {
+    max-width: 490px;
+
+    margin: 0 0 21px;
+
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 14px;
+    line-height: 1.72;
+
+    color: var(--fd-text-muted, #68716b);
+}
+
+
+.fd-faq-intro-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ============================================================
+   SECTION 02 — DETAILS INTRO
+   ============================================================ */
+
+.fd-faq-heading {
+    background: var(--fd-warm-white);
+}
+
+
+.fd-faq-heading-inner {
+    width: min(1120px, calc(100% - 64px));
+    margin: 0 auto;
+
+    padding: 112px 0 68px;
+}
+
+
+.fd-faq-heading .fd-faq-section-label {
+    margin-bottom: 42px;
+}
+
+
+/* ------------------------------------------------------------
+   HEADING LAYOUT
+   ------------------------------------------------------------ */
+
+.fd-faq-heading-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        315px;
+
+    gap: 95px;
+
+    align-items: end;
+}
+
+
+.fd-faq-heading-title {
+    max-width: 720px;
+}
+
+
+.fd-faq-heading-layout > p {
+    max-width: 305px;
+
+    margin: 0 0 5px;
+
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 13px;
+    line-height: 1.72;
+
+    color: var(--fd-text-muted, #68716b);
+}
+
+
+/* ============================================================
+   FAQ LIST
+   ============================================================ */
+
+.fd-faq-section {
+    background: var(--fd-warm-white);
+}
+
+
+.fd-faq-container {
+    width: min(1120px, calc(100% - 64px));
+    margin: 0 auto;
+
+    padding-bottom: 132px;
+}
+
+
+.fd-faq-list {
+    border-top: 1px solid rgba(35, 70, 53, 0.17);
+}
+
+
+.fd-faq-item {
+    border-bottom: 1px solid rgba(35, 70, 53, 0.17);
+}
+
+
+/* ============================================================
+   QUESTION ROW
+   ============================================================ */
+
+.fd-faq-item summary {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        28px;
+
+    align-items: center;
+
+    gap: 34px;
+
+    min-height: 128px;
+
+    padding: 29px 2px;
+
+    cursor: pointer;
+    list-style: none;
+
+    transition:
+        padding 220ms ease;
+}
+
+
+.fd-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.fd-faq-item summary::marker {
+    content: "";
+}
+
+
+/* ------------------------------------------------------------
+   QUESTION
+   ------------------------------------------------------------ */
+
+.fd-faq-question {
+    display: block;
+
+    max-width: 850px;
+
+    font-family:
+        var(--fd-font-display),
+        "Cormorant Garamond",
+        serif;
+
+    font-size: clamp(28px, 3vw, 34px);
+    font-weight: 500;
+
+    letter-spacing: -0.026em;
+    line-height: 1.02;
+
+    color: var(--fd-green-dark);
+
+    transition:
+        color 220ms ease;
+}
+
+
+.fd-faq-item summary:hover .fd-faq-question {
+    color: var(--fd-green);
+}
+
+
+.fd-faq-item[open] .fd-faq-question {
+    color: var(--fd-green);
+}
+
+
+/* ============================================================
+   PLUS ICON
+   ============================================================ */
+
+.fd-faq-plus {
+    position: relative;
+
+    width: 24px;
+    height: 24px;
+
+    justify-self: end;
+
+    margin-top: 3px;
+}
+
+
+.fd-faq-plus::before,
+.fd-faq-plus::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 16px;
+    height: 1px;
+
+    background: var(--fd-green-dark);
+
+    transform:
+        translate(-50%, -50%);
+
+    transition:
+        transform 220ms ease,
+        opacity 220ms ease,
+        background-color 220ms ease;
+}
+
+
+.fd-faq-plus::after {
+    transform:
+        translate(-50%, -50%)
+        rotate(90deg);
+}
+
+
+.fd-faq-item summary:hover .fd-faq-plus::before,
+.fd-faq-item summary:hover .fd-faq-plus::after {
+    background: var(--fd-green);
+}
+
+
+.fd-faq-item[open] .fd-faq-plus::after {
+    opacity: 0;
+}
+
+
+/* ============================================================
+   ANSWER
+   ============================================================ */
+
+.fd-faq-answer {
+    display: grid;
+
+    grid-template-columns:
+        72px
+        minmax(0, 1fr)
+        28px;
+
+    column-gap: 26px;
+
+    padding:
+        0
+        2px
+        48px;
+}
+
+
+.fd-faq-answer-content {
+    grid-column: 2;
+
+    max-width: 720px;
+}
+
+
+.fd-faq-answer-content p {
+    margin: 0;
+
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: var(--fd-text-muted, #68716b);
+}
+
+
+.fd-faq-answer-content strong {
+    font-weight: 600;
+
+    color: var(--fd-green-dark);
+}
+
+
+/* ============================================================
+   TEXT LINKS
+   ============================================================ */
+
+.fd-faq-text-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 24px;
+    padding-bottom: 6px;
+
+    border-bottom:
+        1px solid
+        rgba(35, 70, 53, 0.25);
+
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--fd-green-dark);
+
+    transition:
+        gap 200ms ease,
+        color 200ms ease,
+        border-color 200ms ease;
+}
+
+
+.fd-faq-text-link span {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+
+.fd-faq-text-link:hover {
+    gap: 15px;
+
+    color: var(--fd-green);
+
+    border-color: var(--fd-green);
+}
+
+
+/* ============================================================
+   SECTION 03 — FIRST-TIME BUYER
+   ============================================================ */
+
+.fd-faq-first-time {
+    background: var(--fd-cream);
+
+    border-top:
+        1px solid
+        rgba(35, 70, 53, 0.15);
+}
+
+
+.fd-faq-first-time-inner {
+    width: min(1120px, calc(100% - 64px));
+    margin: 0 auto;
+
+    padding: 118px 0 130px;
+}
+
+
+.fd-faq-first-time-content {
+    max-width: 790px;
+}
+
+
+.fd-faq-first-time-content p {
+    max-width: 555px;
+
+    margin: 31px 0 0;
+
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 14px;
+    line-height: 1.72;
+
+    color: var(--fd-text-muted, #68716b);
+}
+
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+
+.fd-faq-cta {
+    background: var(--fd-green);
+
+    color: #ffffff;
+}
+
+
+.fd-faq-cta-inner {
+    width: min(820px, calc(100% - 64px));
+    margin: 0 auto;
+
+    padding: 118px 0 130px;
+
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------------
+   CTA EYEBROW
+   ------------------------------------------------------------ */
+
+.fd-faq-cta .fd-eyebrow {
+    display: block;
+
+    margin: 0 0 21px;
+}
+
+
+/* ------------------------------------------------------------
+   CTA TITLE
+   ------------------------------------------------------------ */
+
+.fd-faq-cta h2 {
+    margin: 0;
+
+    font-family:
+        var(--fd-font-display),
+        "Cormorant Garamond",
+        serif;
+
+    font-size: clamp(68px, 7vw, 100px);
+    font-weight: 400;
+
+    letter-spacing: -0.048em;
+    line-height: 0.86;
+
+    color: #ffffff;
+}
+
+
+.fd-faq-cta h2 span {
+    display: block;
+
+    font-size: 0.78em;
+    font-style: italic;
+
+    line-height: 0.96;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* ------------------------------------------------------------
+   CTA COPY
+   ------------------------------------------------------------ */
+
+.fd-faq-cta-copy {
+    max-width: 465px;
+
+    margin: 31px auto 0;
+
+    font-family:
+        var(--fd-font-body),
+        Inter,
+        sans-serif;
+
+    font-size: 13px;
+    line-height: 1.72;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* ------------------------------------------------------------
+   CTA BUTTON
+   ------------------------------------------------------------ */
+
+.fd-faq-cta .fd-btn {
+    margin-top: 35px;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    .fd-faq-hero-inner,
+    .fd-faq-intro-inner,
+    .fd-faq-heading-inner,
+    .fd-faq-container,
+    .fd-faq-first-time-inner {
+        width: min(
+            calc(100% - 48px),
+            820px
+        );
+    }
+
+
+    /* INTRO */
+
+    .fd-faq-intro-grid {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(240px, 0.65fr);
+
+        gap: 58px;
+    }
+
+
+    /* DETAILS HEADING */
+
+    .fd-faq-heading-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            250px;
+
+        gap: 58px;
+    }
+
+
+    /* QUESTION */
+
+    .fd-faq-item summary {
+        min-height: 118px;
+
+        gap: 24px;
+    }
+
+
+    .fd-faq-question {
+        font-size: 30px;
+    }
+
+
+    /* ANSWER */
+
+    .fd-faq-answer {
+        grid-template-columns:
+            48px
+            minmax(0, 1fr)
+            20px;
+
+        column-gap: 20px;
+    }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    .fd-faq-hero-inner,
+    .fd-faq-intro-inner,
+    .fd-faq-heading-inner,
+    .fd-faq-container,
+    .fd-faq-first-time-inner,
+    .fd-faq-cta-inner {
+        width: calc(100% - 32px);
+    }
+
+
+    /* --------------------------------------------------------
+       HERO
+       -------------------------------------------------------- */
+
+    .fd-faq-hero-inner {
+        padding: 22px 0 76px;
+    }
+
+
+    .fd-faq-hero-main {
+        padding-top: 61px;
+    }
+
+
+    .fd-faq-hero-title {
+        font-size:
+            clamp(
+                58px,
+                15vw,
+                84px
+            );
+
+        line-height: 0.84;
+    }
+
+
+    .fd-faq-hero-footer {
+        gap: 14px;
+
+        margin-top: 48px;
+        margin-left: 0;
+    }
+
+
+    .fd-faq-hero-footer p {
+        font-size: 12px;
+        line-height: 1.68;
+    }
+
+
+    /* --------------------------------------------------------
+       SECTION LABEL
+       -------------------------------------------------------- */
+
+    .fd-faq-section-label {
+        margin-bottom: 31px;
+    }
+
+
+    .fd-faq-section-eyebrow {
+        font-size: 9px;
+        letter-spacing: 0.17em;
+    }
+
+
+    /* --------------------------------------------------------
+       INTRO
+       -------------------------------------------------------- */
+
+    .fd-faq-intro-inner {
+        padding: 87px 0 92px;
+    }
+
+
+    .fd-faq-intro-grid {
+        display: block;
+    }
+
+
+    .fd-faq-intro-copy {
+        padding-top: 34px;
+    }
+
+
+    .fd-faq-intro-copy p {
+        font-size: 13px;
+        line-height: 1.72;
+    }
+
+
+    /* --------------------------------------------------------
+       DETAILS HEADING
+       -------------------------------------------------------- */
+
+    .fd-faq-heading-inner {
+        padding: 88px 0 63px;
+    }
+
+
+    .fd-faq-heading-layout {
+        display: block;
+    }
+
+
+    .fd-faq-heading-layout > p {
+        max-width: 390px;
+
+        margin: 31px 0 0;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* --------------------------------------------------------
+       FAQ LIST
+       -------------------------------------------------------- */
+
+    .fd-faq-container {
+        padding-bottom: 91px;
+    }
+
+
+    .fd-faq-item summary {
+        grid-template-columns:
+            minmax(0, 1fr)
+            23px;
+
+        gap: 16px;
+
+        min-height: 100px;
+
+        padding: 24px 0;
+    }
+
+
+    .fd-faq-question {
+        max-width: none;
+
+        font-size:
+            clamp(
+                24px,
+                7vw,
+                29px
+            );
+
+        line-height: 1.05;
+    }
+
+
+    .fd-faq-plus {
+        width: 22px;
+        height: 22px;
+
+        margin-top: 3px;
+    }
+
+
+    .fd-faq-answer {
+        display: block;
+
+        padding:
+            0
+            0
+            39px;
+    }
+
+
+    .fd-faq-answer-content {
+        max-width: none;
+    }
+
+
+    .fd-faq-answer-content p {
+        font-size: 13px;
+        line-height: 1.72;
+    }
+
+
+    /* --------------------------------------------------------
+       FIRST-TIME BUYER
+       -------------------------------------------------------- */
+
+    .fd-faq-first-time-inner {
+        padding: 91px 0 99px;
+    }
+
+
+    .fd-faq-first-time-content p {
+        margin-top: 29px;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* --------------------------------------------------------
+       CTA
+       -------------------------------------------------------- */
+
+    .fd-faq-cta-inner {
+        padding: 92px 0 101px;
+    }
+
+
+    .fd-faq-cta h2 {
+        font-size:
+            clamp(
+                58px,
+                15vw,
+                82px
+            );
+    }
+
+
+    .fd-faq-cta-copy {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 420px) {
+
+    .fd-faq-hero-inner,
+    .fd-faq-intro-inner,
+    .fd-faq-heading-inner,
+    .fd-faq-container,
+    .fd-faq-first-time-inner,
+    .fd-faq-cta-inner {
+        width: calc(100% - 26px);
+    }
+
+
+    .fd-faq-hero-title {
+        font-size: 56px;
+    }
+
+
+    .fd-faq-question {
+        font-size: 26px;
+    }
+
+
+    .fd-faq-answer-content p {
+        font-size: 12.5px;
+    }
+
+
+    .fd-faq-text-link {
+        font-size: 9px;
+        letter-spacing: 0.11em;
+    }
+
+}

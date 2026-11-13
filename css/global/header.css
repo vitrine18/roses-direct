@@ -1,0 +1,1070 @@
+/* =========================================================
+   FARM DIRECT — HEADER
+   Editorial Navigation System
+   ========================================================= */
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.fd-header {
+
+    position: relative;
+    z-index: 1000;
+
+    background: var(--fd-green-dark);
+    color: #ffffff;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin-top: 0;
+
+    border-bottom:
+        1px solid rgba(239, 231, 216, 0.38);
+}
+
+
+.fd-header-inner {
+
+    width: min(100% - 48px, 1380px);
+
+    min-height: 82px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.fd-logo {
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    text-decoration: none;
+}
+
+
+.fd-logo img {
+
+    display: block;
+
+
+    width: auto;
+    height: 75px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   ========================================================= */
+
+.fd-nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(20px, 2.2vw, 34px);
+
+    flex: 1;
+}
+
+
+.fd-nav-link {
+
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 30px 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.78rem;
+    font-weight: 500;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.fd-nav-link:hover {
+
+    color: #ffffff;
+}
+
+
+.fd-nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 22px;
+
+    width: 0;
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    transition:
+        width 0.3s ease;
+}
+
+
+.fd-nav-link:hover::after {
+
+    width: 100%;
+}
+
+
+.fd-nav-chevron {
+
+    font-size: 0.8rem;
+
+    opacity: 0.65;
+
+    transform: translateY(-1px);
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.fd-mega-parent:hover .fd-nav-chevron {
+
+    transform:
+        translateY(1px);
+}
+
+
+/* =========================================================
+   HEADER CTA
+   ========================================================= */
+
+.fd-header-actions {
+
+    flex-shrink: 0;
+}
+
+
+.fd-header-cta {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 0 20px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 999px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--fd-warm-white);
+
+    background: var(--fd-green);
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.fd-header-cta:hover {
+
+    background: var(--fd-cream);
+
+    color: var(--fd-green-dark);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   MEGA MENU
+   ========================================================= */
+
+.fd-mega-parent {
+
+    position: static;
+}
+
+
+.fd-mega-dropdown {
+
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    width:
+        min(1180px, calc(100% - 48px));
+
+    transform:
+        translateX(-50%)
+        translateY(10px);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        285px;
+
+    background:
+        var(--fd-warm-white);
+
+    border:
+        1px solid var(--fd-border);
+
+    box-shadow:
+        0 24px 60px rgba(31, 61, 43, 0.14);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease,
+        visibility 0.35s ease;
+}
+
+
+/*
+   Invisible bridge between navigation and mega menu.
+   Prevents the dropdown from disappearing when moving
+   the cursor from Products into the menu.
+*/
+
+.fd-mega-dropdown::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -14px;
+    left: 0;
+
+    width: 100%;
+    height: 14px;
+}
+
+
+.fd-mega-parent:hover .fd-mega-dropdown {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   MEGA MENU — MAIN
+   ========================================================= */
+
+.fd-mega-main {
+
+    padding: 38px;
+}
+
+
+.fd-mega-heading {
+
+    margin-bottom: 26px;
+}
+
+
+.fd-mega-heading h3 {
+
+    max-width: 520px;
+
+    margin: 10px 0 0;
+
+    font-family:
+        var(--fd-font-display);
+
+    font-size: 1.8rem;
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    color:
+        var(--fd-green-dark);
+}
+
+
+.fd-mega-heading h3 span {
+
+    color:
+        var(--fd-green);
+}
+
+
+/* =========================================================
+   MEGA MENU — PRODUCT CARDS
+   ========================================================= */
+
+.fd-mega-card-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+.fd-mega-card {
+
+    position: relative;
+
+    display: block;
+
+    color:
+        var(--fd-green-dark);
+
+    text-decoration: none;
+}
+
+
+.fd-mega-card-image {
+
+    aspect-ratio:
+        1 / 1.05;
+
+    overflow: hidden;
+
+    margin-bottom: 11px;
+
+    background:
+        var(--fd-cream);
+}
+
+
+.fd-mega-card-image img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.55s ease;
+}
+
+
+.fd-mega-card:hover .fd-mega-card-image img {
+
+    transform:
+        scale(1.045);
+}
+
+
+.fd-mega-card-title {
+
+    padding-right: 22px;
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.04em;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+.fd-mega-card:hover .fd-mega-card-title {
+
+    color:
+        var(--fd-green);
+}
+
+
+.fd-mega-card-arrow {
+
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    font-size: 0.9rem;
+
+    opacity: 0;
+
+    transform:
+        translateX(-5px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.fd-mega-card:hover .fd-mega-card-arrow {
+
+    opacity: 0.75;
+
+    transform:
+        translateX(0);
+}
+
+
+/* =========================================================
+   MEGA MENU — EDITORIAL SIDEBAR
+   ========================================================= */
+
+.fd-mega-wholesale {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 38px 30px;
+
+    background:
+        var(--fd-cream);
+
+    border-left:
+        1px solid var(--fd-border);
+}
+
+
+.fd-mega-sidebar-intro {
+
+    margin-top: 16px;
+
+    margin-bottom: 12px;
+
+    font-family:
+        var(--fd-font-display);
+
+    font-size: 1.15rem;
+
+    line-height: 1.25;
+
+    color:
+        var(--fd-green-dark);
+}
+
+
+.fd-mega-wholesale > a {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 0;
+
+    border-bottom:
+        1px solid var(--fd-border);
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size: 0.78rem;
+
+    line-height: 1.4;
+
+    color:
+        var(--fd-green-dark);
+
+    text-decoration: none;
+
+    transition:
+        padding-left 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.fd-mega-wholesale > a:hover {
+
+    padding-left: 5px;
+
+    color:
+        var(--fd-green);
+}
+
+
+.fd-mega-view-all {
+
+    margin-top: auto;
+
+    padding-top: 24px !important;
+
+    border-bottom:
+        none !important;
+
+    font-weight: 600;
+}
+
+
+.fd-mega-view-all span {
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.fd-mega-view-all:hover span {
+
+    transform:
+        translateX(4px);
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.fd-mobile-menu-toggle {
+
+    display: none;
+
+    width: 46px;
+    height: 46px;
+
+    padding: 0;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.4);
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.fd-mobile-menu-toggle:hover {
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    border-color:
+        rgba(255, 255, 255, 0.7);
+}
+
+
+.fd-mobile-menu-toggle span {
+
+    display: block;
+
+    width: 18px;
+    height: 1.5px;
+
+    margin: 3px auto;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+.fd-mobile-menu {
+
+    display: none;
+}
+
+
+/* =========================================================
+   TABLET / SMALL DESKTOP
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .fd-header-inner {
+
+        width:
+            min(100% - 36px, 1380px);
+    }
+
+
+    .fd-nav {
+
+        gap: 18px;
+    }
+
+
+    .fd-nav-link {
+
+        font-size: 0.7rem;
+    }
+
+
+    .fd-header-cta {
+
+        padding: 0 16px;
+    }
+
+
+    .fd-mega-dropdown {
+
+        width:
+            calc(100% - 36px);
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            250px;
+    }
+
+
+    .fd-mega-main {
+
+        padding: 32px;
+    }
+
+
+    .fd-mega-wholesale {
+
+        padding: 32px 26px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fd-header-inner {
+
+        min-height: 82px;
+    }
+
+
+    .fd-nav,
+    .fd-header-actions {
+
+        display: none;
+    }
+
+
+    .fd-mobile-menu-toggle {
+
+        display: block;
+    }
+
+
+    .fd-logo img {
+
+        height: 60px;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE MENU PANEL
+       ----------------------------------------------------- */
+
+    .fd-mobile-menu {
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: block;
+
+        background:
+            var(--fd-cream-soft);
+
+        border-top:
+            1px solid var(--fd-border);
+
+        box-shadow:
+            0 20px 45px rgba(31, 61, 43, 0.12);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(-8px);
+
+        pointer-events: none;
+
+        transition:
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            visibility 0.25s ease;
+    }
+
+
+    .fd-mobile-menu.is-open {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0);
+
+        pointer-events: auto;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE MENU HEADER
+       ----------------------------------------------------- */
+
+    .fd-mobile-menu-header {
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 20px 24px;
+
+        border-bottom:
+            1px solid var(--fd-border);
+    }
+
+
+    .fd-mobile-menu-close {
+
+        width: 36px;
+        height: 36px;
+
+        padding: 0;
+
+        border: none;
+
+        border-radius: 50%;
+
+        background: transparent;
+
+        font-size: 1.7rem;
+
+        line-height: 1;
+
+        color:
+            var(--fd-green-dark);
+
+        cursor: pointer;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE NAV
+       ----------------------------------------------------- */
+
+    .fd-mobile-nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+        padding:
+            14px 24px 28px;
+    }
+
+
+    .fd-mobile-nav > a,
+    .fd-mobile-products-toggle {
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        padding: 17px 0;
+
+        border: none;
+
+        border-bottom:
+            1px solid var(--fd-border);
+
+        background: transparent;
+
+        font-family:
+            var(--fd-font-body);
+
+        font-size: 0.82rem;
+
+        font-weight: 600;
+
+        letter-spacing: 0.06em;
+
+        text-transform: uppercase;
+
+        color:
+            var(--fd-green-dark);
+
+        text-decoration: none;
+
+        text-align: left;
+
+        cursor: pointer;
+    }
+
+
+    .fd-mobile-nav > a {
+
+        transition:
+            color 0.2s ease,
+            padding-left 0.2s ease;
+    }
+
+
+    .fd-mobile-nav > a:hover {
+
+        color:
+            var(--fd-green);
+
+        padding-left: 4px;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE PRODUCTS
+       ----------------------------------------------------- */
+
+    .fd-mobile-products-menu {
+
+        display: none;
+
+        flex-direction: column;
+
+        padding:
+            8px 0 12px 18px;
+    }
+
+
+    .fd-mobile-products-menu.is-open {
+
+        display: flex;
+    }
+
+
+    .fd-mobile-products-menu a {
+
+        padding: 9px 0;
+
+        font-family:
+            var(--fd-font-body);
+
+        font-size: 0.9rem;
+
+        color:
+            var(--fd-text-muted);
+
+        text-decoration: none;
+
+        transition:
+            color 0.2s ease,
+            padding-left 0.2s ease;
+    }
+
+
+    .fd-mobile-products-menu a:hover {
+
+        color:
+            var(--fd-green-dark);
+
+        padding-left: 4px;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE LABELS
+       ----------------------------------------------------- */
+
+    .fd-mobile-label {
+
+        margin-top: 14px;
+        margin-bottom: 6px;
+
+        font-family:
+            var(--fd-font-body);
+
+        font-size: 0.65rem;
+
+        font-weight: 600;
+
+        letter-spacing: 0.13em;
+
+        color:
+            var(--fd-green);
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE PLUS
+       ----------------------------------------------------- */
+
+    .fd-mobile-plus {
+
+        font-size: 1.2rem;
+
+        font-weight: 400;
+
+        transition:
+            transform 0.25s ease;
+    }
+
+
+    .fd-mobile-products-toggle.is-open
+    .fd-mobile-plus {
+
+        transform:
+            rotate(45deg);
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE CTA
+       ----------------------------------------------------- */
+
+    .fd-mobile-cta {
+
+        padding:
+            0 24px 30px;
+    }
+
+
+    .fd-mobile-cta .fd-btn {
+
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-header {
+
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+
+    .fd-header-inner {
+
+        width:
+            calc(100% - 28px);
+
+        min-height: 70px;
+
+        gap: 20px;
+    }
+
+
+    .fd-logo img {
+
+        height: 52px;
+    }
+
+
+    .fd-mobile-menu-toggle {
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .fd-mobile-menu-header {
+
+        padding:
+            18px 20px;
+    }
+
+
+    .fd-mobile-nav {
+
+        padding:
+            10px 20px 24px;
+    }
+
+
+    .fd-mobile-cta {
+
+        padding:
+            0 20px 26px;
+    }
+
+}

@@ -1,0 +1,1304 @@
+/* =========================================================
+   FARM DIRECT ROSES
+   CATALOG — EDITORIAL LOOKBOOK SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   01. FOUNDATION
+   ========================================================= */
+
+.fd-catalog-page {
+    background: var(--fd-green);
+    color: #fff;
+}
+
+.fd-catalog-page .fd-container {
+    width: min(
+        calc(100% - (var(--fd-side) * 2)),
+        1320px
+    );
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   02. HERO
+   ========================================================= */
+
+.fd-catalog-hero {
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--fd-green) 0%,
+            #315F46 55%,
+            #294E3A 100%
+        );
+
+    isolation: isolate;
+}
+
+.fd-catalog-hero-container {
+    position: relative;
+    z-index: 3;
+
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.fd-catalog-hero-content {
+    max-width: 820px;
+}
+
+.fd-catalog-hero .fd-eyebrow {
+    color: rgba(255, 255, 255, .68);
+}
+
+.fd-catalog-hero-title {
+    margin: 0;
+
+    max-width: 850px;
+
+    font-family: var(--fd-font-display);
+
+    font-size:
+        clamp(
+            4.5rem,
+            8vw,
+            7.5rem
+        );
+
+    line-height: .86;
+
+    letter-spacing: -.045em;
+
+    font-weight: 500;
+
+    color: #fff;
+}
+
+.fd-catalog-hero-title em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.fd-catalog-hero-text {
+    max-width: 610px;
+
+    margin-top: 32px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 16px;
+    line-height: 1.75;
+
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, .78);
+}
+
+.fd-catalog-hero-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px 28px;
+
+    margin-top: 38px;
+}
+
+.fd-catalog-hero-tags span {
+    position: relative;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: .18em;
+
+    color: rgba(255, 255, 255, .68);
+}
+
+.fd-catalog-hero-tags span:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    right: -16px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: rgba(255, 255, 255, .45);
+}
+
+
+/* =========================================================
+   03. HERO ORBITS
+   ========================================================= */
+
+.fd-catalog-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 620px;
+    height: 620px;
+
+    right: -180px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 35%,
+            rgba(255, 255, 255, .15),
+            rgba(255, 255, 255, .045) 45%,
+            rgba(255, 255, 255, 0) 72%
+        );
+
+    border: 1px solid rgba(255, 255, 255, .11);
+
+    z-index: -1;
+}
+
+.fd-catalog-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 340px;
+    height: 340px;
+
+    right: 60px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, .10);
+
+    z-index: -1;
+}
+
+.fd-catalog-orbit {
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, .07);
+
+    pointer-events: none;
+}
+
+.fd-catalog-orbit-one {
+    width: 760px;
+    height: 760px;
+
+    right: -250px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.fd-catalog-orbit-two {
+    width: 470px;
+    height: 470px;
+
+    right: -100px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.fd-catalog-hero-rule {
+    position: absolute;
+
+    left: 50%;
+    bottom: 34px;
+
+    width: min(
+        calc(100% - 48px),
+        1320px
+    );
+
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    background: rgba(255, 255, 255, .15);
+}
+
+
+/* =========================================================
+   04. COLLECTION INTRO
+   ========================================================= */
+
+.fd-catalog-introduction {
+    position: relative;
+
+    padding: 125px 0 135px;
+
+    background: var(--fd-green);
+
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.fd-catalog-introduction::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    width: min(
+        calc(100% - 48px),
+        1320px
+    );
+
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    background: rgba(255, 255, 255, .13);
+}
+
+.fd-catalog-introduction::after {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    left: -310px;
+    bottom: -300px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, .06);
+
+    pointer-events: none;
+}
+
+.fd-editorial-intro {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(180px, .55fr)
+        minmax(0, 1.45fr);
+
+    gap: 70px;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+.fd-editorial-intro-main {
+    max-width: 900px;
+}
+
+.fd-editorial-intro-main .fd-eyebrow {
+    color: rgba(255, 255, 255, .62);
+
+    margin-bottom: 18px;
+}
+
+.fd-editorial-intro-main .fd-title-lg {
+    max-width: 900px;
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size:
+        clamp(
+            3.5rem,
+            6vw,
+            6.2rem
+        );
+
+    line-height: .91;
+
+    letter-spacing: -.04em;
+}
+
+.fd-editorial-intro-copy {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 50px;
+
+    max-width: 820px;
+
+    margin-top: 48px;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, .16);
+}
+
+.fd-editorial-intro-copy .fd-description {
+    color: rgba(255, 255, 255, .70);
+
+    margin: 0;
+}
+
+
+/* Editorial side detail */
+
+.fd-editorial-intro::before {
+    content: "FARM DIRECT / ECUADOR";
+
+    align-self: start;
+
+    padding-top: 10px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, .20);
+
+    font-family: var(--fd-font-body);
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: .20em;
+
+    color: rgba(255, 255, 255, .52);
+}
+
+
+/* =========================================================
+   05. CATALOG SECTIONS
+   ========================================================= */
+
+.fd-catalog-section {
+    position: relative;
+
+    padding: 120px 0 135px;
+
+    background: var(--fd-green);
+
+    color: #fff;
+}
+
+.fd-catalog-standard,
+.fd-catalog-garden,
+.fd-catalog-spray,
+.fd-catalog-tinted {
+    background: var(--fd-green);
+}
+
+
+/* Alternating subtle tonal treatment */
+
+.fd-catalog-garden {
+    background:
+        linear-gradient(
+            180deg,
+            #356B4C 0%,
+            #326748 100%
+        );
+}
+
+.fd-catalog-spray {
+    background:
+        linear-gradient(
+            180deg,
+            #326748 0%,
+            #356B4C 100%
+        );
+}
+
+
+/* =========================================================
+   06. SECTION HEADER
+   ========================================================= */
+
+.fd-catalog-section-header {
+    position: relative;
+
+    width: 100%;
+
+    margin: 0 auto 68px;
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, .15);
+}
+
+.fd-catalog-section-heading {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+.fd-catalog-section-heading .fd-eyebrow {
+    margin-bottom: 16px;
+
+    color: rgba(255, 255, 255, .62);
+}
+
+.fd-catalog-section-heading .fd-title-lg {
+    margin: 0;
+
+    color: #fff;
+
+    font-size:
+        clamp(
+            3.3rem,
+            5vw,
+            5.3rem
+        );
+
+    line-height: .94;
+
+    letter-spacing: -.035em;
+}
+
+.fd-catalog-section-heading .fd-description {
+    width: min(100%, 690px);
+
+    margin: 24px 0 0;
+
+    text-align: left;
+
+    color: rgba(255, 255, 255, .68);
+}
+
+
+/* Small editorial marker */
+
+.fd-catalog-section-header::after {
+    content: "EXPLORE THE COLLECTION";
+
+    position: absolute;
+
+    right: 0;
+    top: 35px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: .20em;
+
+    color: rgba(255, 255, 255, .38);
+}
+
+
+/* =========================================================
+   07. LOOKBOOK GRID
+   ========================================================= */
+
+.fd-lookbook-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    column-gap: 28px;
+    row-gap: 58px;
+
+    align-items: start;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   08. LOOKBOOK ITEM
+   ========================================================= */
+
+.fd-lookbook-item {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transform: translateZ(0);
+
+    transition:
+        transform .45s
+        cubic-bezier(.2, .7, .2, 1);
+}
+
+.fd-lookbook-item:hover {
+    transform: translateY(-6px);
+}
+
+
+/* =========================================================
+   09. IMAGE FRAME
+   ========================================================= */
+
+.fd-lookbook-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 3 / 5;
+
+    overflow: hidden;
+
+    background: var(--fd-green);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, .22);
+
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+
+/* First frame */
+
+.fd-lookbook-image::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 9px;
+
+    z-index: 2;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, .34);
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    transition:
+        opacity .45s ease;
+}
+
+
+/* Image overlay */
+
+.fd-lookbook-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 55%,
+            rgba(0, 0, 0, .14) 100%
+        );
+
+    opacity: .30;
+
+    transition:
+        opacity .45s ease;
+}
+
+.fd-lookbook-item:hover
+.fd-lookbook-image::before {
+    opacity: 1;
+}
+
+.fd-lookbook-item:hover
+.fd-lookbook-image::after {
+    opacity: .65;
+}
+
+
+/* =========================================================
+   10. IMAGE
+   ========================================================= */
+
+.fd-lookbook-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+
+    transition:
+        transform .85s
+        cubic-bezier(.2, .65, .2, 1),
+
+        filter .55s ease;
+}
+
+.fd-lookbook-item:hover
+.fd-lookbook-image img {
+    transform: scale(1.045);
+
+    filter: brightness(.96);
+}
+
+
+/* =========================================================
+   11. IMAGE INDEX
+   ========================================================= */
+
+/*
+   Removed intentionally.
+
+   The old numbered image markers made the catalog
+   visually heavy. The photography and variety names
+   now carry the hierarchy.
+*/
+
+.fd-lookbook-index {
+    display: none;
+}
+
+
+/* =========================================================
+   12. CARD CAPTION
+   ========================================================= */
+
+.fd-lookbook-caption {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto;
+
+    grid-template-areas:
+        "label arrow"
+        "name arrow";
+
+    column-gap: 12px;
+
+    align-items: end;
+
+    padding-top: 16px;
+}
+
+.fd-lookbook-caption > span {
+    grid-area: label;
+
+    margin: 0 0 5px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 8px;
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, .48);
+}
+
+.fd-lookbook-caption h3 {
+    grid-area: name;
+
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fd-font-display);
+
+    font-size: 27px;
+
+    line-height: .98;
+
+    font-weight: 500;
+
+    letter-spacing: -.015em;
+
+    color: #fff;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+.fd-lookbook-caption i {
+    grid-area: arrow;
+
+    align-self: end;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, .28);
+
+    border-radius: 50%;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    font-style: normal;
+
+    line-height: 1;
+
+    color: rgba(255, 255, 255, .72);
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.fd-lookbook-item:hover
+.fd-lookbook-caption h3 {
+    color: #fff;
+
+    transform:
+        translateX(3px);
+}
+
+.fd-lookbook-item:hover
+.fd-lookbook-caption i {
+    background: #fff;
+
+    border-color: #fff;
+
+    color: var(--fd-green);
+
+    transform:
+        translate(2px, -2px);
+}
+
+
+/* =========================================================
+   13. TINTED ROSES
+   ========================================================= */
+
+.fd-catalog-tinted {
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            #356B4C 0%,
+            #2F6144 100%
+        );
+}
+
+.fd-catalog-tinted::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    width: min(
+        calc(100% - 48px),
+        1320px
+    );
+
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    background:
+        rgba(255, 255, 255, .14);
+}
+
+.fd-catalog-tinted
+.fd-lookbook-image {
+    background: var(--fd-green);
+
+    border-color:
+        rgba(255, 255, 255, .22);
+}
+
+
+/* =========================================================
+   14. SECTION DIVIDERS
+   ========================================================= */
+
+.fd-catalog-standard::after,
+.fd-catalog-garden::after,
+.fd-catalog-spray::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: min(
+        calc(100% - 48px),
+        1320px
+    );
+
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    background:
+        rgba(255, 255, 255, .13);
+}
+
+
+/* =========================================================
+   15. FINAL CTA
+   ========================================================= */
+
+.fd-catalog-final {
+    position: relative;
+
+    padding: 125px 0;
+
+    background: var(--fd-cream);
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--fd-text);
+}
+
+.fd-catalog-final::before,
+.fd-catalog-final::after {
+    content: "";
+
+    position: absolute;
+
+    border:
+        1px solid
+        rgba(53, 107, 76, .10);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.fd-catalog-final::before {
+    width: 420px;
+    height: 420px;
+
+    left: -190px;
+    bottom: -220px;
+}
+
+.fd-catalog-final::after {
+    width: 300px;
+    height: 300px;
+
+    right: -120px;
+    top: -150px;
+}
+
+.fd-catalog-final-inner {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-catalog-final .fd-eyebrow {
+    text-align: center;
+
+    color: var(--fd-green);
+}
+
+.fd-catalog-final .fd-title-lg {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    font-size:
+        clamp(
+            3.3rem,
+            5vw,
+            5rem
+        );
+
+    line-height: .92;
+
+    color: var(--fd-text);
+}
+
+.fd-catalog-final .fd-description {
+    max-width: 620px;
+
+    margin: 26px auto 35px;
+
+    text-align: center;
+
+    color: var(--fd-muted);
+}
+
+
+/* =========================================================
+   16. BUTTONS
+   ========================================================= */
+
+.fd-catalog-final .fd-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.fd-catalog-final .fd-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 25px;
+
+    border:
+        1px solid
+        var(--fd-green);
+
+    border-radius: 999px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .10em;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.fd-catalog-final .fd-btn-primary {
+    background: var(--fd-green);
+
+    color: #fff;
+}
+
+.fd-catalog-final .fd-btn-primary:hover {
+    background: var(--fd-green-dark);
+
+    transform:
+        translateY(-2px);
+}
+
+.fd-catalog-back-btn {
+    background: transparent;
+
+    color: var(--fd-green);
+}
+
+.fd-catalog-back-btn:hover {
+    background: var(--fd-green);
+
+    color: #fff;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   17. TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .fd-catalog-page .fd-container {
+        width: min(
+            calc(100% - 40px),
+            1180px
+        );
+    }
+
+    .fd-lookbook-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap:
+            48px 22px;
+    }
+
+    .fd-editorial-intro {
+        grid-template-columns:
+            1fr 2fr;
+
+        gap: 45px;
+    }
+}
+
+
+/* =========================================================
+   18. MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .fd-catalog-page .fd-container {
+        width:
+            calc(100% - 40px);
+    }
+
+    .fd-catalog-hero {
+        min-height: 560px;
+    }
+
+    .fd-catalog-hero-container {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .fd-catalog-hero-title {
+        font-size:
+            clamp(
+                3.7rem,
+                13vw,
+                5.4rem
+            );
+    }
+
+    .fd-catalog-introduction {
+        padding: 90px 0 100px;
+    }
+
+    .fd-editorial-intro {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+    .fd-editorial-intro::before {
+        width: 100%;
+    }
+
+    .fd-editorial-intro-main .fd-title-lg {
+        font-size:
+            clamp(
+                3.2rem,
+                12vw,
+                5rem
+            );
+    }
+
+    .fd-editorial-intro-copy {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-top: 38px;
+    }
+
+    .fd-catalog-section {
+        padding: 90px 0 100px;
+    }
+
+    .fd-catalog-section-header {
+        margin-bottom: 48px;
+    }
+
+    .fd-catalog-section-header::after {
+        display: none;
+    }
+
+    .fd-catalog-section-heading .fd-title-lg {
+        font-size:
+            clamp(
+                3rem,
+                11vw,
+                4.5rem
+            );
+    }
+
+    .fd-lookbook-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            42px 15px;
+    }
+
+    .fd-lookbook-caption h3 {
+        font-size: 24px;
+    }
+
+    .fd-catalog-final {
+        padding: 90px 0;
+    }
+}
+
+
+/* =========================================================
+   19. SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .fd-catalog-hero::before {
+        width: 420px;
+        height: 420px;
+
+        right: -250px;
+    }
+
+    .fd-catalog-hero::after {
+        width: 230px;
+        height: 230px;
+
+        right: -80px;
+    }
+
+    .fd-catalog-hero-title {
+        font-size:
+            clamp(
+                3.35rem,
+                15vw,
+                4.5rem
+            );
+    }
+
+    .fd-catalog-hero-text {
+        font-size: 14px;
+    }
+
+    .fd-catalog-hero-tags {
+        gap: 9px 19px;
+    }
+
+    .fd-lookbook-grid {
+        gap:
+            34px 12px;
+    }
+
+    .fd-lookbook-caption h3 {
+        font-size: 22px;
+    }
+
+    .fd-lookbook-caption i {
+        width: 23px;
+        height: 23px;
+
+        font-size: 12px;
+    }
+
+    .fd-catalog-final .fd-buttons {
+        flex-direction: column;
+    }
+
+    .fd-catalog-final .fd-btn {
+        width: auto;
+
+        min-width: 190px;
+    }
+}
+
+
+/* =========================================================
+   20. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .fd-lookbook-item,
+    .fd-lookbook-image img,
+    .fd-lookbook-caption h3,
+    .fd-lookbook-caption i,
+    .fd-catalog-final .fd-btn {
+        transition: none !important;
+    }
+}

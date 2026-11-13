@@ -1,0 +1,744 @@
+/* =========================================================
+   FARM DIRECT — INTERNATIONAL ROSE SOURCING
+   Editorial International Experience
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.fd-international-page {
+    background: var(--fd-warm-white);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fd-international-hero {
+    padding-top: clamp(105px, 12vw, 155px);
+    padding-bottom: clamp(95px, 11vw, 145px);
+
+    background: var(--fd-cream);
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.12);
+}
+
+.fd-international-hero-content {
+    max-width: 980px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-international-hero-content .fd-eyebrow {
+    margin-bottom: 26px;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-international-hero-content .fd-title-xl {
+    max-width: 940px;
+    margin: 0 auto;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-international-hero .fd-description-lg {
+    max-width: 760px;
+
+    margin: 36px auto 0;
+}
+
+.fd-international-hero-note {
+    max-width: 650px;
+
+    margin: 25px auto 0;
+
+    font-size: 0.88rem;
+    line-height: 1.75;
+
+    color: #707873;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.fd-international-intro {
+    padding-top: clamp(95px, 10vw, 135px);
+    padding-bottom: clamp(95px, 10vw, 140px);
+
+    background: var(--fd-warm-white);
+}
+
+.fd-international-intro .fd-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.fd-international-intro .fd-eyebrow {
+    margin-bottom: 24px;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-international-intro .fd-title-lg {
+    max-width: 780px;
+    margin: 0;
+}
+
+.fd-international-intro .fd-description {
+    max-width: 720px;
+
+    margin-top: 30px;
+}
+
+.fd-international-intro .fd-description + .fd-description {
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   INTERNATIONAL PROCESS
+   ========================================================= */
+
+.fd-international-process {
+    padding-top: clamp(90px, 10vw, 135px);
+    padding-bottom: clamp(100px, 11vw, 150px);
+
+    background: var(--fd-cream);
+}
+
+.fd-international-process-header {
+    max-width: 850px;
+
+    margin-bottom: 65px;
+}
+
+.fd-international-process-header .fd-eyebrow {
+    margin-bottom: 23px;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-international-process-header .fd-title-lg {
+    margin: 0;
+}
+
+
+/* =========================================================
+   PROCESS GRID
+   ========================================================= */
+
+.fd-international-process-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    border-top: 1px solid rgba(53, 107, 76, 0.2);
+}
+
+.fd-international-process-item {
+    padding: 42px 45px 45px 0;
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.2);
+}
+
+.fd-international-process-item:nth-child(odd) {
+    padding-right: 55px;
+
+    border-right: 1px solid rgba(53, 107, 76, 0.2);
+}
+
+.fd-international-process-item:nth-child(even) {
+    padding-left: 55px;
+}
+
+.fd-process-label {
+    margin: 0 0 18px;
+
+    font-size: 0.69rem;
+    font-weight: 600;
+
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+.fd-international-process-item h3 {
+    margin: 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(2rem, 3.2vw, 3.15rem);
+    font-weight: 500;
+    line-height: 1;
+
+    letter-spacing: -0.02em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-international-process-item > p:last-child {
+    max-width: 480px;
+
+    margin: 20px 0 0;
+
+    font-size: 0.94rem;
+    line-height: 1.8;
+
+    color: #68716B;
+}
+
+
+/* =========================================================
+   FORM SECTION
+   ========================================================= */
+
+.fd-international-form-section {
+    padding-top: clamp(95px, 10vw, 140px);
+    padding-bottom: clamp(115px, 13vw, 175px);
+
+    background: var(--fd-warm-white);
+}
+
+.fd-container-form {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.fd-international-form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   FORM SECTIONS
+   ========================================================= */
+
+.fd-international-form .fd-form-section {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+
+
+/* Editorial separation between form chapters */
+
+.fd-international-form .fd-form-section + .fd-form-section {
+    margin-top: 78px;
+
+    padding-top: 58px;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.17);
+}
+
+
+/* =========================================================
+   FORM HEADING
+   ========================================================= */
+
+.fd-form-section-heading {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(2.9rem, 5vw, 4.8rem);
+    font-weight: 500;
+    line-height: 0.95;
+
+    letter-spacing: -0.025em;
+
+    color: var(--fd-green-dark);
+}
+
+
+/* =========================================================
+   FORM INTRO
+   ========================================================= */
+
+.fd-form-section-intro {
+    max-width: 680px;
+
+    margin: 24px 0 0;
+
+    font-size: 0.96rem;
+    line-height: 1.75;
+
+    color: #707873;
+}
+
+
+/* =========================================================
+   FORM GRID
+   ========================================================= */
+
+.fd-international-form .fd-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    column-gap: 48px;
+    row-gap: 38px;
+
+    margin-top: 48px;
+}
+
+
+/* =========================================================
+   LAST FORM SECTION
+   ROSE REQUIREMENTS
+   ========================================================= */
+
+.fd-international-form .fd-form-section:last-of-type .fd-form-grid {
+    margin-top: 58px;
+}
+
+
+/* =========================================================
+   FORM FIELDS
+   ========================================================= */
+
+.fd-international-form .fd-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.fd-international-form .fd-form-field-full {
+    grid-column: 1 / -1;
+
+    margin-top: 22px;
+}
+
+.fd-international-form .fd-form-field label {
+    margin-bottom: 11px;
+
+    font-size: 0.74rem;
+    font-weight: 600;
+
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-international-form .fd-form-field label > span {
+    color: var(--fd-green);
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.fd-international-form .fd-form-field input,
+.fd-international-form .fd-form-field select,
+.fd-international-form .fd-form-field textarea {
+    width: 100%;
+
+    border: 0;
+    border-bottom: 1px solid #C9CEC9;
+    border-radius: 0;
+
+    background: transparent;
+
+    padding: 13px 2px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.98rem;
+    line-height: 1.5;
+
+    color: #26342D;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.fd-international-form .fd-form-field input::placeholder,
+.fd-international-form .fd-form-field textarea::placeholder {
+    color: #9A9F9B;
+}
+
+.fd-international-form .fd-form-field input:focus,
+.fd-international-form .fd-form-field select:focus,
+.fd-international-form .fd-form-field textarea:focus {
+    border-bottom-color: var(--fd-green);
+
+    background: rgba(244, 239, 230, 0.42);
+}
+
+.fd-international-form .fd-form-field textarea {
+    min-height: 165px;
+
+    resize: vertical;
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+.fd-international-form .fd-form-field select {
+    appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 30px;
+
+    background-image:
+        linear-gradient(45deg, transparent 50%, #356B4C 50%),
+        linear-gradient(135deg, #356B4C 50%, transparent 50%);
+
+    background-position:
+        calc(100% - 8px) 52%,
+        calc(100% - 3px) 52%;
+
+    background-size:
+        5px 5px,
+        5px 5px;
+
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+
+.fd-international-form .fd-form-submit {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px 30px;
+
+    margin-top: 82px;
+
+    padding-top: 34px;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.2);
+}
+
+.fd-form-submit-button {
+    min-width: 265px;
+}
+
+.fd-form-note {
+    max-width: 620px;
+
+    margin: 0;
+
+    font-size: 0.86rem;
+    line-height: 1.65;
+
+    color: #707873;
+}
+
+
+/* =========================================================
+   INTERNATIONAL GUIDANCE
+   AFTER SUBMIT
+   ========================================================= */
+
+.fd-form-guidance {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 78px;
+
+    padding: clamp(58px, 7vw, 88px) clamp(42px, 6vw, 76px);
+
+    background: var(--fd-green-dark);
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+.fd-form-guidance::after {
+    content: "";
+
+    position: absolute;
+
+    width: 390px;
+    height: 390px;
+
+    right: -210px;
+    bottom: -245px;
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.fd-form-guidance-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 780px;
+}
+
+.fd-form-guidance .fd-eyebrow {
+    margin: 0 0 23px;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.fd-form-guidance h2 {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(3.2rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 0.9;
+
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+}
+
+.fd-form-guidance h2 .fd-title-accent {
+    color: #ffffff;
+}
+
+.fd-form-guidance p:not(.fd-eyebrow) {
+    max-width: 650px;
+
+    margin: 32px 0 0;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.fd-international-final {
+    padding-top: clamp(110px, 12vw, 170px);
+    padding-bottom: clamp(120px, 13vw, 185px);
+
+    background: var(--fd-cream);
+
+    border-top: 1px solid rgba(53, 107, 76, 0.14);
+}
+
+.fd-international-final-inner {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-international-final-inner .fd-eyebrow {
+    margin-bottom: 25px;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-international-final-inner .fd-title-lg {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.fd-international-final-inner .fd-description-lg {
+    max-width: 670px;
+
+    margin: 32px auto 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fd-international-process-item {
+        padding-right: 30px;
+    }
+
+    .fd-international-process-item:nth-child(odd) {
+        padding-right: 30px;
+    }
+
+    .fd-international-process-item:nth-child(even) {
+        padding-left: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .fd-international-hero {
+        padding-top: 82px;
+        padding-bottom: 78px;
+    }
+
+    .fd-international-intro {
+        padding-top: 76px;
+        padding-bottom: 82px;
+    }
+
+    .fd-international-process {
+        padding-top: 76px;
+        padding-bottom: 90px;
+    }
+
+    .fd-international-process-header {
+        margin-bottom: 50px;
+    }
+
+    .fd-international-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fd-international-process-item,
+    .fd-international-process-item:nth-child(odd),
+    .fd-international-process-item:nth-child(even) {
+        padding: 34px 0;
+
+        border-right: 0;
+    }
+
+    .fd-international-process-item:first-child {
+        padding-top: 0;
+    }
+
+
+    /* -----------------------------------------
+       FORM
+       ----------------------------------------- */
+
+    .fd-form-section-heading {
+        font-size: clamp(2.7rem, 11vw, 4rem);
+        line-height: 0.94;
+    }
+
+    .fd-international-form-section {
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+
+    .fd-international-form .fd-form-section + .fd-form-section {
+        margin-top: 62px;
+        padding-top: 52px;
+    }
+
+    .fd-form-section-intro {
+        margin-top: 18px;
+    }
+
+    .fd-international-form .fd-form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        margin-top: 38px;
+    }
+
+    .fd-international-form .fd-form-section:last-of-type .fd-form-grid {
+        margin-top: 48px;
+    }
+
+    .fd-international-form .fd-form-field-full {
+        grid-column: auto;
+
+        margin-top: 18px;
+    }
+
+
+    /* -----------------------------------------
+       SUBMIT
+       ----------------------------------------- */
+
+    .fd-international-form .fd-form-submit {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 68px;
+
+        padding-top: 31px;
+    }
+
+    .fd-form-submit-button {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* -----------------------------------------
+       GUIDANCE
+       ----------------------------------------- */
+
+    .fd-form-guidance {
+        margin-top: 68px;
+
+        padding: 50px 28px;
+    }
+
+    .fd-form-guidance h2 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+
+    /* -----------------------------------------
+       FINAL CTA
+       ----------------------------------------- */
+
+    .fd-international-final {
+        padding-top: 92px;
+        padding-bottom: 105px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-form-section-heading {
+        font-size: 2.65rem;
+    }
+
+    .fd-form-guidance {
+        margin-top: 62px;
+
+        padding: 42px 22px;
+    }
+
+    .fd-form-guidance h2 {
+        font-size: 3.15rem;
+    }
+
+}

@@ -1,0 +1,1175 @@
+/* =========================================================
+   FARM DIRECT ROSES
+   EXPORT PAGE — EDITORIAL EXPERIENCE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fd-export-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding:
+        clamp(90px, 11vw, 150px)
+        0
+        clamp(95px, 11vw, 145px);
+
+    background: var(--fd-green-dark);
+    color: var(--fd-warm-white);
+    text-align: center;
+}
+
+.fd-export-hero::after {
+    content: "";
+
+    position: absolute;
+    right: clamp(25px, 5vw, 80px);
+    bottom: 35px;
+
+    width: clamp(70px, 9vw, 120px);
+    height: 1px;
+
+    background: color-mix(
+        in srgb,
+        var(--fd-warm-white) 28%,
+        transparent
+    );
+}
+
+.fd-export-hero .fd-container {
+    position: relative;
+    z-index: 1;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fd-export-hero .fd-eyebrow {
+    display: block;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 72%,
+        transparent
+    );
+}
+
+.fd-export-hero .fd-title-xl {
+    max-width: 900px;
+    margin: 24px auto 0;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-export-hero .fd-title-xl em {
+    display: block;
+    font-size: 0.78em;
+    line-height: 0.98;
+    color: var(--fd-cream);
+    font-style: italic;
+}
+
+.fd-export-hero .fd-description-lg {
+    max-width: 700px;
+    margin: 34px auto 0;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 76%,
+        transparent
+    );
+}
+
+
+/* =========================================================
+   SHARED EDITORIAL EMPHASIS
+   ========================================================= */
+
+.fd-export-intro h2 em,
+.fd-export-advantages h2 em,
+.fd-export-journey h2 em,
+.fd-export-quality h2 em,
+.fd-export-importers h2 em,
+.fd-export-program h2 em,
+.fd-export-feature h3 em,
+.fd-export-step h3 em {
+    display: inline;
+
+    font-style: italic;
+    font-weight: 400;
+}
+
+.fd-export-intro h2 em,
+.fd-export-advantages h2 em,
+.fd-export-quality h2 em,
+.fd-export-importers h2 em,
+.fd-export-feature h3 em {
+    color: var(--fd-green);
+}
+
+.fd-export-journey h2 em,
+.fd-export-program h2 em,
+.fd-export-step h3 em {
+    color: var(--fd-cream);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.fd-export-intro {
+    padding:
+        clamp(85px, 10vw, 135px)
+        0;
+
+    background: var(--fd-cream);
+}
+.fd-export-intro-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.22fr)
+        minmax(0, 0.78fr);
+
+    gap: clamp(50px, 7vw, 95px);
+
+    align-items: start;
+}
+
+.fd-export-intro-grid > div:first-child {
+    position: relative;
+
+    max-width: 720px;
+
+    padding-top: 4px;
+}
+
+.fd-export-intro-grid > div:first-child::before {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 1px;
+
+    margin-bottom: 28px;
+
+    background: var(--fd-green);
+}
+
+.fd-export-intro-grid .fd-title-lg {
+    max-width: 700px;
+
+    margin-top: 18px;
+
+    /*
+       Slightly smaller than the global editorial title
+       so the long heading breathes better.
+    */
+    font-size: clamp(2.5rem, 4.4vw, 4.35rem);
+    line-height: 0.96;
+}
+
+.fd-export-intro-grid > div:last-child {
+    max-width: 520px;
+
+    /*
+       Deliberately lower than the main title.
+    */
+    padding-top: clamp(65px, 7vw, 100px);
+}
+
+.fd-export-intro-grid .fd-description {
+    max-width: 520px;
+
+    margin: 0;
+}
+
+.fd-export-intro-grid .fd-description + .fd-description {
+    margin-top: 24px;
+}
+
+
+/*
+   The right column intentionally sits lower than
+   the main editorial heading.
+*/
+
+.fd-export-intro-grid > div:last-child {
+    max-width: 520px;
+
+    padding-top: clamp(42px, 5vw, 72px);
+}
+
+.fd-export-intro-grid .fd-description {
+    max-width: 520px;
+
+    margin: 0;
+}
+
+.fd-export-intro-grid .fd-description + .fd-description {
+    margin-top: 24px;
+}
+
+
+/* =========================================================
+   EXPORT ADVANTAGES
+   ========================================================= */
+
+.fd-export-advantages {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0;
+
+    background: var(--fd-warm-white);
+}
+
+
+/*
+   Centered editorial introduction.
+   The eyebrow is a span in the HTML, so it must be
+   explicitly converted to block-level to center correctly.
+*/
+
+/* =====================================================
+   WHY SOURCE FARM DIRECT — SECTION HEADING
+   ===================================================== */
+
+.fd-export-advantages .fd-section-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    align-items: start;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto clamp(55px, 7vw, 80px);
+
+    text-align: center;
+}
+
+.fd-export-advantages .fd-section-heading > .fd-eyebrow {
+    display: block;
+    grid-column: 1;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 0 20px;
+
+    text-align: center;
+}
+
+.fd-export-advantages .fd-section-heading > .fd-title-lg {
+    display: block;
+    grid-column: 1;
+
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-export-advantages .fd-section-heading > .fd-description {
+    display: block;
+    grid-column: 1;
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 28px auto 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   FEATURE GRID
+   ========================================================= */
+
+.fd-export-feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    border-top: 1px solid var(--fd-border);
+}
+
+.fd-export-feature {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 330px;
+
+    padding:
+        30px
+        40px
+        35px
+        0;
+
+    border-right: 1px solid var(--fd-border);
+}
+
+.fd-export-feature:not(:first-child) {
+    padding-left: 40px;
+}
+
+.fd-export-feature:last-child {
+    border-right: 0;
+}
+
+
+/*
+   The number and content now stay close together.
+   The previous margin-bottom:auto + margin-top:80px
+   combination created the excessive vertical gap.
+*/
+
+.fd-export-feature-number {
+    display: block;
+
+    margin: 0 0 22px;
+
+    font-family: var(--fd-font-display);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1;
+
+    color: var(--fd-green);
+}
+
+.fd-export-feature-content {
+    margin-top: 0;
+}
+
+.fd-export-feature h3 {
+    max-width: 300px;
+
+    margin: 0 0 16px;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(28px, 2.5vw, 36px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-export-feature p {
+    max-width: 340px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 13px;
+    line-height: 1.8;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   EXPORT JOURNEY
+   ========================================================= */
+
+.fd-export-journey {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0;
+
+    background: var(--fd-green-dark);
+    color: var(--fd-warm-white);
+}
+
+.fd-export-journey-heading {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(280px, 470px);
+
+    gap: clamp(50px, 8vw, 110px);
+
+    align-items: end;
+
+    margin-bottom:
+        clamp(55px, 7vw, 75px);
+}
+
+.fd-export-journey-heading .fd-eyebrow {
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 62%,
+        transparent
+    );
+}
+
+.fd-export-journey-heading .fd-title-lg {
+    max-width: 700px;
+
+    margin-top: 20px;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-export-journey-heading .fd-description {
+    margin: 0;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 70%,
+        transparent
+    );
+}
+
+
+/* =========================================================
+   EXPORT STEPS
+   ========================================================= */
+
+.fd-export-steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    border-top: 1px solid
+        color-mix(
+            in srgb,
+            var(--fd-warm-white) 20%,
+            transparent
+        );
+}
+
+.fd-export-step {
+    position: relative;
+
+    min-height: 315px;
+
+    padding:
+        30px
+        30px
+        35px
+        0;
+
+    border-right: 1px solid
+        color-mix(
+            in srgb,
+            var(--fd-warm-white) 20%,
+            transparent
+        );
+}
+
+.fd-export-step:not(:first-child) {
+    padding-left: 30px;
+}
+
+.fd-export-step:last-child {
+    border-right: 0;
+}
+
+.fd-export-step-number {
+    display: block;
+
+    margin-bottom: 28px;
+
+    font-family: var(--fd-font-display);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-export-step-label {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-family: var(--fd-font-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 48%,
+        transparent
+    );
+}
+
+.fd-export-step h3 {
+    max-width: 250px;
+
+    margin: 0 0 16px;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(27px, 2.2vw, 34px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-export-step p {
+    max-width: 270px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 66%,
+        transparent
+    );
+}
+
+
+/* =========================================================
+   ECUADOR QUALITY
+   ========================================================= */
+
+.fd-export-quality {
+    padding:
+        clamp(90px, 10vw, 135px)
+        0;
+
+    background: var(--fd-cream);
+}
+
+.fd-export-quality-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.18fr)
+        minmax(0, 0.82fr);
+
+    gap: clamp(55px, 8vw, 105px);
+
+    /*
+       Important:
+       do not vertically center the two columns.
+       The right copy is deliberately lower.
+    */
+    align-items: start;
+}
+
+.fd-export-quality-statement {
+    position: relative;
+
+    max-width: 700px;
+}
+
+.fd-export-quality-statement::before {
+    content: "EC";
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(50px, 6vw, 82px);
+    font-style: italic;
+    line-height: 0.8;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-green) 18%,
+        transparent
+    );
+}
+
+.fd-export-quality-statement .fd-title-lg {
+    max-width: 680px;
+
+    margin-top: 20px;
+}
+
+
+/*
+   Same editorial vertical relationship as
+   THE EXPORT APPROACH.
+*/
+
+.fd-export-quality-copy {
+    max-width: 520px;
+
+    padding-top: clamp(42px, 5vw, 72px);
+}
+
+.fd-export-quality-copy .fd-description {
+    max-width: 520px;
+
+    margin: 0;
+}
+
+.fd-export-quality-copy .fd-description + .fd-description {
+    margin-top: 24px;
+}
+
+
+/* =========================================================
+   FIRST-TIME IMPORTERS
+   ========================================================= */
+
+.fd-export-importers {
+    padding:
+        clamp(85px, 10vw, 125px)
+        0;
+
+    background: var(--fd-warm-white);
+}
+
+.fd-export-importers-inner {
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.fd-export-importers-inner .fd-eyebrow {
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+
+    text-align: center;
+}
+
+
+
+.fd-export-importers-inner .fd-title-lg {
+    max-width: 760px;
+
+    margin: 20px auto 0;
+
+    color: var(--fd-green-dark);
+
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    line-height: 0.96;
+
+}
+
+.fd-export-importers-inner .fd-description {
+    max-width: 680px;
+
+    margin: 28px auto 0;
+}
+
+.fd-export-importers-inner .fd-btn {
+    margin-top: 34px;
+}
+
+
+/* =========================================================
+   EXPORT PROGRAM CTA
+   ========================================================= */
+
+.fd-export-program {
+    position: relative;
+    overflow: hidden;
+
+    padding:
+        clamp(90px, 10vw, 135px)
+        0
+        clamp(100px, 11vw, 150px);
+
+    background: var(--fd-green-dark);
+    color: var(--fd-warm-white);
+}
+
+.fd-export-program::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: min(60vw, 700px);
+    height: min(60vw, 700px);
+
+    border: 1px solid
+        color-mix(
+            in srgb,
+            var(--fd-warm-white) 8%,
+            transparent
+        );
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+.fd-export-program .fd-title-lg em {
+    display: block;
+    font-size: 0.78em;
+    font-weight: 700;
+    
+    line-height: 0.98;
+}
+
+
+
+.fd-export-program-inner {
+    position: relative;
+    z-index: 1;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-export-program-inner .fd-eyebrow {
+    display: block;
+
+    width: 100%;
+
+    color: var(--fd-cream);
+
+    text-align: center;
+}
+
+.fd-export-program-inner .fd-title-lg {
+    max-width: 760px;
+
+    margin: 22px auto 0;
+
+    color: var(--fd-warm-white);
+}
+
+.fd-export-program-inner .fd-description {
+    max-width: 680px;
+
+    margin: 30px auto 0;
+
+    color: color-mix(
+        in srgb,
+        var(--fd-warm-white) 72%,
+        transparent
+    );
+}
+
+.fd-export-actions {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 36px;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .fd-export-intro-grid,
+    .fd-export-quality-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    /*
+       On tablet the two-column editorial relationship
+       becomes a clean stacked composition.
+    */
+
+    .fd-export-intro-grid > div:last-child,
+    .fd-export-quality-copy {
+        max-width: 700px;
+
+        padding-top: 0;
+    }
+
+    .fd-export-intro-grid .fd-description,
+    .fd-export-quality-copy .fd-description {
+        max-width: 700px;
+    }
+
+
+    .fd-export-journey-heading {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+
+    .fd-export-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fd-export-feature {
+        min-height: auto;
+
+        padding:
+            30px
+            0
+            35px;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--fd-border);
+    }
+
+    .fd-export-feature:not(:first-child) {
+        padding-left: 0;
+    }
+
+    .fd-export-feature:last-child {
+        border-bottom: 0;
+    }
+
+    /*
+       Keep number and heading close together on tablet too.
+    */
+
+    .fd-export-feature-number {
+        margin-bottom: 18px;
+    }
+
+    .fd-export-feature-content {
+        margin-top: 0;
+    }
+
+    .fd-export-feature h3 {
+        max-width: 450px;
+    }
+
+    .fd-export-feature p {
+        max-width: 500px;
+    }
+
+
+    .fd-export-steps {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .fd-export-step {
+        min-height: 290px;
+    }
+
+    .fd-export-step:nth-child(2) {
+        border-right: 0;
+    }
+
+    .fd-export-step:nth-child(n + 3) {
+        border-top: 1px solid
+            color-mix(
+                in srgb,
+                var(--fd-warm-white) 20%,
+                transparent
+            );
+    }
+
+    .fd-export-step:nth-child(3) {
+        padding-left: 0;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .fd-export-hero {
+        padding: 75px 0 85px;
+    }
+
+    .fd-export-hero::after {
+        right: 20px;
+        bottom: 25px;
+
+        width: 65px;
+    }
+
+    .fd-export-hero .fd-title-xl em {
+        display: inline;
+    }
+
+    .fd-export-hero .fd-description-lg {
+        margin-top: 28px;
+    }
+
+
+    /* INTRO */
+
+    .fd-export-intro {
+        padding: 80px 0;
+    }
+
+    .fd-export-intro-grid {
+        gap: 38px;
+    }
+
+    .fd-export-intro-grid > div:first-child::before {
+        margin-bottom: 22px;
+    }
+
+    .fd-export-intro-grid > div:last-child {
+        padding-top: 0;
+    }
+
+
+    /* ADVANTAGES */
+
+    .fd-export-advantages {
+        padding: 80px 0;
+    }
+
+    .fd-export-advantages .fd-section-heading {
+        margin-bottom: 48px;
+    }
+
+    .fd-export-feature {
+        padding: 28px 0 32px;
+    }
+
+    .fd-export-feature-number {
+        margin-bottom: 16px;
+    }
+
+    .fd-export-feature-content {
+        margin-top: 0;
+    }
+
+
+    /* JOURNEY */
+
+    .fd-export-journey {
+        padding: 80px 0;
+    }
+
+    .fd-export-journey-heading {
+        gap: 25px;
+
+        margin-bottom: 48px;
+    }
+
+    .fd-export-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .fd-export-step,
+    .fd-export-step:not(:first-child) {
+        min-height: auto;
+
+        padding: 28px 0 32px;
+
+        border-right: 0;
+
+        border-top: 1px solid
+            color-mix(
+                in srgb,
+                var(--fd-warm-white) 20%,
+                transparent
+            );
+    }
+
+    .fd-export-step:first-child {
+        border-top: 0;
+    }
+
+    .fd-export-step:nth-child(3) {
+        padding-left: 0;
+    }
+
+    .fd-export-step-number {
+        margin-bottom: 22px;
+    }
+
+    .fd-export-step h3 {
+        max-width: 400px;
+    }
+
+    .fd-export-step p {
+        max-width: 500px;
+    }
+
+
+    /* QUALITY */
+
+    .fd-export-quality {
+        padding: 80px 0;
+    }
+
+    .fd-export-quality-grid {
+        gap: 38px;
+    }
+
+    .fd-export-quality-copy {
+        padding-top: 0;
+    }
+
+    .fd-export-quality-statement::before {
+        font-size: 58px;
+    }
+
+
+    /* FIRST-TIME IMPORTERS */
+
+    .fd-export-importers {
+        padding: 75px 0;
+    }
+
+
+    /* CTA */
+
+    .fd-export-program {
+        padding: 80px 0 90px;
+    }
+
+    .fd-export-program::before {
+        width: 500px;
+        height: 500px;
+    }
+
+    .fd-export-actions {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .fd-export-actions .fd-btn {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-export-hero {
+        padding: 60px 0 72px;
+    }
+
+    .fd-export-hero .fd-description-lg {
+        margin-top: 24px;
+    }
+
+    .fd-export-intro,
+    .fd-export-advantages,
+    .fd-export-journey,
+    .fd-export-quality {
+        padding: 70px 0;
+    }
+
+    .fd-export-feature {
+        padding: 25px 0 30px;
+    }
+
+    .fd-export-feature-number {
+        margin-bottom: 14px;
+    }
+
+    .fd-export-feature-content {
+        margin-top: 0;
+    }
+
+    .fd-export-step {
+        padding: 25px 0 30px;
+    }
+
+    .fd-export-quality-statement::before {
+        font-size: 50px;
+    }
+
+    .fd-export-importers {
+        padding: 65px 0;
+    }
+
+    .fd-export-program {
+        padding: 70px 0 80px;
+    }
+
+    .fd-export-program::before {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .fd-export-program::before {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+.fd-export-program .fd-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 0 28px;
+
+    border: 1px solid currentColor;
+    border-radius: 999px;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        border-color 180ms ease,
+        transform 180ms ease;
+}
+
+.fd-export-program .fd-button:hover {
+    transform: translateY(-1px);
+}
+
+

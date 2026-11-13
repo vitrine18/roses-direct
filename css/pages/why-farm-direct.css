@@ -1,0 +1,1194 @@
+/* =========================================================
+   FARM DIRECT — WHY FARM DIRECT
+   Editorial Page
+   Page-Specific Styles Only
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE FOUNDATION
+   ========================================================= */
+
+.fd-page {
+    overflow: hidden;
+}
+
+.fd-page section {
+    position: relative;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fd-why-hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--fd-cream) 0%,
+            var(--fd-warm-white) 100%
+        );
+}
+
+.fd-why-hero .fd-container {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.fd-why-hero .fd-eyebrow {
+    display: block;
+}
+
+.fd-why-hero .fd-title-xl {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--fd-green-dark);
+}
+
+
+.fd-why-hero .fd-title-xl .fd-title-accent {
+    color: var(--fd-green);
+    font-size: 0.78em;
+    font-weight: 600;
+}
+
+
+.fd-why-hero .fd-description-lg {
+    max-width: 720px;
+    margin: 30px auto 0;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.fd-why-intro {
+    padding-top: 115px;
+    padding-bottom: 125px;
+
+    background: var(--fd-warm-white);
+
+    text-align: center;
+
+    border-top: 1px solid var(--fd-border);
+}
+
+
+.fd-why-intro .fd-container {
+    max-width: 900px;
+}
+
+.fd-why-intro .fd-title-lg {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--fd-green-dark);
+}
+
+
+.fd-why-intro .fd-title-lg .fd-title-accent {
+    color: var(--fd-green);
+    font-size: 0.78em;
+    font-weight: 600;
+}
+
+
+
+.fd-intro-rule {
+    width: 55px;
+    height: 1px;
+
+    margin: 38px auto;
+
+    background: var(--fd-green);
+}
+
+.fd-why-intro .fd-description {
+    max-width: 760px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fd-why-intro .fd-description + .fd-description {
+    margin-top: 22px;
+}
+
+
+/* =========================================================
+   PROFESSIONALS
+   ========================================================= */
+
+.fd-why-professionals {
+    padding-top: 125px;
+    padding-bottom: 130px;
+
+    background: var(--fd-cream);
+
+    border-top: 1px solid var(--fd-border);
+}
+
+.fd-why-professionals > .fd-container > .fd-section-heading {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(300px, 0.72fr);
+
+    gap: 85px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+.fd-why-professionals .fd-section-heading > div {
+    max-width: 700px;
+}
+
+.fd-why-professionals .fd-section-heading .fd-description {
+    max-width: 500px;
+
+    margin: 0 0 4px;
+}
+
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.fd-card-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.fd-card-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fd-card {
+    position: relative;
+
+    min-height: 310px;
+
+    padding: 36px 34px 40px;
+
+    background: var(--fd-warm-white);
+
+    border: 1px solid var(--fd-border);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.fd-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 45px rgba(38, 51, 45, 0.08);
+}
+
+.fd-card-number {
+    display: block;
+
+    margin-bottom: 34px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+
+    color: var(--fd-green);
+}
+
+.fd-card-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+
+    border: 1px solid rgba(53, 107, 76, 0.25);
+
+    color: var(--fd-green);
+}
+
+.fd-card-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.fd-card h3 {
+    max-width: 320px;
+
+    margin: 0 0 13px;
+
+    font-family: var(--fd-font-display);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.05;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-card p {
+    max-width: 340px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.92rem;
+    line-height: 1.7;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   FARM DIRECT DIFFERENCE
+   ========================================================= */
+
+.fd-difference {
+    padding-top: 135px;
+    padding-bottom: 140px;
+
+    background: var(--fd-warm-white);
+
+    border-top: 1px solid var(--fd-border);
+}
+
+
+.fd-difference > .fd-container > .fd-section-heading {
+    width: 100%;
+    max-width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.fd-difference .fd-section-heading > .fd-eyebrow {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+
+.fd-difference .fd-section-heading .fd-title-lg {
+    width: 100%;
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    color: var(--fd-green-dark);
+}
+
+
+
+.fd-difference .fd-section-heading .fd-description {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 26px auto 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EDITORIAL COMPARISON
+   ========================================================= */
+
+.fd-comparison {
+    margin-top: 95px;
+}
+
+.fd-comparison-intro {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(300px, 0.9fr);
+
+    gap: 75px;
+
+    align-items: end;
+
+    padding-bottom: 36px;
+
+    border-bottom: 1px solid var(--fd-border);
+}
+
+.fd-comparison-intro > div {
+    max-width: 700px;
+}
+
+.fd-comparison-intro h3 {
+    max-width: 650px;
+
+    margin: 16px 0 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(2.15rem, 3.5vw, 3.2rem);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-comparison-intro h3 em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.fd-comparison-intro > p {
+    max-width: 440px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.98rem;
+    line-height: 1.8;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   COMPARISON TABLE
+   ========================================================= */
+
+.fd-comparison-table-wrap {
+    width: 100%;
+
+    margin-top: 0;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.fd-comparison-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.96rem;
+
+    color: var(--fd-text);
+}
+
+
+/* Accessible caption */
+
+.fd-comparison-table caption {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.fd-comparison-table thead th {
+    padding: 30px 24px 25px;
+
+    text-align: left;
+    vertical-align: bottom;
+
+    border-bottom: 1px solid var(--fd-border);
+
+    background: transparent;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+
+    color: var(--fd-text-muted);
+}
+
+.fd-comparison-table thead th:first-child {
+    width: 40%;
+}
+
+.fd-comparison-table thead th:nth-child(2),
+.fd-comparison-table thead th:nth-child(3) {
+    width: 30%;
+}
+
+.fd-comparison-table thead .fd-comparison-farm {
+    color: var(--fd-green);
+}
+
+
+/* =========================================================
+   COMPARISON LABELS
+   ========================================================= */
+
+.fd-comparison-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+
+    color: var(--fd-green);
+}
+
+.fd-comparison-column-title {
+    display: block;
+
+    font-family: var(--fd-font-display);
+    font-size: 1.48rem;
+    font-weight: 500;
+    line-height: 1.15;
+
+    letter-spacing: 0;
+
+    text-transform: none;
+
+    color: var(--fd-green-dark);
+}
+
+
+/* =========================================================
+   COMPARISON BODY
+   ========================================================= */
+
+.fd-comparison-table tbody tr {
+    border-bottom: 1px solid var(--fd-border);
+
+    background: transparent;
+
+    transition: background 0.2s ease;
+}
+
+.fd-comparison-table tbody tr:last-child {
+    border-bottom: 0;
+}
+
+.fd-comparison-table tbody tr:hover {
+    background: rgba(246, 241, 235, 0.28);
+}
+
+.fd-comparison-table tbody th {
+    padding: 29px 24px;
+
+    text-align: left;
+    vertical-align: middle;
+
+    font-family: var(--fd-font-body);
+    font-weight: 500;
+
+    color: var(--fd-text);
+}
+
+.fd-comparison-table tbody td {
+    padding: 29px 24px;
+
+    vertical-align: middle;
+
+    line-height: 1.55;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   COMPARISON NUMBERS
+   ========================================================= */
+
+.fd-comparison-number {
+    display: inline-block;
+
+    min-width: 28px;
+
+    margin-right: 10px;
+
+    font-family: var(--fd-font-display);
+    font-style: italic;
+    font-weight: 600;
+
+    font-size: clamp(0.95rem, 1.2vw, 1.2rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.03em;
+
+    color: var(--fd-green);
+
+    font-variant-numeric: lining-nums;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.fd-comparison-feature {
+    font-family: var(--fd-font-body);
+    font-size: 0.96rem;
+
+    color: var(--fd-text);
+}
+
+.fd-comparison-table tbody .fd-comparison-farm {
+    color: var(--fd-green-dark);
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   COMPARISON CHECK
+   ========================================================= */
+
+.fd-comparison-check {
+    width: 20px;
+    height: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 9px;
+
+    border: 1px solid rgba(53, 107, 76, 0.28);
+    border-radius: 50%;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.65rem;
+    font-weight: 600;
+
+    color: var(--fd-green);
+
+    vertical-align: middle;
+
+    background: rgba(238, 246, 243, 0.42);
+}
+
+
+/* =========================================================
+   JOURNEY
+   ========================================================= */
+
+.fd-journey {
+    padding-top: 130px;
+    padding-bottom: 135px;
+
+    background: var(--fd-cream);
+
+    border-top: 1px solid var(--fd-border);
+}
+
+.fd-journey > .fd-container > .fd-journey-intro {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(300px, 0.72fr);
+
+    gap: 85px;
+
+    align-items: end;
+
+    margin-bottom: 78px;
+}
+
+.fd-journey-heading {
+    max-width: 700px;
+}
+
+.fd-journey-intro > p {
+    max-width: 500px;
+
+    margin: 0 0 4px;
+
+    font-family: var(--fd-font-body);
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: var(--fd-text-muted);
+}
+
+.fd-journey-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    border-top: 1px solid rgba(53, 107, 76, 0.25);
+    border-bottom: 1px solid rgba(53, 107, 76, 0.25);
+}
+
+.fd-journey-grid article {
+    min-height: 300px;
+
+    padding: 32px 28px 38px;
+
+    border-right: 1px solid rgba(53, 107, 76, 0.2);
+}
+
+.fd-journey-grid article:last-child {
+    border-right: 0;
+}
+
+.fd-journey-number {
+    display: block;
+
+    margin-bottom: 58px;
+
+    font-family: var(--fd-font-display);
+    font-style: italic;
+    font-weight: 500;
+
+    font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.03em;
+
+    color: var(--fd-green);
+
+    font-variant-numeric: lining-nums;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.fd-journey-content > span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+
+    color: var(--fd-text-muted);
+}
+
+.fd-journey-content h3 {
+    margin: 0 0 13px;
+
+    font-family: var(--fd-font-display);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.05;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-journey-content p {
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.9rem;
+    line-height: 1.7;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   ADVANTAGES
+   ========================================================= */
+
+.fd-advantages {
+    padding-top: 130px;
+    padding-bottom: 135px;
+
+    background: var(--fd-warm-white);
+
+    border-top: 1px solid var(--fd-border);
+}
+
+.fd-advantages > .fd-container > .fd-section-heading {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(300px, 0.72fr);
+
+    gap: 85px;
+
+    align-items: end;
+
+    margin-bottom: 72px;
+}
+
+.fd-advantages .fd-section-heading > div {
+    max-width: 700px;
+}
+
+.fd-advantages .fd-section-heading .fd-description {
+    max-width: 500px;
+
+    margin: 0 0 4px;
+}
+
+.fd-advantage-list {
+    border-top: 1px solid var(--fd-border);
+}
+
+.fd-advantage {
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 30px;
+
+    padding: 31px 0;
+
+    border-bottom: 1px solid var(--fd-border);
+}
+
+.fd-advantage-number {
+    display: inline-block;
+
+    font-family: var(--fd-font-display);
+    font-style: italic;
+    font-weight: 500;
+
+    font-size: clamp(0.95rem, 1.2vw, 1.4rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.03em;
+
+    color: var(--fd-green);
+
+    font-variant-numeric: lining-nums;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.fd-advantage h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--fd-font-display);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.05;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-advantage p {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.92rem;
+    line-height: 1.7;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.fd-why-cta {
+    padding-top: 135px;
+    padding-bottom: 140px;
+
+    background: var(--fd-green);
+
+    color: #FFFFFF;
+}
+
+.fd-why-cta .fd-container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.fd-why-cta .fd-cta {
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.fd-why-cta .fd-eyebrow {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.fd-why-cta .fd-title-lg {
+    max-width: 820px;
+
+    margin: 22px auto 0;
+
+    color: #FFFFFF;
+}
+
+.fd-why-cta .fd-title-lg em,
+.fd-why-cta .fd-title-accent {
+    color: #FFFFFF;
+}
+
+.fd-why-cta .fd-description-lg {
+    max-width: 680px;
+
+    margin: 28px auto 0;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+   ========================================================= */
+
+.fd-why-cta .fd-cta-actions {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 42px;
+}
+
+.fd-why-cta .fd-btn-primary {
+    background: #FFFFFF;
+    color: var(--fd-green);
+}
+
+.fd-why-cta .fd-btn-primary:hover {
+    background: var(--fd-cream);
+}
+
+.fd-why-cta .fd-btn-secondary {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #FFFFFF;
+}
+
+.fd-why-cta .fd-btn-secondary:hover {
+    border-color: #FFFFFF;
+    background: #FFFFFF;
+    color: var(--fd-green);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .fd-why-professionals > .fd-container > .fd-section-heading,
+    .fd-journey > .fd-container > .fd-journey-intro,
+    .fd-advantages > .fd-container > .fd-section-heading {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .fd-why-professionals > .fd-container > .fd-section-heading,
+    .fd-advantages > .fd-container > .fd-section-heading {
+        margin-bottom: 60px;
+    }
+
+    .fd-journey > .fd-container > .fd-journey-intro {
+        margin-bottom: 60px;
+    }
+
+    .fd-card-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .fd-card {
+        min-height: 270px;
+    }
+
+    .fd-journey-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fd-journey-grid article:nth-child(2) {
+        border-right: 0;
+    }
+
+    .fd-journey-grid article:nth-child(-n + 2) {
+        border-bottom: 1px solid rgba(53, 107, 76, 0.2);
+    }
+
+    .fd-comparison-intro {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .fd-comparison-intro > p {
+        max-width: 650px;
+    }
+
+    .fd-comparison-table {
+        min-width: 760px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .fd-why-hero {
+        min-height: 540px;
+    }
+
+    .fd-why-hero .fd-container {
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+
+    .fd-why-intro,
+    .fd-why-professionals,
+    .fd-difference,
+    .fd-journey,
+    .fd-advantages,
+    .fd-why-cta {
+        padding-top: 85px;
+        padding-bottom: 90px;
+    }
+
+    .fd-why-intro .fd-description + .fd-description {
+        margin-top: 20px;
+    }
+
+    .fd-why-professionals > .fd-container > .fd-section-heading,
+    .fd-advantages > .fd-container > .fd-section-heading {
+        gap: 22px;
+        margin-bottom: 48px;
+    }
+
+    .fd-card-grid {
+        gap: 16px;
+    }
+
+    .fd-card {
+        min-height: auto;
+
+        padding: 30px 26px 34px;
+    }
+
+    .fd-card-number {
+        margin-bottom: 30px;
+    }
+
+    .fd-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .fd-difference {
+        overflow: hidden;
+    }
+
+    .fd-difference .fd-section-heading {
+        text-align: center;
+    }
+
+    .fd-comparison {
+        margin-top: 65px;
+    }
+
+    .fd-comparison-intro {
+        gap: 22px;
+        padding-bottom: 28px;
+    }
+
+    .fd-comparison-intro h3 {
+        font-size: 2.25rem;
+    }
+
+    .fd-comparison-table-wrap {
+        overflow-x: auto;
+    }
+
+    .fd-comparison-table {
+        min-width: 720px;
+    }
+
+    .fd-comparison-table thead th,
+    .fd-comparison-table tbody th,
+    .fd-comparison-table tbody td {
+        padding: 22px 18px;
+    }
+
+    .fd-comparison-column-title {
+        font-size: 1.25rem;
+    }
+
+    .fd-comparison-feature {
+        font-size: 0.92rem;
+    }
+
+    .fd-journey > .fd-container > .fd-journey-intro {
+        gap: 22px;
+        margin-bottom: 48px;
+    }
+
+    .fd-journey-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fd-journey-grid article {
+        min-height: auto;
+
+        padding: 30px 24px 34px;
+
+        border-right: 0;
+        border-bottom: 1px solid rgba(53, 107, 76, 0.2);
+    }
+
+    .fd-journey-grid article:nth-child(2) {
+        border-right: 0;
+    }
+
+    .fd-journey-grid article:nth-child(-n + 2) {
+        border-bottom: 1px solid rgba(53, 107, 76, 0.2);
+    }
+
+    .fd-journey-grid article:last-child {
+        border-bottom: 0;
+    }
+
+    .fd-journey-number {
+        margin-bottom: 38px;
+    }
+
+    .fd-advantage {
+        grid-template-columns: 45px 1fr;
+
+        gap: 15px;
+
+        padding: 27px 0;
+    }
+
+    .fd-advantage h3 {
+        font-size: 1.7rem;
+    }
+
+    .fd-why-cta {
+        padding-top: 90px;
+        padding-bottom: 95px;
+    }
+
+    .fd-why-cta .fd-title-lg {
+        margin-top: 18px;
+    }
+
+    .fd-why-cta .fd-description-lg {
+        margin-top: 23px;
+    }
+
+    .fd-why-cta .fd-cta-actions {
+        flex-direction: column;
+
+        gap: 12px;
+
+        margin-top: 32px;
+    }
+
+    .fd-why-cta .fd-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-why-hero {
+        min-height: 500px;
+    }
+
+    .fd-why-hero .fd-container {
+        padding-top: 55px;
+        padding-bottom: 65px;
+    }
+
+    .fd-why-intro,
+    .fd-why-professionals,
+    .fd-difference,
+    .fd-journey,
+    .fd-advantages {
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+
+    .fd-card {
+        padding: 27px 23px 31px;
+    }
+
+    .fd-comparison {
+        margin-top: 55px;
+    }
+
+    .fd-comparison-intro h3 {
+        font-size: 2rem;
+    }
+
+    .fd-why-cta {
+        padding-top: 78px;
+        padding-bottom: 82px;
+    }
+}

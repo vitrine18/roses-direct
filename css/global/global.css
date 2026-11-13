@@ -1,0 +1,787 @@
+/* =========================================================
+   FARM DIRECT — GLOBAL CSS
+   Premium Editorial Design System
+   ========================================================= */
+
+
+/* =========================================================
+   01 — DESIGN TOKENS
+   Colors • Typography • Layout • Radius • Shadows
+   ========================================================= */
+
+:root {
+
+    /* =========================
+       BRAND COLORS
+       ========================= */
+
+    --fd-green: #356B4C;
+    --fd-green-dark: #1F3D2E;
+    --fd-green-soft: #EAF2ED;
+
+    --fd-rose: #B86F68;
+
+    --fd-cream: #F4EFE6;
+    --fd-warm-white: #FAF8F3;
+    --fd-white: #FFFFFF;
+
+
+    /* =========================
+       TEXT COLORS
+       ========================= */
+
+    --fd-text: #26352D;
+    --fd-text-muted: #68736D;
+    --fd-text-soft: #b9cfc3;
+
+
+    /* =========================
+       BORDERS
+       ========================= */
+
+    --fd-border: rgba(31, 61, 46, 0.14);
+    --fd-border-light: #EEF1EF;
+
+
+    /* =========================
+       SURFACES
+       ========================= */
+
+    --fd-surface-soft: #FAFBFA;
+
+
+    /* =========================
+       TYPOGRAPHY
+       ========================= */
+
+    --fd-font-display: "Cormorant Garamond", serif;
+    --fd-font-body: "Inter", sans-serif;
+
+
+    /* =========================
+       LAYOUT
+       ========================= */
+
+    --fd-container-width: 1200px;
+
+
+    /* =========================
+       RADIUS
+       ========================= */
+
+    --fd-radius-sm: 10px;
+    --fd-radius-md: 14px;
+    --fd-radius-lg: 18px;
+
+
+    /* =========================
+       SHADOWS
+       ========================= */
+
+    --fd-shadow-soft:
+        0 10px 30px rgba(24, 33, 29, 0.06);
+
+    --fd-shadow-card:
+        0 18px 45px rgba(24, 33, 29, 0.08);
+
+
+    /* =========================
+       BUTTONS
+       ========================= */
+
+    --fd-btn-radius: 8px;
+
+    --fd-btn-transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+
+    --fd-btn-shadow:
+        0 8px 22px rgba(31, 61, 43, 0.16);
+
+    --fd-btn-shadow-hover:
+        0 12px 28px rgba(31, 61, 43, 0.22);
+
+    --fd-transition: 250ms ease;
+}
+
+
+/* =========================================================
+   02 — GLOBAL RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   03 — DOCUMENT
+   ========================================================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   04 — BODY
+   ========================================================= */
+
+body {
+    font-family: var(--fd-font-body);
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: var(--fd-text);
+    background: var(--fd-warm-white);
+
+    scrollbar-gutter: stable;
+}
+
+
+/* =========================================================
+   05 — TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.fd-title-xl,
+.fd-title-lg,
+.fd-title-md,
+.fd-section-number {
+    font-family: var(--fd-font-display);
+}
+
+
+/* =========================================================
+   06 — EDITORIAL TYPE SYSTEM
+   ========================================================= */
+
+
+/* XL — HERO / PRIMARY EDITORIAL TITLE */
+
+.fd-title-xl {
+    font-family: var(--fd-font-display);
+
+    font-size: clamp(4rem, 7.2vw, 7rem);
+
+    line-height: 0.9;
+
+    font-weight: 600;
+
+    letter-spacing: -0.055em;
+
+    color: var(--fd-text-soft);
+}
+
+
+/* LG — MAJOR SECTION TITLES */
+
+.fd-title-lg {
+    font-family: var(--fd-font-display);
+
+    font-size: clamp(4.8rem, 6.5vw, 6.4rem);
+
+    line-height: 0.92;
+
+    font-weight: 600;
+
+    letter-spacing: -0.055em;
+
+    color: var(--fd-text);
+}
+
+
+/* LIGHT TITLE */
+
+.fd-title-light {
+    color: var(--fd-text-soft);
+}
+
+
+/* MD — CARD / SECONDARY TITLES */
+
+.fd-title-md {
+    font-family: var(--fd-font-display);
+
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    letter-spacing: -0.015em;
+
+    color: var(--fd-text);
+}
+
+
+/* EYEBROW */
+
+.fd-eyebrow {
+    font-family: var(--fd-font-body), Inter, sans-serif;
+
+    font-size: 0.70rem;
+
+    line-height: 1.3;
+
+    font-weight: 500;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+
+.fd-eyebrow-light {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+.fd-terms-intro-content .fd-eyebrow,
+.fd-terms-item-content .fd-eyebrow,
+.fd-terms-note .fd-eyebrow {
+    margin: 0;
+
+    font-size: 0.68rem;
+    line-height: 1.2;
+    letter-spacing: 0.16em;
+    font-weight: 600;
+}
+
+
+.fd-terms-intro-content h2 em,
+.fd-terms-item-content h2 em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--fd-green);
+}
+
+
+
+
+/* DESCRIPTION */
+
+.fd-description {
+    font-family: var(--fd-font-body);
+
+    font-size: 1rem;
+
+    line-height: 1.5;
+
+    color: var(--fd-text-muted);
+}
+
+
+.fd-description-lg {
+    font-family: var(--fd-font-body);
+
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+
+    line-height: 1.75;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   07 — TITLE ACCENT
+   ========================================================= */
+
+.fd-title-accent {
+    display: block;
+
+    font-family: var(--fd-font-display);
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    font-size: 0.90em;
+
+    line-height: 0.95;
+
+    color: var(--fd-green);
+}
+
+
+/* =========================================================
+   08 — GLOBAL CONTAINER
+   ========================================================= */
+
+.fd-container {
+    width: 100%;
+
+    max-width: var(--fd-container-width);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+@media (min-width: 1280px) {
+
+    .fd-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   09 — GLOBAL SECTION
+   ========================================================= */
+
+.fd-section {
+    width: 100%;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   GLOBAL GREEN SECTION
+   ========================================================= */
+
+.fd-section-inner {
+    background-color: var(--fd-green-dark);
+
+    color: var(--fd-text-soft);
+}
+
+
+/* =========================================================
+   10 — GLOBAL SECTION HEADING
+   Editorial Center
+   ========================================================= */
+
+.fd-section-heading,
+.fd-section-heading-center {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* EYEBROW */
+
+.fd-section-heading .fd-eyebrow,
+.fd-section-heading-center .fd-eyebrow {
+    display: block;
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+/* MAIN TITLE */
+
+.fd-section-heading .fd-title-lg,
+.fd-section-heading-center .fd-title-lg {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+/* DESCRIPTION */
+
+.fd-section-heading .fd-description,
+.fd-section-heading .fd-description-lg,
+.fd-section-heading-center .fd-description,
+.fd-section-heading-center .fd-description-lg {
+    width: min(100%, 680px);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+
+
+/* =========================================================
+   11 — EDITORIAL NUMBER SYSTEM
+   ========================================================= */
+
+.fd-editorial-number,
+.fd-faq-number,
+.fd-section-number,
+.fd-step-number {
+
+    display: inline-block;
+
+    flex-shrink: 0;
+
+    font-family: var(--fd-font-display);
+
+    font-style: italic;
+
+    font-weight: 500;
+
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.045em;
+
+    font-variant-numeric: lining-nums;
+
+    color: var(--fd-green);
+
+    -webkit-font-smoothing: antialiased;
+
+    text-rendering: optimizeLegibility;
+}
+
+
+/* SECTION NUMBERS */
+
+.fd-section-number {
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+}
+
+
+/* FAQ NUMBERS */
+
+.fd-faq-number {
+    font-size: clamp(1.9rem, 2.8vw, 2.8rem);
+}
+
+
+/* STEP / JOURNEY NUMBERS */
+
+.fd-step-number {
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+
+/* =========================================================
+   12 — BUTTON BASE
+   ========================================================= */
+
+.fd-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 13px 28px;
+
+    border-radius: var(--fd-btn-radius);
+
+    border: 1px solid transparent;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.9375rem;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: 0.01em;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: var(--fd-btn-transition);
+}
+
+
+/* =========================================================
+   13 — PRIMARY BUTTON
+   ========================================================= */
+
+.fd-btn-primary {
+    background: var(--fd-green);
+
+    color: #ffffff;
+
+    box-shadow: var(--fd-btn-shadow);
+}
+
+
+.fd-btn-primary:hover {
+    background: var(--fd-green-dark);
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--fd-btn-shadow-hover);
+}
+
+
+/* =========================================================
+   14 — SECONDARY BUTTON
+   ========================================================= */
+
+.fd-btn-secondary {
+    background: transparent;
+
+    color: var(--fd-green);
+
+    border-color: var(--fd-green);
+
+    box-shadow: none;
+}
+
+
+.fd-btn-secondary:hover {
+    background: var(--fd-green);
+
+    color: #ffffff;
+
+    border-color: var(--fd-green);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   15 — OUTLINE BUTTON
+   ========================================================= */
+
+.fd-btn-outline {
+    background: transparent;
+
+    color: var(--fd-green);
+
+    border-color: rgba(53, 107, 76, 0.35);
+}
+
+
+.fd-btn-outline:hover {
+    background: rgba(53, 107, 76, 0.06);
+
+    border-color: var(--fd-green);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   16 — BUTTON SIZES
+   ========================================================= */
+
+.fd-btn-sm {
+    min-height: 42px;
+
+    padding: 11px 22px;
+
+    font-size: 0.875rem;
+}
+
+
+.fd-btn-lg {
+    min-height: 54px;
+
+    padding: 15px 32px;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   17 — BUTTON ACCESSIBILITY
+   ========================================================= */
+
+.fd-btn:focus-visible {
+    outline: 2px solid rgba(53, 107, 76, 0.35);
+
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   18 — TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) {
+
+    .fd-btn:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   19 — GLOBAL RESPONSIVE SYSTEM
+   MOBILE EDITORIAL
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    /* =========================
+       CONTAINERS
+       ========================= */
+
+    .fd-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    /* =========================
+       EDITORIAL TYPOGRAPHY
+       ========================= */
+
+    .fd-title-xl {
+        font-size: clamp(3rem, 13vw, 4.5rem);
+
+        line-height: 0.92;
+
+        letter-spacing: -0.045em;
+    }
+
+
+    .fd-title-lg {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+
+        line-height: 0.94;
+
+        letter-spacing: -0.045em;
+    }
+
+
+    .fd-title-md {
+        font-size: clamp(1.65rem, 7vw, 2.2rem);
+    }
+
+
+    .fd-title-accent {
+        font-size: 0.90em;
+    }
+
+
+    /* =========================
+       EDITORIAL NUMBERS
+       ========================= */
+
+    .fd-section-number {
+        font-size: 2.5rem;
+    }
+
+
+    .fd-editorial-number {
+        font-size: 2.15rem;
+    }
+
+
+    .fd-faq-number {
+        font-size: 2rem;
+    }
+
+
+    .fd-step-number {
+        font-size: 2.15rem;
+    }
+
+
+    /* =========================
+       EYEBROWS
+       ========================= */
+
+    .fd-eyebrow {
+        font-size: 0.66rem;
+
+        letter-spacing: 0.14em;
+    }
+
+
+    /* =========================
+       BUTTONS
+       ========================= */
+
+    .fd-btn {
+        min-height: 46px;
+
+        padding: 12px 24px;
+
+        font-size: 0.9375rem;
+    }
+
+
+    .fd-btn-lg {
+        min-height: 50px;
+
+        padding: 13px 26px;
+    }
+
+}
+
+
+/* =========================================================
+   20 — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    /* =========================
+       EDITORIAL TYPOGRAPHY
+       ========================= */
+
+    .fd-title-xl {
+        font-size: clamp(2.75rem, 14vw, 3.6rem);
+
+        line-height: 0.93;
+    }
+
+
+    .fd-title-lg {
+        font-size: clamp(2.6rem, 13vw, 3.4rem);
+
+        line-height: 0.95;
+    }
+
+
+    .fd-title-md {
+        font-size: 1.7rem;
+    }
+
+
+    .fd-eyebrow {
+        font-size: 0.62rem;
+
+        letter-spacing: 0.12em;
+    }
+
+}

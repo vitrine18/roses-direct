@@ -1,0 +1,856 @@
+/* =========================================================
+   FARM DIRECT — EDITORIAL FOOTER
+   Magazine / Editorial Brand System
+   ========================================================= */
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.fd-footer {
+
+    position: relative;
+
+    background:
+        var(--fd-cream);
+
+    color:
+        var(--fd-green-dark);
+
+    padding-top:
+        clamp(80px, 10vw, 140px);
+
+    padding-bottom:
+        28px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN FOOTER CONTAINER
+   ========================================================= */
+
+.fd-footer-container {
+
+    width:
+        min(100% - 48px, 1380px);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(420px, 0.9fr);
+
+    gap:
+        clamp(70px, 10vw, 160px);
+
+    align-items:
+        start;
+}
+
+
+/* =========================================================
+   BRAND / EDITORIAL AREA
+   ========================================================= */
+
+.fd-footer-brand {
+
+    max-width:
+        720px;
+}
+
+
+/* =========================================================
+   TOP MICRO INFORMATION
+   ========================================================= */
+
+.fd-footer-brand-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom:
+        30px;
+}
+
+
+.fd-footer-index {
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.12em;
+
+    color:
+        var(--fd-green);
+}
+
+
+.fd-footer-location {
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.65rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.14em;
+
+    text-transform:
+        uppercase;
+
+    color:
+        var(--fd-text-muted);
+}
+
+
+.fd-footer-brand-top::after {
+
+    content: "";
+
+    width:
+        45px;
+
+    height:
+        1px;
+
+    background:
+        var(--fd-border);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.fd-footer-logo {
+
+    display:
+        inline-flex;
+
+    margin-bottom:
+        28px;
+
+    padding:
+        20px 0;
+
+    text-decoration:
+        none;
+}
+
+
+.fd-footer-logo img {
+
+    display:
+        block;
+
+    width:
+        auto;
+
+    height:
+        125px;
+
+    object-fit:
+        contain;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.fd-footer-eyebrow {
+
+    display:
+        block;
+
+    margin-bottom:
+        18px;
+
+    color:
+        var(--fd-green);
+}
+
+
+/* =========================================================
+   MAIN EDITORIAL TITLE
+   ========================================================= */
+
+.fd-footer-brand h2 {
+
+    max-width:
+        720px;
+
+    margin:
+        0 0 28px;
+
+    font-family:
+        var(--fd-font-display);
+
+    font-size:
+        clamp(3.2rem, 6.2vw, 6.4rem);
+
+    line-height:
+        0.96;
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        -0.035em;
+
+    color:
+        var(--fd-green-dark);
+}
+
+
+.fd-footer-brand h2 span {
+
+    display:
+        block;
+
+    color:
+        var(--fd-green);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.fd-footer-intro {
+
+    max-width:
+        470px;
+
+    margin:
+        0;
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.92rem;
+
+    line-height:
+        1.75;
+
+    color:
+        var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.fd-footer-navigation {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap:
+        34px;
+
+    padding-top:
+        92px;
+}
+
+
+/* =========================================================
+   FOOTER COLUMN
+   ========================================================= */
+
+.fd-footer-column {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+}
+
+
+/* =========================================================
+   COLUMN LABEL
+   ========================================================= */
+
+.fd-footer-label {
+
+    margin-bottom:
+        22px;
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.14em;
+
+    text-transform:
+        uppercase;
+
+    color:
+        var(--fd-green);
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+   ========================================================= */
+
+.fd-footer-column a {
+
+    position:
+        relative;
+
+    width:
+        fit-content;
+
+    padding:
+        6px 0;
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.86rem;
+
+    line-height:
+        1.5;
+
+    color:
+        var(--fd-green-dark);
+
+    text-decoration:
+        none;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.fd-footer-column a::before {
+
+    content:
+        "→";
+
+    position:
+        absolute;
+
+    left:
+        -18px;
+
+    opacity:
+        0;
+
+    transform:
+        translateX(-5px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.fd-footer-column a:hover {
+
+    color:
+        var(--fd-green);
+
+    transform:
+        translateX(4px);
+}
+
+
+.fd-footer-column a:hover::before {
+
+    opacity:
+        1;
+
+    transform:
+        translateX(0);
+}
+
+
+/* =========================================================
+   EDITORIAL STATEMENT
+   ========================================================= */
+
+.fd-footer-statement {
+
+    width:
+        min(100% - 48px, 1380px);
+
+    margin:
+        clamp(90px, 12vw, 160px) auto 0;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(40px, 1fr)
+        auto
+        minmax(40px, 1fr);
+
+    align-items:
+        center;
+
+    gap:
+        24px;
+}
+
+
+.fd-footer-statement-line {
+
+    height:
+        1px;
+
+    background:
+        var(--fd-border);
+}
+
+
+.fd-footer-statement p {
+
+    margin:
+        0;
+
+    text-align:
+        center;
+
+    font-family:
+        var(--fd-font-display);
+
+    font-size:
+        clamp(1.6rem, 3vw, 2.8rem);
+
+    line-height:
+        1;
+
+    font-weight:
+        500;
+
+    color:
+        var(--fd-green-dark);
+}
+
+
+.fd-footer-statement p span {
+
+    color:
+        var(--fd-green);
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.fd-footer-divider {
+
+    width:
+        min(100% - 48px, 1380px);
+
+    height:
+        1px;
+
+    margin:
+        44px auto 24px;
+
+    background:
+        var(--fd-border);
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.fd-footer-bottom {
+
+    width:
+        min(100% - 48px, 1380px);
+
+    margin:
+        0 auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        auto
+        1fr;
+
+    align-items:
+        center;
+
+    gap:
+        24px;
+}
+
+
+/* =========================================================
+   LEGAL LINKS
+   ========================================================= */
+
+.fd-footer-legal {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        16px;
+}
+
+
+.fd-footer-legal a {
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.65rem;
+
+    color:
+        var(--fd-text-muted);
+
+    text-decoration:
+        none;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+.fd-footer-legal a:hover {
+
+    color:
+        var(--fd-green-dark);
+}
+
+
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+.fd-footer-copyright {
+
+    margin:
+        0;
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.65rem;
+
+    color:
+        var(--fd-text-muted);
+
+    white-space:
+        nowrap;
+}
+
+
+/* =========================================================
+   ROUTE
+   ========================================================= */
+
+.fd-footer-route {
+
+    margin:
+        0;
+
+    text-align:
+        right;
+
+    font-family:
+        var(--fd-font-body);
+
+    font-size:
+        0.65rem;
+
+    font-weight:
+        500;
+
+    color:
+        var(--fd-green);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .fd-footer-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            70px;
+    }
+
+
+    .fd-footer-navigation {
+
+        padding-top:
+            0;
+    }
+
+
+    .fd-footer-brand h2 {
+
+        max-width:
+            700px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .fd-footer {
+
+        padding-top:
+            70px;
+
+        padding-bottom:
+            24px;
+    }
+
+
+    .fd-footer-container {
+
+        width:
+            min(100% - 40px, 1380px);
+
+        gap:
+            58px;
+    }
+
+
+    /* -----------------------------------------------------
+       BRAND
+       ----------------------------------------------------- */
+
+    .fd-footer-brand h2 {
+
+        font-size:
+            clamp(3rem, 15vw, 4.8rem);
+
+        line-height:
+            0.9;
+
+        letter-spacing:
+            -0.04em;
+    }
+
+
+    .fd-footer-logo img {
+
+        height:
+            90px;
+    }
+
+
+    .fd-footer-intro {
+
+        max-width:
+            100%;
+
+        font-size:
+            0.9rem;
+    }
+
+
+    /* -----------------------------------------------------
+       NAVIGATION
+       ----------------------------------------------------- */
+
+    .fd-footer-navigation {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            42px 28px;
+    }
+
+
+    .fd-footer-column:last-child {
+
+        grid-column:
+            1 / -1;
+    }
+
+
+    /* -----------------------------------------------------
+       STATEMENT
+       ----------------------------------------------------- */
+
+    .fd-footer-statement {
+
+        width:
+            min(100% - 40px, 1380px);
+
+        margin-top:
+            90px;
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            18px;
+    }
+
+
+    .fd-footer-statement-line {
+
+        width:
+            100%;
+    }
+
+
+    .fd-footer-statement p {
+
+        font-size:
+            2rem;
+
+        padding:
+            8px 0;
+    }
+
+
+    /* -----------------------------------------------------
+       DIVIDER
+       ----------------------------------------------------- */
+
+    .fd-footer-divider {
+
+        width:
+            min(100% - 40px, 1380px);
+
+        margin-top:
+            65px;
+    }
+
+
+    /* -----------------------------------------------------
+       BOTTOM
+       ----------------------------------------------------- */
+
+    .fd-footer-bottom {
+
+        width:
+            min(100% - 40px, 1380px);
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            14px;
+
+        align-items:
+            start;
+    }
+
+
+    .fd-footer-copyright {
+
+        white-space:
+            normal;
+    }
+
+
+    .fd-footer-route {
+
+        text-align:
+            left;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-footer-brand h2 {
+
+        font-size:
+            2.8rem;
+    }
+
+
+    .fd-footer-navigation {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .fd-footer-column:last-child {
+
+        grid-column:
+            auto;
+    }
+
+
+    .fd-footer-statement p {
+
+        font-size:
+            1.7rem;
+    }
+
+}
+
+
+
+.fd-footer-logo img {
+    height: 125px !important;
+    width: auto !important;
+    max-width: 100% !important;
+}

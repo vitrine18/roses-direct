@@ -1,0 +1,1355 @@
+/* =========================================================
+   FARM DIRECT ROSES
+   GARDEN ROSES — PRODUCT PAGE
+
+   Editorial category page
+   Shared visual system with Standard / Spray / Tinted
+   ========================================================= */
+
+
+/* =========================================================
+   01 — PAGE
+   ========================================================= */
+
+.gr-page {
+    background: var(--fd-cream);
+    color: var(--fd-text);
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   02 — HERO
+   ========================================================= */
+
+.gr-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--fd-green-dark);
+
+    color: var(--fd-white);
+
+    padding-block:
+        clamp(80px, 9vw, 135px)
+        clamp(85px, 10vw, 145px);
+}
+
+
+/* =========================================================
+   HERO — EDITORIAL CIRCLES
+   ========================================================= */
+
+.gr-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width:
+        clamp(480px, 54vw, 860px);
+
+    height:
+        clamp(480px, 54vw, 860px);
+
+    right:
+        clamp(-340px, -18vw, -170px);
+
+    top:
+        clamp(-280px, -16vw, -120px);
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-white) 10%,
+            transparent
+        );
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.gr-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width:
+        clamp(300px, 34vw, 560px);
+
+    height:
+        clamp(300px, 34vw, 560px);
+
+    right:
+        clamp(-180px, -9vw, -70px);
+
+    bottom:
+        clamp(-210px, -11vw, -90px);
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-white) 7%,
+            transparent
+        );
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO — INNER / GRID
+   ========================================================= */
+
+.gr-hero-inner {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
+    gap: clamp(55px, 7vw, 110px);
+
+    align-items: center;
+}
+
+
+
+/* =========================================================
+   HERO — CONTENT
+   ========================================================= */
+
+.gr-product-copy {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 650px;
+}
+
+
+.gr-eyebrow {
+
+    margin-bottom: 25px;
+}
+
+
+.gr-title {
+
+    max-width: 700px;
+
+    margin: 0;
+}
+
+
+.gr-title em {
+
+    display: block;
+
+    font-weight: 400;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   HERO — DESCRIPTION
+   ========================================================= */
+
+.gr-description {
+
+    max-width: 570px;
+
+    margin-top: 32px;
+}
+
+
+/* =========================================================
+   HERO — ACTIONS
+   ========================================================= */
+
+.gr-hero .fd-rose-hero-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px 14px;
+
+    margin-top: 38px;
+}
+
+
+/* =========================================================
+   HERO — VISUAL
+   ========================================================= */
+
+.gr-hero .fd-rose-hero-visual {
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* =========================================================
+   HERO — IMAGE
+   ========================================================= */
+
+.gr-hero .fd-rose-hero-image-wrap {
+
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 4 / 5;
+
+    background: var(--fd-green);
+
+    box-shadow:
+        0 28px 65px
+        color-mix(
+            in srgb,
+            var(--fd-green-dark) 35%,
+            transparent
+        );
+}
+
+
+.gr-hero .fd-rose-hero-image-wrap::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-white) 18%,
+            transparent
+        );
+
+    pointer-events: none;
+}
+
+
+.gr-hero .fd-rose-hero-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform
+        .8s
+        cubic-bezier(.2, .7, .2, 1);
+}
+
+
+.gr-hero .fd-rose-hero-image-wrap:hover
+.fd-rose-hero-image {
+
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   HERO — CAPTION
+   ========================================================= */
+
+.gr-hero .fd-rose-image-caption {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding-top: 13px;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    letter-spacing: .15em;
+
+    text-transform: uppercase;
+
+    opacity: .62;
+}
+
+
+/* =========================================================
+   03 — INTRO
+   ========================================================= */
+
+.gr-page .fd-rose-intro {
+
+    background: var(--fd-cream);
+
+    padding-block:
+        clamp(90px, 10vw, 150px);
+}
+
+
+.gr-page .fd-rose-intro-copy {
+
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.gr-page .fd-rose-intro-label {
+
+    margin-bottom: 28px;
+}
+
+
+.gr-page .fd-rose-intro-copy .fd-title-lg {
+
+    max-width: 780px;
+
+    margin: 0;
+}
+
+
+.gr-page .fd-rose-intro-copy .fd-title-lg em {
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.gr-page .fd-rose-intro-copy .fd-description {
+
+    max-width: 650px;
+}
+
+
+.gr-page .fd-rose-intro-copy .fd-description:first-of-type {
+
+    margin-top: 32px;
+}
+
+
+.gr-page .fd-rose-intro-copy .fd-description + .fd-description {
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   04 — WHAT DEFINES THEM
+   ========================================================= */
+
+.gr-page .fd-rose-features {
+
+    background: var(--fd-warm-white);
+
+    padding-block:
+        clamp(90px, 9vw, 135px);
+}
+
+
+/* The entire heading block is centered,
+   not only the text inside it. */
+
+.gr-page .fd-rose-features .fd-section-heading {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom:
+        clamp(45px, 5vw, 65px);
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.gr-page .fd-section-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.gr-page .fd-rose-features .fd-section-heading .fd-title-lg {
+
+    width: 100%;
+
+    max-width: 780px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+.gr-page .fd-rose-features .fd-section-heading .fd-title-lg em {
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   FEATURES — GRID
+   ========================================================= */
+
+.gr-page .fd-rose-feature-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-green-dark) 16%,
+            transparent
+        );
+}
+
+
+/* =========================================================
+   FEATURE CARD
+   ========================================================= */
+
+.gr-page .fd-rose-feature {
+
+    position: relative;
+
+    padding:
+        30px
+        32px
+        20px
+        0;
+}
+
+
+.gr-page .fd-rose-feature + .fd-rose-feature {
+
+    padding-left: 32px;
+
+    border-left:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-green-dark) 16%,
+            transparent
+        );
+}
+
+
+.gr-page .fd-rose-feature-number {
+
+    margin-bottom: 28px;
+
+    font-family: var(--fd-font-display);
+
+    font-size: 17px;
+
+    line-height: 1;
+
+    font-style: italic;
+
+    color: var(--fd-green);
+}
+
+
+.gr-page .fd-rose-feature h3 {
+
+    max-width: 280px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-display);
+
+    font-size:
+        clamp(27px, 2.5vw, 38px);
+
+    line-height: .95;
+
+    font-weight: 500;
+
+    color: var(--fd-green-dark);
+}
+
+
+.gr-page .fd-rose-feature p {
+
+    max-width: 340px;
+
+    margin: 20px 0 0;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: var(--fd-text-soft);
+}
+
+
+/* =========================================================
+   05 — SPECIFICATIONS
+   ========================================================= */
+
+.gr-page .fd-rose-specifications {
+
+    background: var(--fd-green-dark);
+
+    color: var(--fd-white);
+
+    padding-block:
+        clamp(95px, 10vw, 150px);
+}
+
+
+.gr-page .fd-rose-spec-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, .85fr)
+        minmax(420px, 1.15fr);
+
+    gap:
+        clamp(60px, 10vw, 145px);
+
+    align-items: start;
+}
+
+
+.gr-page .fd-rose-spec-intro {
+
+    position: sticky;
+
+    top: 120px;
+}
+
+
+.gr-page .fd-rose-spec-intro .fd-eyebrow {
+
+    margin-bottom: 20px;
+}
+
+
+.gr-page .fd-rose-spec-intro .fd-title-lg {
+
+    max-width: 520px;
+
+    margin: 0;
+}
+
+
+.gr-page .fd-rose-spec-intro .fd-title-lg em {
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.gr-page .fd-rose-spec-intro p {
+
+    max-width: 470px;
+
+    margin: 28px 0 0;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+
+    font-weight: 300;
+
+    opacity: .72;
+}
+
+
+/* =========================================================
+   SPECIFICATIONS — LIST
+   ========================================================= */
+
+.gr-page .fd-rose-spec-list {
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-white) 17%,
+            transparent
+        );
+}
+
+
+.gr-page .fd-rose-spec-row {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(130px, .7fr)
+        minmax(180px, 1fr);
+
+    gap: 30px;
+
+    padding: 21px 0;
+
+    border-bottom:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-white) 10%,
+            transparent
+        );
+}
+
+
+.gr-page .fd-rose-spec-label {
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    letter-spacing: .15em;
+
+    text-transform: uppercase;
+
+    opacity: .48;
+}
+
+
+.gr-page .fd-rose-spec-value {
+
+    font-family: var(--fd-font-display);
+
+    font-size:
+        clamp(20px, 2vw, 27px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    opacity: .88;
+}
+
+
+/* =========================================================
+   06 — FEATURED GARDEN ROSES
+   ========================================================= */
+
+.gr-page .fd-rose-varieties {
+
+    background: var(--fd-cream);
+
+    padding-block:
+        clamp(90px, 9vw, 135px)
+        clamp(100px, 10vw, 150px);
+}
+
+
+.gr-page .fd-rose-varieties-heading {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(260px, .55fr);
+
+    gap: 60px;
+
+    align-items: end;
+
+    margin-bottom: 50px;
+}
+
+
+.gr-page .fd-rose-varieties-heading .fd-description {
+
+    max-width: 390px;
+
+    margin:
+        0
+        0
+        4px
+        auto;
+}
+
+
+/* =========================================================
+   VARIETY GRID
+   ========================================================= */
+
+.gr-page .fd-rose-variety-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   VARIETY CARD
+   ========================================================= */
+
+.gr-page .fd-rose-variety-card {
+
+    display: block;
+
+    overflow: hidden;
+
+    background: var(--fd-warm-white);
+
+    color: var(--fd-text);
+
+    text-decoration: none;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-green-dark) 8%,
+            transparent
+        );
+
+    transition:
+        transform .4s
+        cubic-bezier(.2, .7, .2, 1),
+        box-shadow .4s ease,
+        border-color .3s ease;
+}
+
+
+.gr-page .fd-rose-variety-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--fd-green-dark) 18%,
+            transparent
+        );
+
+    box-shadow:
+        0 22px 50px
+        color-mix(
+            in srgb,
+            var(--fd-green-dark) 12%,
+            transparent
+        );
+}
+
+
+/* =========================================================
+   VARIETY IMAGE
+   ========================================================= */
+
+.gr-page .fd-rose-variety-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 4 / 5;
+
+    background: var(--fd-green);
+}
+
+
+.gr-page .fd-rose-variety-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .7s
+        cubic-bezier(.2, .7, .2, 1);
+}
+
+
+.gr-page .fd-rose-variety-card:hover
+.fd-rose-variety-image img {
+
+    transform: scale(1.045);
+}
+
+
+/* =========================================================
+   VARIETY NUMBER
+   Numbers stay ONLY inside cards.
+   ========================================================= */
+
+.gr-page .fd-rose-variety-index {
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 30px;
+
+    height: 30px;
+
+    padding: 0 8px;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--fd-white) 38%,
+            transparent
+        );
+
+    background:
+        color-mix(
+            in srgb,
+            var(--fd-green-dark) 42%,
+            transparent
+        );
+
+    color: var(--fd-white);
+
+    font-family: var(--fd-font-display);
+
+    font-size: 15px;
+
+    font-style: italic;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   VARIETY CONTENT
+   ========================================================= */
+
+.gr-page .fd-rose-variety-content {
+
+    padding:
+        22px
+        21px
+        25px;
+}
+
+
+.gr-page .fd-rose-variety-meta {
+
+    margin-bottom: 9px;
+
+    font-size: 8px;
+
+    line-height: 1.4;
+
+    letter-spacing: .15em;
+
+    text-transform: uppercase;
+
+    color: var(--fd-text-muted);
+}
+
+
+.gr-page .fd-rose-variety-content h3 {
+
+    margin: 0;
+
+    font-family: var(--fd-font-display);
+
+    font-size:
+        clamp(30px, 3vw, 40px);
+
+    line-height: .9;
+
+    font-weight: 500;
+
+    color: var(--fd-green-dark);
+}
+
+
+.gr-page .fd-rose-variety-content p {
+
+    max-width: 300px;
+
+    margin: 15px 0 20px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: var(--fd-text-soft);
+}
+
+
+.gr-page .fd-rose-variety-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+
+    transition:
+        gap .25s ease;
+}
+
+
+.gr-page .fd-rose-variety-card:hover
+.fd-rose-variety-link {
+
+    gap: 11px;
+}
+
+
+/* =========================================================
+   07 — FINAL CTA
+   ========================================================= */
+
+.gr-page .fd-rose-catalog-cta {
+
+    background: var(--fd-green);
+
+    color: var(--fd-white);
+
+    padding-block:
+        clamp(95px, 10vw, 150px);
+}
+
+
+.gr-page .fd-rose-catalog-inner {
+
+    max-width: 920px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+.gr-page .fd-rose-catalog-content {
+
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.gr-page .fd-rose-catalog-content .fd-eyebrow {
+
+    margin-bottom: 22px;
+}
+
+
+.gr-page .fd-rose-catalog-content .fd-title-lg {
+
+    max-width: 720px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.gr-page .fd-rose-catalog-content .fd-title-lg em {
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.gr-page .fd-rose-catalog-content .fd-description-lg {
+
+    max-width: 620px;
+
+    margin:
+        28px
+        auto
+        0;
+}
+
+
+.gr-page .fd-rose-catalog-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px 14px;
+
+    margin-top: 38px;
+}
+
+
+/* =========================================================
+   08 — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .gr-hero {
+
+        padding-block:
+            75px
+            100px;
+    }
+
+
+    .gr-hero-inner {
+
+        width: 100%;
+    }
+
+
+    .gr-page .fd-rose-spec-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .gr-page .fd-rose-spec-intro {
+
+        position: static;
+    }
+
+
+    .gr-page .fd-rose-varieties-heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .gr-page .fd-rose-varieties-heading .fd-description {
+
+        margin: 0;
+
+        max-width: 520px;
+    }
+
+
+    .gr-page .fd-rose-variety-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   09 — MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .gr-hero {
+
+        padding-block:
+            60px
+            80px;
+    }
+
+
+    .gr-hero::before {
+
+        width: 520px;
+
+        height: 520px;
+
+        right: -330px;
+
+        top: -190px;
+    }
+
+
+    .gr-hero::after {
+
+        width: 360px;
+
+        height: 360px;
+
+        right: -210px;
+
+        bottom: -150px;
+    }
+
+
+    .gr-page .fd-rose-hero-grid {
+
+        gap: 48px;
+    }
+
+
+    .gr-page .fd-rose-hero-actions,
+    .gr-page .fd-rose-catalog-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .gr-page .fd-rose-hero-actions .fd-btn,
+    .gr-page .fd-rose-catalog-actions .fd-btn {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .gr-page .fd-rose-intro {
+
+        padding-block: 80px;
+    }
+
+
+    .gr-page .fd-rose-features {
+
+        padding-block: 80px;
+    }
+
+
+    .gr-page .fd-rose-features
+    .fd-section-heading {
+
+        margin-bottom: 45px;
+    }
+
+
+    .gr-page .fd-rose-feature-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .gr-page .fd-rose-feature {
+
+        padding:
+            25px
+            0
+            30px;
+    }
+
+
+    .gr-page .fd-rose-feature
+    + .fd-rose-feature {
+
+        padding-left: 0;
+
+        border-left: 0;
+
+        border-top:
+            1px solid
+            color-mix(
+                in srgb,
+                var(--fd-green-dark) 16%,
+                transparent
+            );
+    }
+
+
+    .gr-page .fd-rose-feature-number {
+
+        margin-bottom: 20px;
+    }
+
+
+    .gr-page .fd-rose-specifications {
+
+        padding-block: 80px;
+    }
+
+
+    .gr-page .fd-rose-spec-grid {
+
+        gap: 45px;
+    }
+
+
+    .gr-page .fd-rose-spec-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        padding: 18px 0;
+    }
+
+
+    .gr-page .fd-rose-spec-value {
+
+        font-size: 24px;
+    }
+
+
+    .gr-page .fd-rose-varieties {
+
+        padding-block:
+            80px
+            90px;
+    }
+
+
+    .gr-page .fd-rose-variety-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 13px;
+    }
+
+
+    .gr-page .fd-rose-variety-content {
+
+        padding:
+            17px
+            14px
+            20px;
+    }
+
+
+    .gr-page .fd-rose-variety-content h3 {
+
+        font-size: 28px;
+    }
+
+
+    .gr-page .fd-rose-variety-content p {
+
+        font-size: 11px;
+
+        margin-top: 12px;
+    }
+
+
+    .gr-page .fd-rose-catalog-cta {
+
+        padding-block: 85px;
+    }
+
+}
+
+
+/* =========================================================
+   10 — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .gr-page .fd-rose-image-caption {
+
+        font-size: 8px;
+    }
+
+
+    .gr-page .fd-rose-intro-copy
+    .fd-description {
+
+        font-size: 14px;
+    }
+
+
+    .gr-page .fd-rose-variety-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .gr-page .fd-rose-variety-image {
+
+        aspect-ratio: 4 / 5;
+    }
+
+
+    .gr-page .fd-rose-variety-content h3 {
+
+        font-size: 31px;
+    }
+
+
+    .gr-page .fd-rose-variety-content p {
+
+        max-width: 340px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   11 — REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gr-page *,
+    .gr-page *::before,
+    .gr-page *::after {
+
+        scroll-behavior: auto;
+
+        transition: none;
+
+        animation: none;
+    }
+
+}

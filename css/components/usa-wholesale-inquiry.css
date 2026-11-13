@@ -1,0 +1,840 @@
+/* =========================================================
+   FARM DIRECT — USA ROSE INQUIRY
+   Editorial Inquiry Experience
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fd-inquiry-hero {
+    padding-top: clamp(105px, 12vw, 155px);
+    padding-bottom: clamp(95px, 10vw, 135px);
+
+    background: var(--fd-green-dark);
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.fd-inquiry-hero-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.fd-inquiry-hero-copy {
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.fd-inquiry-hero .fd-eyebrow {
+    margin-bottom: 28px;
+
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.fd-inquiry-hero .fd-title-xl {
+    max-width: 950px;
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.fd-inquiry-hero .fd-title-accent {
+    color: #ffffff;
+}
+
+.fd-inquiry-hero-rule {
+    width: min(100%, 150px);
+    height: 1px;
+
+    margin: 36px auto 32px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.fd-inquiry-hero .fd-description-lg {
+    max-width: 720px;
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.fd-inquiry-hero-note {
+    max-width: 650px;
+
+    margin: 26px auto 0;
+
+    font-size: 0.92rem;
+    line-height: 1.75;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.fd-inquiry-hero-note strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.fd-inquiry-intro {
+    padding-top: clamp(100px, 10vw, 135px);
+    padding-bottom: clamp(105px, 11vw, 145px);
+
+    background: var(--fd-cream);
+}
+
+.fd-inquiry-intro .fd-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.fd-inquiry-intro .fd-eyebrow {
+    margin-bottom: 25px;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-inquiry-intro .fd-title-lg {
+    max-width: 780px;
+    margin: 0;
+}
+
+.fd-inquiry-intro .fd-description {
+    max-width: 720px;
+
+    margin-top: 32px;
+}
+
+.fd-inquiry-intro .fd-description + .fd-description {
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   FORM SECTION
+   ========================================================= */
+
+.fd-inquiry-form-section {
+    padding-top: clamp(90px, 10vw, 135px);
+    padding-bottom: clamp(100px, 11vw, 150px);
+
+    background: var(--fd-warm-white);
+}
+
+.fd-inquiry-form {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   FORM SECTIONS
+   ========================================================= */
+
+.fd-form-section {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+
+.fd-form-section + .fd-form-section {
+   
+    margin-top: clamp(85px, 9vw, 125px);
+   
+}
+
+
+/* =========================================================
+   FORM HEADING
+   ========================================================= */
+
+.fd-form-heading {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(2.9rem, 5vw, 4.8rem);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+
+    color: var(--fd-green-dark);
+}
+
+
+/* =========================================================
+   FORM INTRO
+   ========================================================= */
+
+.fd-form-intro {
+    max-width: 650px;
+
+    margin: 22px 0 0;
+
+    font-size: 0.96rem;
+    line-height: 1.75;
+
+    color: #707873;
+}
+
+
+/* =========================================================
+   FORM GRID
+   ========================================================= */
+
+.fd-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 38px 48px;
+
+    margin-top: 48px;
+}
+
+
+.fd-order-grid {
+    margin-top: 42px;
+    row-gap: 38px;
+    column-gap: 48px;
+}
+
+
+.fd-order-grid .fd-field-full {
+    transform: translateY(-50px);
+}
+
+
+
+/* =========================================================
+   FORM FIELDS
+   ========================================================= */
+
+.fd-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.fd-field-full {
+    grid-column: 1 / -1;
+}
+
+.fd-field label {
+    margin-bottom: 11px;
+
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-field label > span[aria-hidden="true"] {
+    color: var(--fd-green);
+}
+
+.fd-label-optional {
+    margin-left: 6px;
+
+    font-size: 0.68rem;
+    font-weight: 400;
+
+    letter-spacing: 0;
+    text-transform: none;
+
+    color: #8A918C;
+}
+
+.fd-field input,
+.fd-field select,
+.fd-field textarea {
+    width: 100%;
+
+    border: 0;
+    border-bottom: 1px solid #C9CEC9;
+    border-radius: 0;
+
+    background: transparent;
+
+    padding: 13px 2px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.98rem;
+    line-height: 1.5;
+
+    color: #26342D;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.fd-field select {
+    appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 28px;
+
+    background-image:
+        linear-gradient(45deg, transparent 50%, #356B4C 50%),
+        linear-gradient(135deg, #356B4C 50%, transparent 50%);
+
+    background-position:
+        calc(100% - 8px) 52%,
+        calc(100% - 3px) 52%;
+
+    background-size:
+        5px 5px,
+        5px 5px;
+
+    background-repeat: no-repeat;
+}
+
+.fd-field textarea {
+    min-height: 155px;
+
+    resize: vertical;
+}
+
+.fd-field input::placeholder,
+.fd-field textarea::placeholder {
+    color: #9A9F9B;
+}
+
+.fd-field input:focus,
+.fd-field select:focus,
+.fd-field textarea:focus {
+    border-bottom-color: var(--fd-green);
+
+    background: rgba(244, 239, 230, 0.42);
+}
+
+.fd-field-readonly {
+    color: #7A817C;
+    cursor: default;
+}
+
+
+/* =========================================================
+   FIRST-TIME BUYER FEATURE
+   ========================================================= */
+
+.fd-first-buyer-note {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.28fr)
+        minmax(0, 1.72fr);
+
+    gap: 55px;
+
+    margin-top: clamp(80px, 9vw, 125px);
+    padding: clamp(50px, 6vw, 78px);
+
+    background: var(--fd-green-dark);
+
+    color: #ffffff;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.fd-first-buyer-note::after {
+    content: "";
+
+    position: absolute;
+
+    width: 310px;
+    height: 310px;
+
+    right: -145px;
+    bottom: -175px;
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 50%;
+}
+
+.fd-first-buyer-mark {
+    display: flex;
+    align-items: flex-start;
+}
+
+.fd-first-buyer-mark::before {
+    content: "FARM DIRECT";
+
+    display: block;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.67rem;
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.fd-first-buyer-note .fd-eyebrow {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.fd-first-buyer-note h2 {
+    max-width: 780px;
+
+    margin: 18px 0 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(3.1rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 0.91;
+    letter-spacing: -0.025em;
+
+    color: #ffffff;
+}
+
+.fd-first-buyer-note h2 .fd-title-accent {
+    color: #ffffff;
+}
+
+.fd-first-buyer-note p {
+    max-width: 660px;
+
+    margin: 31px 0 0;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.76);
+}
+
+
+/* =========================================================
+   SUBMIT AREA
+   ========================================================= */
+
+.fd-form-submit {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 18px 30px;
+
+    margin-top: 42px;
+    padding-top: 32px;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.2);
+}
+
+.fd-submit-btn {
+    min-width: 225px;
+}
+
+.fd-submit-note {
+    margin: 0;
+
+    font-size: 0.86rem;
+    line-height: 1.6;
+
+    color: #707873;
+}
+
+.fd-submit-note strong {
+    color: var(--fd-green-dark);
+    font-weight: 600;
+}
+
+.fd-submit-logistics {
+    flex-basis: 100%;
+
+    margin: 3px 0 0;
+
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    color: #8A918C;
+}
+
+.fd-submit-logistics span {
+    margin: 0 7px;
+    color: var(--fd-green);
+}
+
+
+/* =========================================================
+   FIRST-TIME BUYER — EDITORIAL FEATURE
+========================================================= */
+
+.fd-first-buyer-note {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 90px;
+    align-items: stretch;
+
+    margin-top: clamp(90px, 11vw, 145px);
+
+    padding: clamp(58px, 7vw, 92px) clamp(38px, 6vw, 78px);
+
+    background: var(--fd-green-dark);
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+.fd-first-buyer-content {
+    max-width: 780px;
+}
+
+.fd-first-buyer-note .fd-eyebrow {
+    margin-bottom: 24px;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.fd-first-buyer-note h2 {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(3.3rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+}
+
+.fd-first-buyer-note h2 .fd-title-accent {
+    color: #ffffff;
+}
+
+.fd-first-buyer-note p:not(.fd-eyebrow) {
+    max-width: 620px;
+
+    margin: 32px 0 0;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.74);
+}
+
+
+/* =========================================================
+   EDITORIAL SIDE LINE
+========================================================= */
+
+.fd-first-buyer-line {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.fd-first-buyer-line::before,
+.fd-first-buyer-line::after {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 50%;
+}
+
+.fd-first-buyer-line::before {
+    width: 150px;
+    height: 150px;
+
+    top: 50%;
+    right: -105px;
+
+    transform: translateY(-50%);
+}
+
+.fd-first-buyer-line::after {
+    width: 310px;
+    height: 310px;
+
+    top: 50%;
+    right: -185px;
+
+    transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .fd-form-submit {
+        margin-top: 36px;
+        padding-top: 28px;
+
+        align-items: flex-start;
+    }
+
+    .fd-submit-btn {
+        width: 100%;
+    }
+
+    .fd-submit-logistics {
+        line-height: 1.8;
+    }
+
+    .fd-first-buyer-note {
+        grid-template-columns: 1fr;
+
+        margin-top: 78px;
+
+        padding: 48px 28px;
+    }
+
+    .fd-first-buyer-line {
+        display: none;
+    }
+
+    .fd-first-buyer-note h2 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+}
+
+
+/* =========================================================
+   FINAL EDITORIAL SECTION
+   ========================================================= */
+
+.fd-inquiry-final {
+    padding-top: clamp(115px, 13vw, 180px);
+    padding-bottom: clamp(125px, 14vw, 195px);
+
+    background: var(--fd-cream);
+
+    text-align: center;
+}
+
+.fd-inquiry-final .fd-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.fd-inquiry-final .fd-eyebrow {
+    margin-bottom: 28px;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-inquiry-final h2 {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(3.6rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-inquiry-final h2 .fd-title-accent {
+    display: inline-block;
+}
+
+.fd-inquiry-final .fd-description-lg {
+    max-width: 650px;
+
+    margin: 38px auto 0;
+
+    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+    line-height: 1.75;
+
+    color: #68716B;
+}
+
+.fd-inquiry-final-rule {
+    width: min(100%, 170px);
+    height: 1px;
+
+    margin: 42px auto 25px;
+
+    background: rgba(53, 107, 76, 0.35);
+}
+
+.fd-inquiry-final-small {
+    margin: 0;
+
+    font-size: 0.72rem;
+    font-weight: 500;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #7D857F;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fd-form-grid {
+        gap: 34px 30px;
+    }
+
+    .fd-first-buyer-note {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .fd-first-buyer-mark::before {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .fd-inquiry-hero {
+        padding-top: 85px;
+        padding-bottom: 78px;
+    }
+
+    .fd-inquiry-hero-rule {
+        margin-top: 28px;
+        margin-bottom: 25px;
+    }
+
+    .fd-inquiry-intro {
+        padding-top: 75px;
+        padding-bottom: 78px;
+    }
+
+    .fd-inquiry-form-section {
+        padding-top: 72px;
+        padding-bottom: 88px;
+    }
+
+    .fd-form-section + .fd-form-section {
+        margin-top: 72px;
+        padding-top: 66px;
+    }
+
+    .fd-form-heading {
+        font-size: clamp(2.7rem, 11vw, 4rem);
+        line-height: 0.94;
+    }
+
+    .fd-form-intro {
+        margin-top: 18px;
+    }
+
+    .fd-form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        margin-top: 36px;
+    }
+
+    .fd-field-full {
+        grid-column: auto;
+    }
+
+    .fd-first-buyer-note {
+        margin-top: 72px;
+
+        padding: 40px 28px;
+    }
+
+    .fd-first-buyer-note h2 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+    .fd-first-buyer-note p {
+        margin-top: 25px;
+    }
+
+    .fd-form-submit {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 68px;
+        padding-top: 31px;
+    }
+
+    .fd-submit-btn {
+        width: 100%;
+    }
+
+    .fd-submit-logistics {
+        line-height: 1.8;
+    }
+
+    .fd-inquiry-final {
+        padding-top: 92px;
+        padding-bottom: 105px;
+    }
+
+    .fd-inquiry-final h2 {
+        font-size: clamp(3.4rem, 16vw, 6rem);
+    }
+
+    .fd-inquiry-final .fd-description-lg {
+        margin-top: 30px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .fd-form-heading {
+        font-size: 2.65rem;
+    }
+
+    .fd-first-buyer-note {
+        padding: 35px 22px;
+    }
+
+    .fd-first-buyer-note h2 {
+        font-size: 3.15rem;
+    }
+
+    .fd-submit-logistics {
+        font-size: 0.68rem;
+    }
+
+}

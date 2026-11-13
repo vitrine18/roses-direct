@@ -1,5 +1,6 @@
 <!-- =========================================================
      FARM DIRECT — HEADER
+     Editorial Navigation System
      ========================================================= -->
 
 <header class="fd-header">
@@ -7,7 +8,11 @@
     <div class="fd-header-inner">
 
         <!-- LOGO -->
-        <a href="/" class="fd-logo" aria-label="Farm Direct Roses Home">
+        <a
+            href="/"
+            class="fd-logo"
+            aria-label="Farm Direct Roses Home"
+        >
             <img
                 src="/images/farm-direct-roses-logo.png"
                 alt="Farm Direct Roses"
@@ -15,8 +20,14 @@
         </a>
 
 
-        <!-- DESKTOP NAVIGATION -->
-        <nav class="fd-nav" aria-label="Main navigation">
+        <!-- =====================================================
+             DESKTOP NAVIGATION
+             ===================================================== -->
+
+        <nav
+            class="fd-nav"
+            aria-label="Main navigation"
+        >
 
             <a href="/" class="fd-nav-link">
                 Home
@@ -31,17 +42,31 @@
             </a>
 
 
-            <!-- PRODUCTS MEGA MENU -->
+            <!-- =================================================
+                 PRODUCTS MEGA MENU
+                 ================================================= -->
+
             <div class="fd-mega-parent">
 
-                <a href="/products/" class="fd-nav-link fd-products-trigger">
+                <a
+                    href="/products/"
+                    class="fd-nav-link fd-products-trigger"
+                    aria-haspopup="true"
+                >
                     Products
-                    <span class="fd-nav-chevron">⌄</span>
+
+                    <span
+                        class="fd-nav-chevron"
+                        aria-hidden="true"
+                    >
+                        ⌄
+                    </span>
                 </a>
 
 
                 <div class="fd-mega-dropdown">
 
+                    <!-- MAIN COLLECTION -->
                     <div class="fd-mega-main">
 
                         <div class="fd-mega-heading">
@@ -60,65 +85,105 @@
 
                         <div class="fd-mega-card-grid">
 
-                            <a href="/standard-roses/" class="fd-mega-card">
+                            <!-- STANDARD -->
+                            <a
+                                href="/standard-roses/"
+                                class="fd-mega-card"
+                            >
 
                                 <div class="fd-mega-card-image">
+
                                     <img
                                         src="/menu-roses-images/freedom-red-rose-ecuador-closeup.webp"
                                         alt="Standard Ecuadorian Roses"
                                     >
+
                                 </div>
 
-                                <span>
+                                <div class="fd-mega-card-title">
                                     Standard Roses
+                                </div>
+
+                                <span class="fd-mega-card-arrow">
+                                    →
                                 </span>
 
                             </a>
 
 
-                            <a href="/spray-roses/" class="fd-mega-card">
+                            <!-- SPRAY -->
+                            <a
+                                href="/spray-roses/"
+                                class="fd-mega-card"
+                            >
 
                                 <div class="fd-mega-card-image">
+
                                     <img
                                         src="/menu-roses-images/silver-mikado-light-purple-spray-roses-ecuador-closeup.webp"
                                         alt="Spray Ecuadorian Roses"
                                     >
+
                                 </div>
 
-                                <span>
+                                <div class="fd-mega-card-title">
                                     Spray Roses
+                                </div>
+
+                                <span class="fd-mega-card-arrow">
+                                    →
                                 </span>
 
                             </a>
 
 
-                            <a href="/garden-roses/" class="fd-mega-card">
+                            <!-- GARDEN -->
+                            <a
+                                href="/garden-roses/"
+                                class="fd-mega-card"
+                            >
 
                                 <div class="fd-mega-card-image">
+
                                     <img
                                         src="/menu-roses-images/white-ohara-garden-rose-ecuador-closeup.webp"
                                         alt="Garden Ecuadorian Roses"
                                     >
+
                                 </div>
 
-                                <span>
+                                <div class="fd-mega-card-title">
                                     Garden Roses
+                                </div>
+
+                                <span class="fd-mega-card-arrow">
+                                    →
                                 </span>
 
                             </a>
 
 
-                            <a href="/tinted-roses/" class="fd-mega-card">
+                            <!-- TINTED -->
+                            <a
+                                href="/tinted-roses/"
+                                class="fd-mega-card"
+                            >
 
                                 <div class="fd-mega-card-image">
+
                                     <img
                                         src="/menu-roses-images/silver-tinted-rose-ecuador-closeup.webp"
                                         alt="Tinted Ecuadorian Roses"
                                     >
+
                                 </div>
 
-                                <span>
+                                <div class="fd-mega-card-title">
                                     Tinted Roses
+                                </div>
+
+                                <span class="fd-mega-card-arrow">
+                                    →
                                 </span>
 
                             </a>
@@ -128,11 +193,20 @@
                     </div>
 
 
-                    <div class="fd-mega-wholesale">
+                    <!-- =================================================
+                         EDITORIAL SIDEBAR
+                         ================================================= -->
+
+                    <aside class="fd-mega-wholesale">
 
                         <span class="fd-eyebrow">
                             WHOLESALE EXPORT
                         </span>
+
+                        <div class="fd-mega-sidebar-intro">
+                            Explore the Farm Direct sourcing model.
+                        </div>
+
 
                         <a href="/farm-direct-roses-export/">
                             Farm Direct Roses Export
@@ -146,14 +220,16 @@
                             Buying Ecuadorian Roses for the First Time
                         </a>
 
+
                         <a
                             href="/products/"
                             class="fd-mega-view-all"
                         >
-                            View All Products →
+                            View All Products
+                            <span>→</span>
                         </a>
 
-                    </div>
+                    </aside>
 
                 </div>
 
@@ -171,7 +247,10 @@
         </nav>
 
 
-        <!-- DESKTOP CTA -->
+        <!-- =====================================================
+             DESKTOP CTA
+             ===================================================== -->
+
         <div class="fd-header-actions">
 
             <a
@@ -184,13 +263,17 @@
         </div>
 
 
-        <!-- MOBILE MENU BUTTON -->
+        <!-- =====================================================
+             MOBILE MENU BUTTON
+             ===================================================== -->
+
         <button
             id="fd-mobile-menu-toggle"
             class="fd-mobile-menu-toggle"
             type="button"
             aria-label="Open menu"
             aria-expanded="false"
+            aria-controls="fd-mobile-menu"
         >
             <span></span>
             <span></span>
@@ -200,11 +283,14 @@
     </div>
 
 
-    <!-- =====================================================
+    <!-- =========================================================
          MOBILE MENU
-         ===================================================== -->
+         ========================================================= -->
 
-    <div id="fd-mobile-menu" class="fd-mobile-menu">
+    <div
+        id="fd-mobile-menu"
+        class="fd-mobile-menu"
+    >
 
         <div class="fd-mobile-menu-header">
 
@@ -224,7 +310,10 @@
         </div>
 
 
-        <nav class="fd-mobile-nav">
+        <nav
+            class="fd-mobile-nav"
+            aria-label="Mobile navigation"
+        >
 
             <a href="/">
                 Home
@@ -239,14 +328,22 @@
             </a>
 
 
+            <!-- PRODUCTS -->
             <button
                 id="fd-products-toggle"
                 class="fd-mobile-products-toggle"
                 type="button"
                 aria-expanded="false"
+                aria-controls="fd-products-menu"
             >
                 <span>Products</span>
-                <span class="fd-mobile-plus">+</span>
+
+                <span
+                    class="fd-mobile-plus"
+                    aria-hidden="true"
+                >
+                    +
+                </span>
             </button>
 
 

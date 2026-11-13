@@ -1,0 +1,924 @@
+/* =========================================================
+   FARM DIRECT — CLAIMS & LIABILITY
+   Editorial / Magazine Layout
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fd-claims-hero {
+    padding: clamp(105px, 12vw, 150px) 24px clamp(90px, 10vw, 125px);
+
+    background: var(--fd-cream);
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.14);
+}
+
+.fd-claims-hero-inner {
+    width: min(900px, 100%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.fd-claims-kicker {
+    margin: 0 0 26px;
+
+    font-family: var(--fd-font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 0.22em;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-hero h1 {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(3.8rem, 7vw, 6.2rem);
+    font-weight: 500;
+    line-height: 0.94;
+
+    letter-spacing: -0.035em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-claims-hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.fd-claims-rule {
+    width: 65px;
+    height: 1px;
+
+    margin: 31px auto 27px;
+
+    background: var(--fd-green);
+}
+
+.fd-claims-intro {
+    max-width: 630px;
+
+    margin: 0 auto;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.96rem;
+    line-height: 1.8;
+
+    color: #707873;
+}
+
+
+/* =========================================================
+   QUICK CLAIM GUIDE
+   ========================================================= */
+
+.fd-claims-snapshot {
+    background: var(--fd-warm-white);
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.14);
+}
+
+.fd-claims-snapshot-inner {
+    width: min(1180px, calc(100% - 48px));
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fd-claims-snapshot-item {
+    padding: 42px 38px 45px;
+
+    border-right: 1px solid rgba(53, 107, 76, 0.14);
+}
+
+.fd-claims-snapshot-item:last-child {
+    border-right: 0;
+}
+
+.fd-claims-snapshot-number {
+    display: block;
+
+    margin-bottom: 17px;
+
+    font-family: var(--fd-font-display);
+    font-size: 1.3rem;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-snapshot-label {
+    margin: 0 0 9px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.61rem;
+    font-weight: 600;
+
+    letter-spacing: 0.17em;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    color: #7A827D;
+}
+
+.fd-claims-snapshot-item h2 {
+    margin: 0 0 10px;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(1.8rem, 2.5vw, 2.15rem);
+    font-weight: 600;
+    line-height: 1;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-claims-snapshot-item > p:last-child {
+    max-width: 300px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.78rem;
+    line-height: 1.7;
+
+    color: #707873;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.fd-claims-content {
+    padding: clamp(95px, 10vw, 140px) 24px clamp(110px, 12vw, 165px);
+
+    background: var(--fd-warm-white);
+}
+
+.fd-claims-layout {
+    width: min(1120px, 100%);
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 175px minmax(0, 740px);
+
+    gap: 85px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   SIDE NAVIGATION
+   ========================================================= */
+
+.fd-claims-aside {
+    position: sticky;
+    top: 115px;
+}
+
+.fd-claims-aside-label {
+    margin: 0 0 19px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.61rem;
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.fd-claims-nav a {
+    padding: 10px 0;
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.13);
+
+    font-family: var(--fd-font-body);
+    font-size: 0.7rem;
+    line-height: 1.45;
+
+    color: #707873;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+.fd-claims-nav a:hover {
+    padding-left: 5px;
+
+    color: var(--fd-green);
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+.fd-claims-main {
+    min-width: 0;
+}
+
+.fd-claims-main p {
+    font-family: var(--fd-font-body);
+    font-size: 0.94rem;
+    line-height: 1.85;
+
+    color: #39443E;
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.fd-claims-opening {
+    padding-bottom: 78px;
+}
+
+.fd-claims-lead {
+    max-width: 700px;
+
+    margin: 0 0 27px;
+
+    font-family: var(--fd-font-display) !important;
+    font-size: clamp(2rem, 4vw, 2.75rem) !important;
+    font-weight: 500;
+
+    line-height: 1.12 !important;
+    letter-spacing: -0.015em;
+
+    color: var(--fd-green-dark) !important;
+}
+
+.fd-claims-lead em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   CONTENT SECTIONS
+   No decorative numerals here.
+   ========================================================= */
+
+.fd-claims-section {
+    padding: 82px 0;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.16);
+}
+
+.fd-claims-section h2 {
+    max-width: 720px;
+
+    margin: 0 0 28px;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(2.7rem, 5vw, 4rem);
+    font-weight: 500;
+
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-claims-section h2 em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   CHECKLIST
+   ========================================================= */
+
+.fd-claims-checklist {
+    margin-top: 42px;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.16);
+}
+
+.fd-claims-check {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.13);
+}
+
+.fd-claims-check > span {
+    font-family: var(--fd-font-display);
+    font-size: 1.25rem;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-check h3 {
+    margin: 0 0 7px;
+
+    font-family: var(--fd-font-display);
+    font-size: 1.55rem;
+    font-weight: 600;
+
+    line-height: 1.08;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-claims-check p {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-size: 0.82rem !important;
+    line-height: 1.7 !important;
+
+    color: #707873 !important;
+}
+
+
+/* =========================================================
+   CLAIM INFORMATION
+   ========================================================= */
+
+.fd-claims-info-list {
+    margin-top: 38px;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.16);
+}
+
+.fd-claims-info-list > div {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.13);
+}
+
+.fd-claims-info-list span {
+    font-family: var(--fd-font-display);
+    font-size: 1.15rem;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-info-list p {
+    margin: 0;
+
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+   ========================================================= */
+
+.fd-claims-note {
+    display: grid;
+
+    margin-top: 38px;
+
+    background: var(--fd-cream);
+
+    border-left: 2px solid var(--fd-green);
+}
+
+.fd-claims-note-item {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+
+    gap: 12px;
+
+    padding: 23px 27px;
+}
+
+.fd-claims-note-item + .fd-claims-note-item {
+    border-top: 1px solid rgba(53, 107, 76, 0.14);
+}
+
+.fd-claims-note-mark {
+    font-family: var(--fd-font-display);
+    font-size: 1.6rem;
+    line-height: 1;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-note p {
+    margin: 0;
+
+    font-family: var(--fd-font-display) !important;
+    font-size: 1.2rem !important;
+    font-style: italic;
+
+    line-height: 1.4 !important;
+
+    color: var(--fd-green-dark) !important;
+}
+
+
+/* =========================================================
+   QUALITY
+   ========================================================= */
+
+.fd-claims-quality-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    margin-top: 42px;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.16);
+    border-bottom: 1px solid rgba(53, 107, 76, 0.16);
+}
+
+.fd-claims-quality-grid > div {
+    padding: 34px 30px;
+}
+
+.fd-claims-quality-grid > div:first-child {
+    border-right: 1px solid rgba(53, 107, 76, 0.14);
+}
+
+.fd-claims-quality-grid span {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.6rem;
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+    line-height: 1.3;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-quality-grid h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--fd-font-display);
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    line-height: 1;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-claims-quality-grid p {
+    margin: 0;
+
+    font-size: 0.82rem !important;
+    line-height: 1.7 !important;
+
+    color: #707873 !important;
+}
+
+
+/* =========================================================
+   CARRIER NOTE
+   ========================================================= */
+
+.fd-claims-carrier-note {
+    margin-top: 38px;
+
+    padding: 27px 30px;
+
+    background: var(--fd-cream);
+
+    border-left: 2px solid var(--fd-green);
+}
+
+.fd-claims-carrier-label {
+    margin-bottom: 11px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.6rem;
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+    line-height: 1.3;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-carrier-note p {
+    margin: 0;
+
+    font-size: 0.82rem !important;
+    line-height: 1.7 !important;
+
+    color: #39443E !important;
+}
+
+
+/* =========================================================
+   LIMITATIONS
+   ========================================================= */
+
+.fd-claims-limitations {
+    margin-top: 38px;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.16);
+}
+
+.fd-claims-limitations > div {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+    gap: 10px;
+
+    padding: 21px 0;
+
+    border-bottom: 1px solid rgba(53, 107, 76, 0.13);
+}
+
+.fd-claims-limitations span {
+    font-family: var(--fd-font-display);
+    font-size: 1.15rem;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-limitations p {
+    margin: 0;
+
+    font-size: 0.82rem !important;
+    line-height: 1.7 !important;
+
+    color: #707873 !important;
+}
+
+
+/* =========================================================
+   LEGAL NOTE
+   ========================================================= */
+
+.fd-claims-legal-note {
+    margin-top: 32px;
+
+    padding: 22px 24px;
+
+    border: 1px solid rgba(53, 107, 76, 0.17);
+}
+
+.fd-claims-legal-note strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.6rem;
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-legal-note p {
+    margin: 0;
+
+    font-size: 0.76rem !important;
+    line-height: 1.7 !important;
+
+    color: #707873 !important;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.fd-claims-final {
+    margin-top: 20px;
+
+    padding: clamp(70px, 8vw, 105px) 40px;
+
+    text-align: center;
+
+    background: var(--fd-cream);
+
+    border-top: 1px solid rgba(53, 107, 76, 0.15);
+    border-bottom: 1px solid rgba(53, 107, 76, 0.15);
+}
+
+.fd-claims-final-kicker {
+    margin: 0 0 20px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.6rem;
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+}
+
+.fd-claims-final h2 {
+    margin: 0 0 21px;
+
+    font-family: var(--fd-font-display);
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 500;
+
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+
+    color: var(--fd-green-dark);
+}
+
+.fd-claims-final h2 em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.fd-claims-final > p:not(.fd-claims-final-kicker) {
+    max-width: 560px;
+
+    margin: 0 auto 30px;
+
+    font-family: var(--fd-font-body);
+    font-size: 0.87rem;
+    line-height: 1.8;
+
+    color: #707873;
+}
+
+.fd-claims-final .fd-btn {
+    display: inline-flex;
+}
+
+
+/* =========================================================
+   BACK
+   ========================================================= */
+
+.fd-claims-back {
+    padding-top: 32px;
+
+    text-align: center;
+}
+
+.fd-claims-back a {
+    font-family: var(--fd-font-body);
+    font-size: 0.68rem;
+    font-weight: 600;
+
+    letter-spacing: 0.07em;
+
+    color: var(--fd-green);
+
+    text-decoration: none;
+}
+
+.fd-claims-back a span {
+    margin-right: 7px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fd-claims-layout {
+        grid-template-columns: 1fr;
+
+        gap: 42px;
+    }
+
+    .fd-claims-aside {
+        position: static;
+
+        padding-bottom: 24px;
+
+        border-bottom: 1px solid rgba(53, 107, 76, 0.15);
+    }
+
+    .fd-claims-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .fd-claims-hero {
+        padding: 82px 20px 70px;
+    }
+
+    .fd-claims-hero h1 {
+        font-size: clamp(3rem, 14vw, 4rem);
+    }
+
+    .fd-claims-intro {
+        font-size: 0.87rem;
+    }
+
+
+    /* -----------------------------------------
+       SNAPSHOT
+       ----------------------------------------- */
+
+    .fd-claims-snapshot-inner {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .fd-claims-snapshot-item {
+        padding: 30px 22px 32px;
+
+        border-right: 0;
+        border-bottom: 1px solid rgba(53, 107, 76, 0.14);
+    }
+
+    .fd-claims-snapshot-item:last-child {
+        border-bottom: 0;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+       ----------------------------------------- */
+
+    .fd-claims-content {
+        padding: 76px 20px 95px;
+    }
+
+    .fd-claims-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .fd-claims-main p {
+        font-size: 0.87rem;
+        line-height: 1.8;
+    }
+
+    .fd-claims-opening {
+        padding-bottom: 62px;
+    }
+
+    .fd-claims-lead {
+        font-size: 2rem !important;
+    }
+
+
+    /* -----------------------------------------
+       SECTIONS
+       ----------------------------------------- */
+
+    .fd-claims-section {
+        padding: 65px 0;
+    }
+
+    .fd-claims-section h2 {
+        font-size: clamp(2.55rem, 11vw, 3.4rem);
+    }
+
+
+    /* -----------------------------------------
+       CHECKLIST
+       ----------------------------------------- */
+
+    .fd-claims-check {
+        grid-template-columns: 40px 1fr;
+
+        gap: 13px;
+
+        padding: 25px 0;
+    }
+
+    .fd-claims-check h3 {
+        font-size: 1.4rem;
+    }
+
+
+    /* -----------------------------------------
+       INFO LIST
+       ----------------------------------------- */
+
+    .fd-claims-info-list > div {
+        grid-template-columns: 42px 1fr;
+    }
+
+
+    /* -----------------------------------------
+       QUALITY
+       ----------------------------------------- */
+
+    .fd-claims-quality-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fd-claims-quality-grid > div {
+        padding: 28px 24px;
+    }
+
+    .fd-claims-quality-grid > div:first-child {
+        border-right: 0;
+        border-bottom: 1px solid rgba(53, 107, 76, 0.14);
+    }
+
+
+    /* -----------------------------------------
+       NOTES
+       ----------------------------------------- */
+
+    .fd-claims-note-item {
+        padding: 21px 20px;
+    }
+
+    .fd-claims-note p {
+        font-size: 1.08rem !important;
+    }
+
+    .fd-claims-carrier-note {
+        padding: 24px 22px;
+    }
+
+
+    /* -----------------------------------------
+       FINAL CTA
+       ----------------------------------------- */
+
+    .fd-claims-final {
+        padding: 62px 24px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-claims-hero {
+        padding-top: 72px;
+        padding-bottom: 62px;
+    }
+
+    .fd-claims-hero h1 {
+        font-size: 3rem;
+    }
+
+    .fd-claims-content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .fd-claims-final {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

@@ -1,0 +1,682 @@
+/* =========================================================
+   FARM DIRECT ROSES — PRIVACY POLICY
+   Editorial / Magazine Style
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fd-policy-hero {
+    background: var(--fd-green, #356B4C);
+    color: var(--fd-white, #FFFFFF);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.fd-policy-hero-inner {
+    width: min(1180px, calc(100% - 64px));
+    margin: 0 auto;
+    padding:
+        clamp(90px, 11vw, 145px)
+        0
+        clamp(85px, 9vw, 120px);
+}
+
+
+/* =========================================================
+   SHARED EYEBROWS / LABELS
+   ========================================================= */
+
+.fd-policy-eyebrow,
+.fd-policy-section-label {
+    display: block;
+    margin: 0;
+
+    font-family: var(--fd-font-body, "Inter", Arial, sans-serif);
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.fd-policy-eyebrow {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.fd-policy-section-label {
+    color: var(--fd-green, #356B4C);
+}
+
+
+/* =========================================================
+   EDITORIAL EMPHASIS
+   ========================================================= */
+
+.fd-policy-intro-content h2 .fd-title-accent,
+.fd-policy-heading h2 .fd-title-accent,
+.fd-policy-item-content h3 .fd-title-accent,
+.fd-policy-contact h2 .fd-title-accent {
+    display: inline;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--fd-green, #356B4C);
+}
+
+
+/* =========================================================
+   HERO EYEBROW
+   ========================================================= */
+
+.fd-policy-hero .fd-policy-eyebrow {
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.fd-policy-hero h1 {
+    max-width: 900px;
+    margin: 0;
+
+    font-family:
+        var(--fd-font-display,
+        "Cormorant Garamond",
+        Georgia,
+        serif);
+
+    font-size: clamp(3.5rem, 7vw, 6.8rem);
+    line-height: 0.9;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+
+    color: var(--fd-white, #FFFFFF);
+}
+
+.fd-policy-hero h1 .fd-title-accent {
+    color: var(--fd-cream, #F4EFE6);
+}
+
+
+/* =========================================================
+   HERO INTRO
+   ========================================================= */
+
+.fd-policy-hero-intro {
+    max-width: 650px;
+    margin: 30px 0 0;
+
+    font-family:
+        var(--fd-font-body,
+        "Inter",
+        Arial,
+        sans-serif);
+
+    font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+    line-height: 1.8;
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.fd-policy-intro {
+    background: var(--fd-warm-white, #FAF8F3);
+    border-bottom: 1px solid rgba(53, 107, 76, 0.12);
+}
+
+.fd-policy-intro-inner {
+    width: min(1180px, calc(100% - 64px));
+    margin: 0 auto;
+    padding: clamp(75px, 9vw, 120px) 0;
+}
+
+.fd-policy-intro-inner > .fd-policy-section-label {
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   INTRO CONTENT
+   ========================================================= */
+
+.fd-policy-intro-content {
+    max-width: 820px;
+}
+
+.fd-policy-intro-content h2 {
+    max-width: 780px;
+    margin: 0 0 28px;
+
+    font-family:
+        var(--fd-font-display,
+        "Cormorant Garamond",
+        Georgia,
+        serif);
+
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+
+    color: var(--fd-green-dark, #234638);
+}
+
+.fd-policy-intro-content p {
+    max-width: 720px;
+    margin: 0 0 18px;
+
+    font-family:
+        var(--fd-font-body,
+        "Inter",
+        Arial,
+        sans-serif);
+
+    font-size: 0.94rem;
+    line-height: 1.85;
+    font-weight: 300;
+
+    color: var(--fd-green-dark, #234638);
+}
+
+.fd-policy-intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   MAIN POLICY
+   ========================================================= */
+
+.fd-policy-section {
+    background: var(--fd-warm-white, #FAF8F3);
+    padding:
+        clamp(80px, 9vw, 120px)
+        0
+        clamp(90px, 10vw, 125px);
+}
+
+.fd-policy-container {
+    width: min(1180px, calc(100% - 64px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   POLICY HEADING
+   ========================================================= */
+
+.fd-policy-heading {
+    max-width: 760px;
+    margin: 0 auto clamp(55px, 7vw, 80px);
+    text-align: center;
+}
+
+.fd-policy-heading .fd-policy-section-label {
+    margin-bottom: 20px;
+}
+
+.fd-policy-heading h2 {
+    margin: 0 0 22px;
+
+    font-family:
+        var(--fd-font-display,
+        "Cormorant Garamond",
+        Georgia,
+        serif);
+
+    font-size: clamp(2.7rem, 5vw, 4.2rem);
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+
+    color: var(--fd-green-dark, #234638);
+}
+
+.fd-policy-heading > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-family:
+        var(--fd-font-body,
+        "Inter",
+        Arial,
+        sans-serif);
+
+    font-size: 0.91rem;
+    line-height: 1.8;
+    font-weight: 300;
+
+    color: var(--fd-muted, #69736C);
+}
+
+
+/* =========================================================
+   POLICY ITEMS
+   ========================================================= */
+
+.fd-policy-item {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: clamp(50px, 6vw, 72px) 0;
+
+    border-top: 1px solid rgba(53, 107, 76, 0.16);
+}
+
+.fd-policy-item:last-child {
+    border-bottom: 1px solid rgba(53, 107, 76, 0.16);
+}
+
+
+/* =========================================================
+   POLICY ITEM CONTENT
+   ========================================================= */
+
+.fd-policy-item-content {
+    max-width: 760px;
+}
+
+.fd-policy-item-content h3 {
+    max-width: 700px;
+    margin: 0 0 20px;
+
+    font-family:
+        var(--fd-font-display,
+        "Cormorant Garamond",
+        Georgia,
+        serif);
+
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+
+    color: var(--fd-green-dark, #234638);
+}
+
+.fd-policy-item-content p {
+    max-width: 720px;
+    margin: 0 0 17px;
+
+    font-family:
+        var(--fd-font-body,
+        "Inter",
+        Arial,
+        sans-serif);
+
+    font-size: 0.91rem;
+    line-height: 1.85;
+    font-weight: 300;
+
+    color: var(--fd-muted, #69736C);
+}
+
+.fd-policy-item-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   TRUST CALLOUT
+   ========================================================= */
+
+.fd-policy-trust {
+    background: var(--fd-green, #356B4C);
+    color: var(--fd-white, #FFFFFF);
+
+    padding:
+        clamp(85px, 10vw, 125px)
+        0;
+}
+
+.fd-policy-trust-inner {
+    width: min(850px, calc(100% - 64px));
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fd-policy-trust .fd-policy-eyebrow {
+    margin-bottom: 20px;
+    color: var(--fd-cream, #F4EFE6);
+}
+
+.fd-policy-trust h2 {
+    max-width: 800px;
+    margin: 0 auto 26px;
+
+    font-family:
+        var(--fd-font-display,
+        "Cormorant Garamond",
+        Georgia,
+        serif);
+
+    font-size: clamp(2.6rem, 5vw, 4.3rem);
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+
+    color: var(--fd-white, #FFFFFF);
+}
+
+.fd-policy-trust h2 .fd-title-accent {
+    display: inline;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--fd-cream, #F4EFE6);
+}
+
+.fd-policy-trust p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-family:
+        var(--fd-font-body,
+        "Inter",
+        Arial,
+        sans-serif);
+
+    font-size: 0.91rem;
+    line-height: 1.8;
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.fd-policy-contact {
+    background: var(--fd-warm-white, #FAF8F3);
+    padding: clamp(70px, 8vw, 105px) 0;
+}
+
+.fd-policy-contact-inner {
+    width: min(1000px, calc(100% - 64px));
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 55px;
+}
+
+.fd-policy-contact-inner > div {
+    max-width: 620px;
+}
+
+
+/* =========================================================
+   CONTACT LABEL
+   ========================================================= */
+
+.fd-policy-contact .fd-policy-section-label {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CONTACT TITLE
+   ========================================================= */
+
+.fd-policy-contact h2 {
+    margin: 0 0 18px;
+
+    font-family:
+        var(--fd-font-display,
+        "Cormorant Garamond",
+        Georgia,
+        serif);
+
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+
+    color: var(--fd-green-dark, #234638);
+}
+
+
+/* =========================================================
+   CONTACT TEXT
+   ========================================================= */
+
+.fd-policy-contact p:last-child {
+    max-width: 600px;
+    margin: 0;
+
+    font-family:
+        var(--fd-font-body,
+        "Inter",
+        Arial,
+        sans-serif);
+
+    font-size: 0.91rem;
+    line-height: 1.8;
+    font-weight: 300;
+
+    color: var(--fd-muted, #69736C);
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+   ========================================================= */
+
+.fd-policy-contact .fd-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    min-height: 48px;
+    padding: 13px 25px;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   LAST UPDATED
+   ========================================================= */
+
+.fd-policy-updated {
+    background: var(--fd-warm-white, #FAF8F3);
+    padding: 0 0 42px;
+    text-align: center;
+}
+
+.fd-policy-updated p {
+    margin: 0;
+
+    font-family:
+        var(--fd-font-body,
+        "Inter",
+        Arial,
+        sans-serif);
+
+    font-size: 0.68rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--fd-muted, #69736C);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fd-policy-hero-inner,
+    .fd-policy-intro-inner,
+    .fd-policy-container {
+        width: min(100% - 48px, 1180px);
+    }
+
+    .fd-policy-trust-inner {
+        width: min(100% - 48px, 850px);
+    }
+
+    .fd-policy-contact-inner {
+        width: min(100% - 48px, 1000px);
+
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .fd-policy-hero-inner {
+        width: calc(100% - 40px);
+        padding: 70px 0 72px;
+    }
+
+    .fd-policy-hero .fd-policy-eyebrow {
+        margin-bottom: 18px;
+    }
+
+    .fd-policy-hero h1 {
+        font-size: clamp(3.1rem, 14vw, 4rem);
+        line-height: 0.92;
+    }
+
+    .fd-policy-hero-intro {
+        margin-top: 25px;
+        font-size: 0.9rem;
+        line-height: 1.75;
+    }
+
+
+    /* INTRO */
+
+    .fd-policy-intro-inner {
+        width: calc(100% - 40px);
+        padding: 65px 0 72px;
+    }
+
+    .fd-policy-intro-inner > .fd-policy-section-label {
+        margin-bottom: 18px;
+    }
+
+    .fd-policy-intro-content h2 {
+        font-size: clamp(2.35rem, 11vw, 3.3rem);
+        line-height: 0.98;
+    }
+
+    .fd-policy-intro-content p {
+        font-size: 0.88rem;
+        line-height: 1.8;
+    }
+
+
+    /* POLICY */
+
+    .fd-policy-section {
+        padding: 70px 0 80px;
+    }
+
+    .fd-policy-container {
+        width: calc(100% - 40px);
+    }
+
+    .fd-policy-heading {
+        margin-bottom: 45px;
+    }
+
+    .fd-policy-heading h2 {
+        font-size: clamp(2.4rem, 11vw, 3.3rem);
+    }
+
+    .fd-policy-heading > p:last-child {
+        font-size: 0.87rem;
+    }
+
+    .fd-policy-item {
+        padding: 42px 0;
+    }
+
+    .fd-policy-item-content h3 {
+        font-size: clamp(1.95rem, 9vw, 2.5rem);
+        line-height: 1;
+    }
+
+    .fd-policy-item-content p {
+        font-size: 0.86rem;
+        line-height: 1.8;
+    }
+
+
+    /* TRUST */
+
+    .fd-policy-trust {
+        padding: 72px 0 78px;
+    }
+
+    .fd-policy-trust-inner {
+        width: calc(100% - 40px);
+    }
+
+    .fd-policy-trust h2 {
+        font-size: clamp(2.4rem, 10vw, 3.3rem);
+    }
+
+    .fd-policy-trust p:last-child {
+        font-size: 0.87rem;
+    }
+
+
+    /* CONTACT */
+
+    .fd-policy-contact {
+        padding: 65px 0 70px;
+    }
+
+    .fd-policy-contact-inner {
+        width: calc(100% - 40px);
+    }
+
+    .fd-policy-contact h2 {
+        font-size: clamp(2.4rem, 10vw, 3.2rem);
+    }
+
+    .fd-policy-contact p:last-child {
+        font-size: 0.86rem;
+    }
+
+    .fd-policy-contact .fd-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* UPDATED */
+
+    .fd-policy-updated {
+        padding-bottom: 32px;
+    }
+
+}

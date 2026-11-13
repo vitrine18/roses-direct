@@ -1,0 +1,1298 @@
+/* =========================================================
+   FARM DIRECT — HOME PAGE
+   Premium Editorial Homepage
+   ========================================================= */
+
+
+/* =========================================================
+   01 — HOME HERO
+   ========================================================= */
+
+.fd-home-hero {
+    position: relative;
+
+    background: var(--fd-cream);
+
+    overflow: hidden;
+}
+
+
+.fd-home-hero-inner {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.92fr)
+        minmax(0, 1.08fr);
+
+    align-items: center;
+
+    gap: clamp(56px, 6.5vw, 110px);
+
+    min-height: min(790px, 90vh);
+
+    padding-top: clamp(80px, 9vw, 130px);
+    padding-bottom: clamp(90px, 9vw, 135px);
+}
+
+
+.fd-home-hero-content {
+    max-width: 650px;
+}
+
+
+.fd-home-hero-title {
+    max-width: 700px;
+
+    margin: 20px 0 28px;
+
+    color: var(--fd-green-dark);
+
+    font-size: clamp(58px, 6.7vw, 96px);
+
+    line-height: 0.94;
+
+    letter-spacing: -0.045em;
+}
+
+
+.fd-home-hero-title span {
+    display: block;
+
+    color: var(--fd-green);
+}
+
+
+.fd-home-hero-description {
+    max-width: 590px;
+
+    margin: 0 0 18px;
+
+    line-height: 1.65;
+}
+
+
+.fd-home-hero-note {
+    max-width: 550px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+
+    color: var(--fd-text-muted);
+}
+
+
+.fd-home-hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    margin-top: 36px;
+
+    flex-wrap: nowrap;
+}
+
+
+.fd-home-hero-buttons .fd-btn {
+    white-space: nowrap;
+}
+
+
+.fd-home-hero-media {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.fd-home-hero-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    border-radius: 2px;
+}
+
+
+.fd-home-hero-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(31, 61, 43, 0.02) 0%,
+            rgba(31, 61, 43, 0.10) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+.fd-home-hero-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+
+.fd-home-hero:hover .fd-home-hero-image img {
+    transform: scale(1.025);
+}
+
+
+.fd-home-hero-caption {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 13px;
+
+    padding: 0 2px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.68rem;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+
+    color: var(--fd-text-muted);
+}
+
+
+.fd-home-hero-caption span:last-child {
+    text-align: right;
+}
+
+
+/* =========================================================
+   02 — FIRST-TIME IMPORTERS
+   ========================================================= */
+
+.fd-importer-section {
+    background: var(--fd-warm-white);
+
+    padding-top: clamp(105px, 11vw, 155px);
+
+    padding-bottom: clamp(110px, 11vw, 160px);
+}
+
+
+.fd-importer-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.9fr);
+
+    align-items: center;
+
+    gap: clamp(65px, 8vw, 125px);
+}
+
+
+.fd-importer-intro {
+    max-width: 650px;
+}
+
+
+.fd-importer-intro .fd-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+}
+
+
+.fd-importer-intro .fd-title-lg {
+    max-width: 620px;
+
+    margin: 0 0 27px;
+}
+
+
+.fd-importer-intro .fd-description-lg {
+    max-width: 570px;
+
+    line-height: 1.72;
+}
+
+
+.fd-importer-intro .fd-buttons {
+    display: flex;
+
+    justify-content: flex-start;
+
+    margin-top: 34px;
+}
+
+
+.fd-importer-points {
+    border-top: 1px solid var(--fd-border);
+}
+
+
+.fd-info-item {
+    display: grid;
+
+    grid-template-columns:
+        48px
+        minmax(0, 1fr);
+
+    gap: 20px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid var(--fd-border);
+}
+
+
+.fd-info-number {
+    padding-top: 5px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    color: var(--fd-green);
+}
+
+
+.fd-info-item h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--fd-font-display);
+
+    font-size: 1.38rem;
+
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    color: var(--fd-green-dark);
+}
+
+
+.fd-info-item p {
+    max-width: 480px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.92rem;
+
+    line-height: 1.68;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   03 — THE ECUADORIAN ADVANTAGE
+   ========================================================= */
+
+.fd-quality-section {
+    background: #F4EFE6;
+
+    color: var(--fd-green-dark);
+
+    padding-top: clamp(110px, 11vw, 155px);
+
+    padding-bottom: clamp(115px, 11vw, 165px);
+}
+
+
+.fd-quality-section .fd-section-heading {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.fd-quality-section .fd-section-heading .fd-eyebrow {
+    display: block;
+
+    width: auto;
+
+    margin: 0 0 17px;
+
+    color: var(--fd-green);
+
+    text-align: center;
+}
+
+
+.fd-quality-section .fd-section-heading .fd-title-lg {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    font-size: clamp(50px, 6.2vw, 84px);
+
+    line-height: 0.96;
+
+    letter-spacing: -0.04em;
+
+    color: var(--fd-green-dark);
+
+    text-align: center;
+}
+
+
+.fd-quality-section .fd-section-heading .fd-title-accent {
+    color: var(--fd-green);
+
+    font-style: italic;
+}
+
+
+.fd-quality-section .fd-section-heading .fd-description-lg {
+    width: 100%;
+
+    max-width: 680px;
+
+    margin: 28px auto 0;
+
+    color: rgba(35, 70, 53, 0.72);
+
+    text-align: center;
+
+    line-height: 1.72;
+}
+
+
+/* =========================================================
+   ADVANTAGE CARDS
+   ========================================================= */
+
+.fd-quality-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: clamp(18px, 2.2vw, 30px);
+
+    margin-top: clamp(70px, 8vw, 105px);
+}
+
+
+.fd-quality-card {
+    position: relative;
+
+    min-height: 295px;
+
+    padding: 34px 30px 36px;
+
+    background: rgba(255, 255, 255, 0.74);
+
+    border: 1px solid rgba(35, 70, 53, 0.08);
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 14px 34px rgba(35, 70, 53, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.fd-quality-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 42px rgba(35, 70, 53, 0.11);
+}
+
+
+.fd-quality-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+
+    height: 48px;
+
+    margin-bottom: 34px;
+
+    border: 1px solid rgba(53, 107, 76, 0.24);
+
+    border-radius: 50%;
+}
+
+
+.fd-quality-icon span {
+    font-family: var(--fd-font-body);
+
+    font-size: 0.66rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    color: var(--fd-green);
+}
+
+
+.fd-quality-card h3 {
+    max-width: 250px;
+
+    margin: 0 0 15px;
+
+    font-family: var(--fd-font-display);
+
+    font-size: clamp(25px, 2vw, 31px);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.015em;
+
+    color: var(--fd-green-dark);
+}
+
+
+.fd-quality-card p {
+    max-width: 260px;
+
+    margin: 0;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 14.5px;
+
+    line-height: 1.7;
+
+    color: rgba(35, 70, 53, 0.68);
+}
+
+
+/* =========================================================
+   04 — FARM TO DOOR
+   ========================================================= */
+
+.fd-logistics-section {
+    background: var(--fd-cream);
+
+    /*
+       Slightly closer to the section above.
+       Still enough space to preserve the editorial rhythm.
+    */
+
+    padding-top: clamp(88px, 9vw, 125px);
+
+    padding-bottom: clamp(115px, 11vw, 155px);
+}
+
+
+.fd-logistics-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    align-items: center;
+
+    gap: clamp(65px, 8vw, 115px);
+}
+
+
+.fd-logistics-content {
+    max-width: 620px;
+}
+
+
+.fd-logistics-content .fd-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+}
+
+
+.fd-logistics-content .fd-title-lg {
+    max-width: 600px;
+
+    margin: 0 0 27px;
+}
+
+
+.fd-logistics-content .fd-description-lg {
+    max-width: 570px;
+
+    margin: 0 0 40px;
+
+    line-height: 1.72;
+}
+
+
+.fd-logistics-list {
+    border-top: 1px solid var(--fd-border);
+}
+
+
+.fd-logistics-list .fd-info-item {
+    padding: 25px 0;
+}
+
+
+.fd-logistics-media {
+    width: 100%;
+}
+
+
+.fd-logistics-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 4.6;
+
+    overflow: hidden;
+
+    border-radius: 2px;
+}
+
+
+.fd-logistics-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+
+.fd-logistics-media:hover .fd-logistics-image img {
+    transform: scale(1.025);
+}
+
+
+.fd-image-caption {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 13px;
+
+    padding: 0 2px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.68rem;
+
+    font-weight: 500;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+
+    color: var(--fd-text-muted);
+}
+
+
+/* =========================================================
+   05 — PROJECT CTA / U.S. FLORISTS & DESIGNERS
+   ========================================================= */
+
+.fd-about-cta {
+    background: var(--fd-green-dark);
+
+    color: #ffffff;
+
+    padding-top: clamp(110px, 12vw, 165px);
+
+    padding-bottom: clamp(115px, 12vw, 170px);
+}
+
+
+.fd-about-cta .fd-cta-inner {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.fd-about-cta .fd-eyebrow {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.66);
+
+    text-align: center;
+}
+
+
+.fd-about-cta .fd-title-lg {
+    max-width: 850px;
+
+    margin: 0 auto 28px;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+.fd-about-cta .fd-title-accent {
+    color: var(--fd-green-soft);
+
+    font-style: italic;
+}
+
+
+.fd-about-cta .fd-description-lg {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.76);
+
+    line-height: 1.75;
+
+    text-align: center;
+}
+
+
+.fd-about-cta .fd-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+
+.fd-about-cta .fd-btn-primary {
+    color: var(--fd-green-dark);
+
+    background: #ffffff;
+
+    border-color: #ffffff;
+}
+
+
+.fd-about-cta .fd-btn-primary:hover {
+    color: #ffffff;
+
+    background: transparent;
+
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* =========================================================
+   06 — BEYOND THE UNITED STATES
+   ========================================================= */
+
+.fd-international-section {
+    background: var(--fd-warm-white);
+
+    padding-top: clamp(105px, 11vw, 150px);
+
+    padding-bottom: clamp(115px, 12vw, 165px);
+}
+
+
+.fd-international {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.fd-international .fd-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+}
+
+
+.fd-international .fd-title-md {
+    max-width: 800px;
+
+    margin: 0 auto 23px;
+
+    color: var(--fd-green-dark);
+}
+
+
+.fd-international .fd-title-accent {
+    color: var(--fd-green);
+
+    font-style: italic;
+}
+
+
+.fd-international .fd-description-lg {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    line-height: 1.72;
+
+    color: var(--fd-text-muted);
+}
+
+
+.fd-text-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 34px;
+
+    font-family: var(--fd-font-body);
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+    color: var(--fd-green);
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        gap 0.25s ease;
+}
+
+
+.fd-text-link:hover {
+    color: var(--fd-green-dark);
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   07 — TABLET
+   1000px
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .fd-home-hero-inner {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 48px;
+    }
+
+
+    .fd-importer-grid {
+        gap: 55px;
+    }
+
+
+    .fd-logistics-grid {
+        gap: 55px;
+    }
+
+
+    .fd-quality-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+
+    .fd-quality-card {
+        min-height: 270px;
+    }
+
+}
+
+
+/* =========================================================
+   08 — TABLET / LARGE MOBILE
+   900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* HERO */
+
+    .fd-home-hero-inner {
+        grid-template-columns: 1fr;
+
+        gap: 52px;
+
+        min-height: auto;
+
+        padding-top: 70px;
+
+        padding-bottom: 75px;
+    }
+
+
+    .fd-home-hero-content {
+        max-width: 700px;
+    }
+
+
+    .fd-home-hero-title {
+        margin-top: 15px;
+
+        margin-bottom: 23px;
+
+        font-size: clamp(58px, 9vw, 82px);
+    }
+
+
+    .fd-home-hero-description {
+        max-width: 620px;
+    }
+
+
+    .fd-home-hero-buttons {
+        margin-top: 31px;
+    }
+
+
+    .fd-home-hero-media {
+        max-width: 720px;
+    }
+
+
+    .fd-home-hero-image {
+        aspect-ratio: 4 / 4.8;
+    }
+
+
+    /* QUALITY */
+
+    .fd-quality-section .fd-section-heading .fd-title-lg {
+        max-width: 850px;
+    }
+
+
+    /* LOGISTICS */
+
+    .fd-logistics-grid {
+        gap: 60px;
+    }
+
+}
+
+
+/* =========================================================
+   09 — MOBILE
+   767px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    /* GENERAL SECTION RHYTHM */
+
+    .fd-importer-section,
+    .fd-quality-section,
+    .fd-logistics-section,
+    .fd-about-cta,
+    .fd-international-section {
+
+        padding-top: 82px;
+
+        padding-bottom: 88px;
+    }
+
+
+    /* IMPORTERS */
+
+    .fd-importer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 52px;
+    }
+
+
+    .fd-importer-intro {
+        max-width: 680px;
+    }
+
+
+    /* QUALITY */
+
+    .fd-quality-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-top: 60px;
+    }
+
+
+    .fd-quality-card {
+        min-height: auto;
+
+        padding: 30px 28px 34px;
+    }
+
+
+    /* LOGISTICS */
+
+    .fd-logistics-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .fd-logistics-content {
+        max-width: 680px;
+    }
+
+
+    .fd-logistics-media {
+        max-width: 720px;
+    }
+
+
+    /* PROJECT CTA */
+
+    .fd-about-cta .fd-cta-inner {
+        max-width: 680px;
+    }
+
+}
+
+
+/* =========================================================
+   10 — MOBILE REFINEMENT
+   700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* HERO */
+
+    .fd-home-hero-inner {
+        gap: 40px;
+
+        padding-top: 52px;
+
+        padding-bottom: 60px;
+    }
+
+
+    .fd-home-hero-title {
+        font-size: clamp(48px, 12vw, 66px);
+
+        line-height: 0.97;
+    }
+
+
+    .fd-home-hero-description {
+        line-height: 1.7;
+    }
+
+
+    /* QUALITY */
+
+    .fd-quality-section {
+        padding-top: 82px;
+
+        padding-bottom: 88px;
+    }
+
+
+    .fd-quality-section .fd-section-heading .fd-eyebrow {
+        margin-bottom: 13px;
+    }
+
+
+    .fd-quality-section .fd-section-heading .fd-title-lg {
+        font-size: clamp(44px, 12vw, 60px);
+
+        line-height: 0.98;
+    }
+
+
+    .fd-quality-section .fd-section-heading .fd-description-lg {
+        margin-top: 22px;
+
+        max-width: 520px;
+    }
+
+
+    .fd-quality-grid {
+        margin-top: 58px;
+    }
+
+
+    /* FARM TO DOOR */
+
+    .fd-logistics-section {
+        padding-top: 72px;
+
+        padding-bottom: 88px;
+    }
+
+
+    /* PROJECT CTA */
+
+    .fd-about-cta {
+        padding-top: 88px;
+
+        padding-bottom: 92px;
+    }
+
+
+    .fd-about-cta .fd-title-lg {
+        margin-bottom: 22px;
+    }
+
+
+    .fd-about-cta .fd-buttons {
+        margin-top: 34px;
+    }
+
+}
+
+
+/* =========================================================
+   11 — SMALL MOBILE
+   600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* HERO */
+
+    .fd-home-hero-inner {
+        gap: 34px;
+
+        padding-top: 43px;
+
+        padding-bottom: 48px;
+    }
+
+
+    .fd-home-hero-title {
+        font-size: clamp(43px, 12vw, 58px);
+
+        line-height: 0.98;
+    }
+
+
+    .fd-home-hero-description {
+        line-height: 1.68;
+    }
+
+
+    /*
+       On smaller screens the buttons stack.
+       Desktop/tablet remain side-by-side.
+    */
+
+    .fd-home-hero-buttons,
+    .fd-importer-intro .fd-buttons,
+    .fd-about-cta .fd-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+
+    .fd-home-hero-buttons .fd-btn,
+    .fd-importer-intro .fd-btn,
+    .fd-about-cta .fd-btn {
+
+        width: 100%;
+    }
+
+
+    .fd-home-hero-buttons .fd-btn {
+        white-space: normal;
+    }
+
+
+    .fd-home-hero-caption,
+    .fd-image-caption {
+        font-size: 0.61rem;
+    }
+
+
+    /* INFO ITEMS */
+
+    .fd-info-item {
+        grid-template-columns:
+            38px
+            minmax(0, 1fr);
+
+        gap: 14px;
+
+        padding: 25px 0;
+    }
+
+
+    .fd-info-item h3 {
+        font-size: 1.2rem;
+    }
+
+
+    /* QUALITY CARDS */
+
+    .fd-quality-card {
+        padding: 28px 25px 32px;
+    }
+
+
+    .fd-quality-icon {
+        margin-bottom: 28px;
+    }
+
+
+    /* LOGISTICS */
+
+    .fd-logistics-list .fd-info-item {
+        padding: 25px 0;
+    }
+
+
+    /* INTERNATIONAL */
+
+    .fd-international-section {
+        padding-top: 78px;
+
+        padding-bottom: 88px;
+    }
+
+}
+
+
+/* =========================================================
+   12 — VERY SMALL MOBILE
+   420px
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .fd-importer-section,
+    .fd-quality-section,
+    .fd-logistics-section,
+    .fd-about-cta,
+    .fd-international-section {
+
+        padding-top: 72px;
+
+        padding-bottom: 78px;
+    }
+
+
+    .fd-home-hero-inner {
+        padding-top: 36px;
+
+        padding-bottom: 42px;
+    }
+
+
+    .fd-home-hero-title {
+        font-size: 43px;
+    }
+
+
+    .fd-home-hero-note {
+        font-size: 0.84rem;
+
+        line-height: 1.65;
+    }
+
+
+    .fd-quality-grid {
+        margin-top: 50px;
+    }
+
+
+    .fd-quality-card {
+        padding: 25px 22px 29px;
+    }
+
+
+    .fd-quality-icon {
+        width: 44px;
+
+        height: 44px;
+    }
+
+
+    .fd-about-cta .fd-title-lg {
+        font-size: clamp(40px, 11vw, 50px);
+    }
+
+}

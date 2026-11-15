@@ -1149,3 +1149,14 @@
     }
 
 }
+
+
+@media (max-width: 768px) {
+
+  body.standard-product-page .fd-footer-logo img {
+    width: 140px !important;
+    max-width: 140px !important;
+    height: auto !important;
+  }
+
+}

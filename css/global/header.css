@@ -1154,9 +1154,9 @@
 @media (max-width: 768px) {
 
   body.standard-product-page .fd-footer-logo img {
-    width: 140px !important;
-    max-width: 140px !important;
-    height: auto !important;
+    height: 62px !important;
+    width: auto !important;
+    max-width: 100% !important;
   }
 
 }

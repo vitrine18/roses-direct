@@ -959,8 +959,11 @@
 }
 
 .quotation-intro h2 em {
+  color: var(--fd-warm-white, #FAF8F3);
   font-weight: 300;
+  font-style: italic;
 }
+
 
 .quotation-intro p {
   max-width: 630px;
